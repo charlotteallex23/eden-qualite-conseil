@@ -1,0 +1,75 @@
+TODO | THEME | SLUG | MOT-CLE PRINCIPAL | ANGLE | OBJECTIONS PRINCIPALES
+
+QUALIOPI : INTENTIONS “OBTENIR / ÊTRE CERTIFIÉ / PRÉPARER AUDIT”
+
+TODO | QUALIOPI | certification-qualiopi | certification qualiopi | parcours complet de préparation | organisme certificateur, coûts, indicateurs
+TODO | QUALIOPI | qualiopi-cfa | qualiopi cfa | spécificités CFA | exigences, preuves, audits
+TODO | QUALIOPI | qualiopi-bilan-competences | qualiopi bilan de compétences | périmètre bilan | indicateurs, preuves, audit
+TODO | QUALIOPI | qualiopi-vae | qualiopi VAE | périmètre VAE | process, preuves, audit
+TODO | QUALIOPI | qualiopi-apprentissage | qualiopi apprentissage | CFA et apprentissage | conformité, audit, délais
+TODO | QUALIOPI | qualiopi-sous-traitance | qualiopi sous-traitant | conformité sous-traitance | obligations, risques, preuves
+TODO | QUALIOPI | qualiopi-preaudit | pré-audit qualiopi | audit blanc + plan correctif | coût, utilité, délais
+TODO | QUALIOPI | audit-initial-qualiopi | audit initial qualiopi | préparation et checklists | stress, docs, indicateurs
+TODO | QUALIOPI | audit-surveillance-qualiopi | audit de surveillance qualiopi | maintien conformité | échéances, preuves, non-conformités
+TODO | QUALIOPI | audit-renouvellement-qualiopi | audit de renouvellement qualiopi | renouveler sans stress | échéances, changements, preuves
+TODO | QUALIOPI | non-conformite-qualiopi | non-conformité qualiopi | corriger vite et proprement | gravité, délais, reprise
+TODO | QUALIOPI | plan-action-qualiopi | plan d’action qualiopi | roadmap 30-60-90 jours | organisation, charge, priorité
+TODO | QUALIOPI | documents-qualiopi | documents qualiopi | liste + modèles + méthode | quoi fournir, comment rédiger
+TODO | QUALIOPI | procedures-qualiopi | procédures qualiopi | kit procédures complet | peur paperasse, cohérence
+TODO | QUALIOPI | indicateurs-qualiopi | indicateurs qualiopi | comprendre et prouver | interprétation, exemples
+TODO | QUALIOPI | processus-qualiopi | processus qualiopi | du NDA à l’audit | étapes, timings
+TODO | QUALIOPI | prix-qualiopi | prix qualiopi | budget réaliste + postes | coût certificateur, accompagnement
+TODO | QUALIOPI | devis-qualiopi | devis qualiopi | obtenir un devis clair | transparence, comparaison
+TODO | QUALIOPI | choisir-certificateur-qualiopi | choisir certificateur qualiopi | critères de choix | prix, disponibilité, sérieux
+TODO | QUALIOPI | qualiopi-a-distance | audit qualiopi à distance | conditions et préparation | matériel, risques
+TODO | QUALIOPI | qualiopi-sur-site | audit qualiopi sur site | préparation terrain | organisation, preuves
+TODO | QUALIOPI | qualiopi-e-learning | qualiopi e-learning | preuves et suivi | traçabilité, LMS
+TODO | QUALIOPI | qualiopi-presentiel | qualiopi formation présentiel | preuves et émargements | documents, conformité
+TODO | QUALIOPI | qualiopi-evaluation | évaluation formation qualiopi | évaluations et amélioration | preuves, indicateurs
+TODO | QUALIOPI | qualiopi-reclamations | réclamations qualiopi | process réclamations | peur contrôle, formalisation
+TODO | QUALIOPI | veille-qualiopi | veille réglementaire qualiopi | mettre en place une veille | fréquence, preuves
+TODO | QUALIOPI | bpf-et-qualiopi | BPF et qualiopi | cohérence conformité | obligations, calendrier
+TODO | QUALIOPI | erreur-dossier-qualiopi | erreurs dossier qualiopi | erreurs fréquentes + correctifs | éviter échec audit
+TODO | QUALIOPI | checklist-qualiopi | checklist qualiopi | checklist actionnable | par où commencer
+TODO | QUALIOPI | modele-manuel-qualite | manuel qualité qualiopi | trame + méthode | peur écrire, cohérence
+TODO | QUALIOPI | politique-qualite-qualiopi | politique qualité qualiopi | formulation claire | quoi mettre, comment prouver
+TODO | QUALIOPI | audit-qualiopi-questions | questions audit qualiopi | simulation + réponses attendues | stress, préparation orale
+TODO | QUALIOPI | audit-qualiopi-preuves | preuves audit qualiopi | exemples de preuves | manque de cas concrets
+
+EDOF/CPF : INTENTIONS “ACCÉDER / S’INSCRIRE / RÉFÉRENCER / PUBLIER / ÊTRE CONFORME”
+
+TODO | EDOF | inscription-edof | inscription EDOF | étape par étape | blocages, justificatifs
+TODO | EDOF | creer-compte-edof | créer compte EDOF | parcours d’ouverture | délais, pièces, validation
+TODO | EDOF | demande-acces-edof | demande accès EDOF | check-list avant dépôt | incomplet, rejets
+TODO | EDOF | delai-acces-edof | délai accès EDOF | planifier et anticiper | attente, relances
+TODO | EDOF | conditions-acces-edof | conditions accès EDOF | prérequis clairs | NDA, Qualiopi, BPF, capacité
+TODO | CPF | publier-offre-cpf | publier une offre CPF | process publication | qualité, conformité, délais
+TODO | CPF | catalogue-cpf | catalogue CPF | structurer son catalogue | lisibilité, conversion
+TODO | CPF | edof-parametrage | paramétrage EDOF | config compte + rôles | erreurs, droits
+TODO | CPF | edof-sessions | créer une session CPF | sessions et dates | délais, règles
+TODO | CPF | edof-prix | prix formation CPF | structurer prix | cohérence, contrôles
+TODO | CPF | edof-documents | documents EDOF | pièces et justificatifs | confusion, oublis
+TODO | CPF | edof-refus | refus EDOF | comprendre et corriger | motifs, plan correctif
+TODO | CPF | edof-blocage | compte EDOF bloqué | débloquer proprement | causes, preuves
+TODO | CPF | edof-dereferencement | déréférencement CPF | éviter sanctions | conformité, preuves
+TODO | CPF | conformite-cpf | conformité CPF | se mettre en conformité | contrôles, traçabilité
+TODO | CPF | cgu-cpf-organisme | CGU CPF organisme | obligations clés | délais, process
+TODO | CPF | delai-11-jours-cpf | délai 11 jours ouvrés CPF | sécuriser la planification | calendrier, sessions
+TODO | CPF | qualio pi-et-cpf | qualiopi et CPF | lien et prérequis | ordre des étapes, délais
+TODO | CPF | nda-et-cpf | NDA et CPF | étapes administratives | calendrier, pièces
+TODO | CPF | edof-habilitation | habilitation certification | prouver l’éligibilité | RS/RNCP, preuves
+TODO | CPF | rs-rncp-et-cpf | RS RNCP CPF | comprendre l’éligibilité | choix certification, stratégie
+TODO | CPF | edof-sous-traitance | sous-traitance CPF | sécuriser la sous-traitance | risques, conformité
+TODO | CPF | edof-qualite | qualité sur CPF | éviter avis négatifs | expérience apprenant
+TODO | CPF | edof-annulation | annulation CPF | gérer annulations | règles, preuves
+TODO | CPF | edof-remboursement | remboursement CPF | process et justificatifs | litiges, conformité
+TODO | CPF | edof-financement | financement CPF | comprendre le parcours | délais, étapes
+TODO | CPF | edof-facturation | facturation CPF | préparer la facturation | erreurs, justificatifs
+TODO | CPF | edof-controle | contrôle Caisse des Dépôts | se préparer | preuves, traçabilité
+TODO | CPF | edof-preuves | preuves CPF | constituer un dossier preuves | audits, contrôles
+TODO | CPF | edof-amelioration | amélioration continue CPF | process qualité | indicateurs, actions
+
+PAGES HYBRIDES “PACK” (TRÈS CONVERSION)
+TODO | PACK | pack-of-cpf | organisme de formation CPF | accès CPF + offre | éligibilité, conformité
+TODO | PACK | pack-rs-rncp-cpf | RS RNCP CPF | stratégie certification | choix, délais, coûts
+TODO | PACK | pack-surveillance-renouvellement | surveillance renouvellement qualiopi | maintien + renouvellement | échéances, charge, preuves
