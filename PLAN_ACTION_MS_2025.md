@@ -32,7 +32,7 @@ C. Long-tail Keywords
 
 #### 2. Competitor Keyword Gap Analysis
 - Analyser les 50 premiers mots-clés d'InSyst
-- Identifier 20-30 quick wins (M&S peut ranker)
+- Identifier 20-30 quick wins (ECQ peut ranker)
 - Prioriser par volume + conversion intent
 
 #### 3. Content Audit
@@ -83,7 +83,7 @@ Pages actuelles avec potentiel SEO:
 
 | # | Titre | Mot-clés cibles | Type | Longueur |
 |---|-------|------------------|------|----------|
-| 13 | Méthodologie M&S: Certifier à Résultats | "méthode consulting formation", "proprietary" | Thought leadership | 2000 words |
+| 13 | Méthodologie ECQ: Certifier à Résultats | "méthode consulting formation", "proprietary" | Thought leadership | 2000 words |
 | 14 | Case Study Spotlight: [Client Name] | "success story", "transformation" | Case study | 1500 words |
 | 15 | Tendances Formation 2025 | "formation trends", "future skills" | Industry insight | 2000 words |
 
@@ -102,7 +102,7 @@ Pages actuelles avec potentiel SEO:
 ## Section 2: Pourquoi C'est Important
 ## Section 3: Comment [Faire Truc]
 ## Section 4: Erreurs Courantes
-## Section 5: M&S Approach vs Standard
+## Section 5: ECQ Approach vs Standard
 ## Section 6: Prochain Pas
 
 [CTA: "Parlons de votre situation"]
@@ -452,7 +452,7 @@ Week 4: Link Building
 
 ## 🚀 COMPETITIVE ADVANTAGE
 
-**What makes M&S different:**
+**What makes ECQ different:**
 
 1. **Quality > Quantity**
    - Every article is expert-written
@@ -477,5 +477,5 @@ Week 4: Link Building
 ---
 
 **Prochaine étape:** Démarrer production contenu immédiatement
-**Temps estimé:** 6 mois pour positionner M&S comme authority régionale
+**Temps estimé:** 6 mois pour positionner ECQ comme authority régionale
 **Investissement:** €7,500-11,000 (très ROI-positive)

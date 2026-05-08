@@ -9,8 +9,8 @@
 |---------|-------------------|--------|---------|
 | **Nombre de pages** | ~20 pages | 300+ pages | InSyst |
 | **Stratégie contenu** | Cas d'études + ressources | Articles SEO massifs | InSyst (volume) |
-| **Design/UX** | Premium moderne | Traditionnel blog | M&S |
-| **CTA Conversion** | Optimisé (WhatsApp primary) | Standard contact | M&S |
+| **Design/UX** | Premium moderne | Traditionnel blog | ECQ |
+| **CTA Conversion** | Optimisé (WhatsApp primary) | Standard contact | ECQ |
 | **Autorité SEO** | Nouveau (faible) | Établi (forte) | InSyst |
 | **Positionnement** | Consultant premium | Content hub | Différent |
 
@@ -18,7 +18,7 @@
 
 ## 🎯 STRATÉGIE CONTENU & SEO
 
-### **MAÎTRISE & STRATÉGIE** 
+### **EDEN CONSEIL QUALITÉ** 
 **Approche: Qualité + Cas d'études**
 
 #### Pages principales (14 pages)

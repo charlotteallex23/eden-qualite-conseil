@@ -2,15 +2,17 @@ import { useState, useEffect } from 'react';
 import type { FormEvent } from 'react';
 import { Mail, Phone, Clock, MapPin, Send } from 'lucide-react';
 import emailjs from '@emailjs/browser';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 import { useScrollToTop } from '../hooks/userHooks';
 
-// Initialiser EmailJS (remplacez par votre clé publique EmailJS)
-const EMAILJS_PUBLIC_KEY = 'k87pSGbEnPDzkiiDU';
+// Initialiser EmailJS
+const EMAILJS_PUBLIC_KEY = 'w0GiVe8V5k_sHZYwU';
 const EMAILJS_SERVICE_ID = 'service_3o7wsxl';
 const EMAILJS_TEMPLATE_ID = 'template_31vea09';
 
 export default function Contact() {
   useScrollToTop();
+  const { executeRecaptcha } = useGoogleReCaptcha();
 
   useEffect(() => {
     emailjs.init(EMAILJS_PUBLIC_KEY);
@@ -47,6 +49,13 @@ export default function Contact() {
     setErrorMessage('');
 
     try {
+      // Exécuter reCAPTCHA
+      if (!executeRecaptcha) {
+        throw new Error('reCAPTCHA non disponible');
+      }
+
+      const token = await executeRecaptcha('contact_form');
+
       const templateParams = {
         from_name: `${formData.prenom} ${formData.nom}`,
         nom: formData.nom,
@@ -55,7 +64,8 @@ export default function Contact() {
         telephone: formData.telephone,
         besoin: formData.besoin,
         message: formData.message,
-        reply_to: formData.email
+        reply_to: formData.email,
+        recaptcha_token: token
       };
 
       await emailjs.send(
@@ -234,6 +244,12 @@ export default function Contact() {
                     placeholder="Décrivez-nous votre projet..."
                   />
                 </div>
+
+                <p className="text-xs text-gray-500 text-center">
+                  This site is protected by reCAPTCHA and the Google
+                  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline ml-1"> Privacy Policy</a> and
+                  <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline ml-1"> Terms of Service</a> apply.
+                </p>
 
                 <button
                   type="submit"

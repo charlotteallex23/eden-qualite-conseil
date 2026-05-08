@@ -173,7 +173,7 @@ const articles: { [key: string]: BlogArticle } = {
       <h3>Phase 4 : Audit & Certification (Mois 7+)</h3>
       <p>Nous vous préparons aux audits : Pré-audit complet, Corrections non-conformités, Préparation auditeurs, Suivi post-audit.</p>
       <h3>Cas d'usage : Exemple réel</h3>
-      <p>Situation initiale : Petit organisme 5 personnes, Qualiopi expirée, 0 formations CPF. Après accompagnement M&S : Qualiopi re-certifié en 4 mois, 3 formations certifiées RNCP + CPF, Chiffre d'affaires +60%, Équipe autonome, Plan croissance en place.</p>
+      <p>Situation initiale : Petit organisme 5 personnes, Qualiopi expirée, 0 formations CPF. Après accompagnement Eden Conseil Qualité : Qualiopi re-certifié en 4 mois, 3 formations certifiées RNCP + CPF, Chiffre d'affaires +60%, Équipe autonome, Plan croissance en place.</p>
     `
   }
 };

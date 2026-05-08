@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { useScrollToTop } from './hooks/userHooks';
 import Header from './components/Header';
@@ -29,6 +30,13 @@ import NotFound from './pages/NotFound';
 
 function App() {
   useScrollToTop();
+
+  // Forcer HTTPS en production
+  useEffect(() => {
+    if (window.location.protocol !== 'https:' && !window.location.hostname.includes('localhost')) {
+      window.location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
