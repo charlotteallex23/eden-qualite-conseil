@@ -1,21 +1,15 @@
 import { useState, useEffect } from 'react';
 import type { FormEvent } from 'react';
 import { Mail, Phone, Clock, MapPin, Send } from 'lucide-react';
-import emailjs from '@emailjs/browser';
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 import { useScrollToTop } from '../hooks/userHooks';
-
-// Initialiser EmailJS
-const EMAILJS_PUBLIC_KEY = 'w0GiVe8V5k_sHZYwU';
-const EMAILJS_SERVICE_ID = 'service_3o7wsxl';
-const EMAILJS_TEMPLATE_ID = 'template_31vea09';
 
 export default function Contact() {
   useScrollToTop();
   const { executeRecaptcha } = useGoogleReCaptcha();
 
   useEffect(() => {
-    emailjs.init(EMAILJS_PUBLIC_KEY);
+    // Component mounted
   }, []);
 
   const [formData, setFormData] = useState({
@@ -56,23 +50,28 @@ export default function Contact() {
 
       const token = await executeRecaptcha('contact_form');
 
-      const templateParams = {
-        from_name: `${formData.prenom} ${formData.nom}`,
-        nom: formData.nom,
-        prenom: formData.prenom,
-        from_email: formData.email,
-        telephone: formData.telephone,
-        besoin: formData.besoin,
-        message: formData.message,
-        reply_to: formData.email,
-        recaptcha_token: token
-      };
+      // Appeler le serveur backend pour envoyer l'email
+      const response = await fetch('http://localhost:3001/api/send-contact-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          token,
+          nom: formData.nom,
+          prenom: formData.prenom,
+          email: formData.email,
+          telephone: formData.telephone,
+          besoin: formData.besoin,
+          message: formData.message,
+        }),
+      });
 
-      await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
-        templateParams
-      );
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.message || 'Erreur lors de l\'envoi');
+      }
 
       setSubmitStatus('success');
       setFormData({
