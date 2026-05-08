@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-lg font-bold mb-4">Maîtrise et Stratégie</h3>
+            <h3 className="text-lg font-bold mb-4">Eden Conseil Qualité</h3>
             <p className="text-amber-100">
               Cabinet de conseil expert pour organismes de formation et CFA
             </p>
@@ -68,7 +68,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-center text-amber-100 border-t border-amber-800 pt-4">
-            <p>&copy; {new Date().getFullYear()} Maîtrise et Stratégie. Tous droits réservés.</p>
+            <p>&copy; {new Date().getFullYear()} Eden Conseil Qualité. Tous droits réservés.</p>
           </div>
         </div>
       </div>

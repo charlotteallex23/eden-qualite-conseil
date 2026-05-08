@@ -8,7 +8,7 @@ export default function CallToActionAccueil() {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(
-      'Bonjour, je suis intéressé par les services de Maîtrise & Stratégie pour mon organisme de formation. Pouvez-vous me fournir plus d\'informations ?'
+      'Bonjour, je suis intéressé par les services de Eden Conseil Qualité pour mon organisme de formation. Pouvez-vous me fournir plus d\'informations ?'
     );
     window.open(
       `https://wa.me/${config.company.whatsapp.replace(/[^\d]/g, '')}?text=${message}`,
@@ -29,7 +29,7 @@ export default function CallToActionAccueil() {
             Prêt à structurer votre organisme ?
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Réservez une consultation gratuite avec nos experts. Découvrez comment Maîtrise & Stratégie peut accélérer votre développement.
+            Réservez une consultation gratuite avec nos experts. Découvrez comment Eden Conseil Qualite  peut accélérer votre développement.
           </p>
         </div>
 

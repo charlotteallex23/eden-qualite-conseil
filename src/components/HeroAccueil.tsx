@@ -5,7 +5,7 @@ import { config } from '../config/company';
 export default function HeroAccueil() {
   const handleWhatsApp = () => {
     const message = encodeURIComponent(
-      'Bonjour, je suis intéressé par les services de Maîtrise & Stratégie pour mon organisme de formation. Pouvez-vous me fournir plus d\'informations ?'
+      'Bonjour, je suis intéressé par les services de Eden Conseil Qualité pour mon organisme de formation. Pouvez-vous me fournir plus d\'informations ?'
     );
     window.open(
       `https://wa.me/${config.company.whatsapp.replace(/[^\d]/g, '')}?text=${message}`,

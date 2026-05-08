@@ -6,7 +6,7 @@ const temoignages = [
     nom: 'Sophie L.',
     role: 'Directrice CFA langues',
     citation:
-      'Grâce à Maîtrise & Stratégie, notre CFA a obtenu Qualiopi du premier coup. Accompagnement ultra pro et humain.',
+      'Grâce à Eden Conseil Qualité, notre CFA a obtenu Qualiopi du premier coup. Accompagnement ultra pro et humain.',
     rating: 5
   },
   {
