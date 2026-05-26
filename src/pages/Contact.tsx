@@ -1,21 +1,24 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import type { FormEvent } from 'react';
 import { Mail, Phone, Clock, MapPin, Send } from 'lucide-react';
 import emailjs from '@emailjs/browser';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { useScrollToTop } from '../hooks/userHooks';
 
-// Initialiser EmailJS (remplacez par votre clé publique EmailJS)
-const EMAILJS_PUBLIC_KEY = 'k87pSGbEnPDzkiiDU';
+const EMAILJS_PUBLIC_KEY = 'w0GiVe8V5k_sHZYwU';
 const EMAILJS_SERVICE_ID = 'service_3o7wsxl';
 const EMAILJS_TEMPLATE_ID = 'template_31vea09';
+const RECAPTCHA_SITE_KEY = '6LcgcuosAAAAAATBUqa0aTfI81oLaJO1qXkBb2F4';
 
 export default function Contact() {
   useScrollToTop();
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   useEffect(() => {
     emailjs.init(EMAILJS_PUBLIC_KEY);
   }, []);
 
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     nom: '',
     prenom: '',
@@ -42,6 +45,13 @@ export default function Contact() {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+
+    if (!recaptchaToken) {
+      setSubmitStatus('error');
+      setErrorMessage('Veuillez cocher la case "Je ne suis pas un robot".');
+      return;
+    }
+
     setIsSubmitting(true);
     setSubmitStatus('idle');
     setErrorMessage('');
@@ -73,6 +83,8 @@ export default function Contact() {
         besoin: '',
         message: ''
       });
+      setRecaptchaToken(null);
+      recaptchaRef.current?.reset();
 
       setTimeout(() => {
         setSubmitStatus('idle');
@@ -235,9 +247,18 @@ export default function Contact() {
                   />
                 </div>
 
+                <div className="flex justify-center">
+                  <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey={RECAPTCHA_SITE_KEY}
+                    onChange={(token) => setRecaptchaToken(token)}
+                    onExpired={() => setRecaptchaToken(null)}
+                  />
+                </div>
+
                 <button
                   type="submit"
-                  disabled={isSubmitting}
+                  disabled={isSubmitting || !recaptchaToken}
                   className="w-full bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-amber-800 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? (
