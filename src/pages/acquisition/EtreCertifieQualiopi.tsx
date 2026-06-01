@@ -10,6 +10,17 @@ export default function EtreCertifieQualiopiPage() {
         <title>Être certifié Qualiopi : Méthode simple & plan d'action | Eden Conseil Qualité</title>
         <meta name="description" content="Devenir certifié Qualiopi simplement. Méthode éprouvée, plan d'action clair, zéro charge cachée. Accompagnement complet jusqu'à la certification." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/etre-certifie-qualiopi" />
+        <meta property="og:url" content="https://edenconseilqualite.fr/acquisition/etre-certifie-qualiopi" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://edenconseilqualite.fr/' },
+            { '@type': 'ListItem', position: 2, name: 'Être certifié Qualiopi', item: 'https://edenconseilqualite.fr/acquisition/etre-certifie-qualiopi' }
+          ]
+        })}</script>
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',

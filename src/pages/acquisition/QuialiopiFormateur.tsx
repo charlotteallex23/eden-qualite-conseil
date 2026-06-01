@@ -10,6 +10,17 @@ export default function QuialiopiFormateurIndependantPage() {
         <title>Qualiopi formateur indépendant : Processus light & budget adapté | Eden Conseil Qualité</title>
         <meta name="description" content="Formateur indépendant ? Obtenez Qualiopi sans surcharge. Processus light, budget réaliste, accompagnement solo-preneur." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/qualiopi-formateur-independant" />
+        <meta property="og:url" content="https://edenconseilqualite.fr/acquisition/qualiopi-formateur-independant" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://edenconseilqualite.fr/' },
+            { '@type': 'ListItem', position: 2, name: 'Qualiopi Formateur Indépendant', item: 'https://edenconseilqualite.fr/acquisition/qualiopi-formateur-independant' }
+          ]
+        })}</script>
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',

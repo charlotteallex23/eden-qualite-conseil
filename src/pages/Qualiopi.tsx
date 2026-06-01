@@ -1,6 +1,7 @@
 import { MessageCircle, CheckCircle, AlertCircle } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { config } from '../config/company';
+import { Helmet } from 'react-helmet-async';
 
 export function Qualiopi() {
   const navigate = useNavigate();
@@ -14,6 +15,15 @@ export function Qualiopi() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Certification Qualiopi | Accompagnement Audit | Eden Conseil Qualité</title>
+        <meta name="description" content="Obtenez la certification Qualiopi du premier coup. Accompagnement personnalisé pour l'audit initial et la préparation de votre organisme de formation." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/qualiopi" />
+        <meta property="og:title" content="Certification Qualiopi | Eden Conseil Qualité" />
+        <meta property="og:description" content="Obtenez la certification Qualiopi du premier coup grâce à notre accompagnement expert." />
+        <meta property="og:url" content="https://edenconseilqualite.fr/qualiopi" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+      </Helmet>
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-amber-50 to-amber-100 py-16">
         <div className="max-w-4xl mx-auto px-4">

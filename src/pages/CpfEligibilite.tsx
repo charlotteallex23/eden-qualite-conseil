@@ -1,6 +1,7 @@
 import { MessageCircle, CheckCircle, AlertCircle } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { config } from '../config/company';
+import { Helmet } from 'react-helmet-async';
 
 export function CpfEligibilite() {
   const navigate = useNavigate();
@@ -14,6 +15,15 @@ export function CpfEligibilite() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Éligibilité CPF pour Formations | Eden Conseil Qualité</title>
+        <meta name="description" content="Rendez vos formations éligibles au CPF : accompagnement EDOF, Qualiopi, référencement MonCompteFormation. Experts en éligibilité CPF." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/cpf-eligibilite" />
+        <meta property="og:title" content="Éligibilité CPF pour Formations | Eden Conseil Qualité" />
+        <meta property="og:description" content="Rendez vos formations éligibles au CPF grâce à notre accompagnement EDOF et Qualiopi." />
+        <meta property="og:url" content="https://edenconseilqualite.fr/cpf-eligibilite" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+      </Helmet>
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-amber-50 to-amber-100 py-16">
         <div className="max-w-4xl mx-auto px-4">

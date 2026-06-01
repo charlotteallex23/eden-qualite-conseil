@@ -10,6 +10,17 @@ export default function ObtenerQualiopiPage() {
         <title>Obtenir Qualiopi : Accompagnement pas à pas | Eden Conseil Qualité</title>
         <meta name="description" content="Obtenir votre certification Qualiopi simplement. Plan étape par étape, documents prêts, accompagnement jusqu'au succès. Démarrez votre conformité dès aujourd'hui." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/obtenir-qualiopi" />
+        <meta property="og:url" content="https://edenconseilqualite.fr/acquisition/obtenir-qualiopi" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://edenconseilqualite.fr/' },
+            { '@type': 'ListItem', position: 2, name: 'Obtenir Qualiopi', item: 'https://edenconseilqualite.fr/acquisition/obtenir-qualiopi' }
+          ]
+        })}</script>
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Service',

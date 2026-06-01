@@ -1,6 +1,7 @@
 import { Briefcase, TrendingUp, CheckCircle, Award, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { config } from '../config/company';
+import { Helmet } from 'react-helmet-async';
 
 interface CaseStudy {
   id: string;
@@ -97,6 +98,15 @@ export default function CaseStudies() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Études de Cas | Résultats Clients Qualiopi CPF EDOF | Eden Conseil Qualité</title>
+        <meta name="description" content="Découvrez les cas concrets de nos clients : organismes de formation accompagnés vers Qualiopi, CPF, EDOF. Résultats mesurables." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/case-studies" />
+        <meta property="og:title" content="Études de Cas | Eden Conseil Qualité" />
+        <meta property="og:description" content="Résultats concrets de nos clients : Qualiopi, CPF, EDOF, création d'organismes de formation." />
+        <meta property="og:url" content="https://edenconseilqualite.fr/case-studies" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+      </Helmet>
       {/* Hero */}
       <section className="bg-gradient-to-br from-red-900 to-red-600 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">

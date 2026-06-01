@@ -10,6 +10,17 @@ export default function PackCreationOfQualiopiPage() {
         <title>Pack Création OF + Qualiopi : Tout en 1 | Eden Conseil Qualité</title>
         <meta name="description" content="Pack complet : créer organisme formation + obtenir Qualiopi. Tout inclus, pas de pièces manquantes. Budget clair, délai 3-4 mois." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/pack-creation-of-qualiopi" />
+        <meta property="og:url" content="https://edenconseilqualite.fr/acquisition/pack-creation-of-qualiopi" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://edenconseilqualite.fr/' },
+            { '@type': 'ListItem', position: 2, name: 'Pack Création OF + Qualiopi', item: 'https://edenconseilqualite.fr/acquisition/pack-creation-of-qualiopi' }
+          ]
+        })}</script>
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',

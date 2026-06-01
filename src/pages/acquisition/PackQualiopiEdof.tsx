@@ -10,6 +10,17 @@ export default function PackQualiopiEdofPage() {
         <title>Pack Qualiopi + EDOF : Certification + accès CPF complet | Eden Conseil Qualité</title>
         <meta name="description" content="Pack tout-en-un : Obtenez Qualiopi ET accédez à EDOF/CPF. Parcours complet, délais optimisés, un seul accompagnateur." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/pack-qualiopi-edof" />
+        <meta property="og:url" content="https://edenconseilqualite.fr/acquisition/pack-qualiopi-edof" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://edenconseilqualite.fr/' },
+            { '@type': 'ListItem', position: 2, name: 'Pack Qualiopi + EDOF', item: 'https://edenconseilqualite.fr/acquisition/pack-qualiopi-edof' }
+          ]
+        })}</script>
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',

@@ -10,6 +10,17 @@ export default function AccederEdofPage() {
         <title>Accéder à EDOF : Inscription pour organismes formation | Eden Conseil Qualité</title>
         <meta name="description" content="Inscription EDOF complet. Accès MonCompteFormation, CPF, financement public. Dossier conforme, validation garantie." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/acceder-edof" />
+        <meta property="og:url" content="https://edenconseilqualite.fr/acquisition/acceder-edof" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://edenconseilqualite.fr/' },
+            { '@type': 'ListItem', position: 2, name: 'Accéder à EDOF', item: 'https://edenconseilqualite.fr/acquisition/acceder-edof' }
+          ]
+        })}</script>
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',

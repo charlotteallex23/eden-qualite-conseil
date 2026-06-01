@@ -10,6 +10,17 @@ export default function QuialiopiRapidementPage() {
         <title>Obtenir Qualiopi rapidement : Plan accéléré réaliste | Eden Conseil Qualité</title>
         <meta name="description" content="Qualiopi en moins de 3 mois ? C'est possible. Plan accéléré réaliste, sans raccourcis. Démarrez immédiatement." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/qualiopi-rapidement" />
+        <meta property="og:url" content="https://edenconseilqualite.fr/acquisition/qualiopi-rapidement" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://edenconseilqualite.fr/' },
+            { '@type': 'ListItem', position: 2, name: 'Obtenir Qualiopi Rapidement', item: 'https://edenconseilqualite.fr/acquisition/qualiopi-rapidement' }
+          ]
+        })}</script>
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',

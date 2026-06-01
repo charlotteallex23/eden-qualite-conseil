@@ -1,6 +1,7 @@
 import { Download, ExternalLink, FileText, MessageCircle } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { config } from '../config/company';
+import { Helmet } from 'react-helmet-async';
 
 export function Ressources() {
   const navigate = useNavigate();
@@ -14,6 +15,27 @@ export function Ressources() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Ressources Gratuites | Guides Qualiopi CPF EDOF | Eden Conseil Qualité</title>
+        <meta name="description" content="Téléchargez nos ressources gratuites : checklist Qualiopi, guide EDOF, modèle BPF, stratégie tarifaire CPF. Outils pratiques pour organismes de formation." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/ressources" />
+        <meta property="og:title" content="Ressources Gratuites Qualiopi CPF EDOF | Eden Conseil Qualité" />
+        <meta property="og:description" content="Checklist Qualiopi, guide EDOF, modèle BPF. Ressources gratuites pour organismes de formation." />
+        <meta property="og:url" content="https://edenconseilqualite.fr/ressources" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          name: 'Ressources gratuites pour organismes de formation',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Checklist Qualiopi', description: 'Outil couvrant l’ensemble des critères Qualiopi répartis sur les 7 domaines' },
+            { '@type': 'ListItem', position: 2, name: 'Plan d’action Qualiopi', description: 'Modèle pour organiser vos actions correctives' },
+            { '@type': 'ListItem', position: 3, name: 'Guide EDOF', description: 'Détails des étapes pour créer votre compte EDOF et importer vos formations' },
+            { '@type': 'ListItem', position: 4, name: 'Modèle BPF', description: 'Modèle expliquant chaque section du Bilan Pédagogique et Financier' },
+            { '@type': 'ListItem', position: 5, name: 'Stratégie tarifaire CPF', description: 'Benchmarking des tarifs CPF par secteur' }
+          ]
+        })}</script>
+      </Helmet>
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-amber-50 to-amber-100 py-16">
         <div className="max-w-4xl mx-auto px-4">

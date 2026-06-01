@@ -14,6 +14,11 @@ export default function Accueil() {
         <title>Consultant Qualiopi Paris | Accompagnement CPF EDOF | Eden Conseil Qualité</title>
         <meta name="description" content="Expert en certification Qualiopi, CPF et EDOF. Accompagnement personnalisé pour organismes de formation avec résultats prouvés." />
         <link rel="canonical" href="https://edenconseilqualite.fr/" />
+        <meta property="og:title" content="Consultant Qualiopi Paris | Accompagnement CPF EDOF | Eden Conseil Qualité" />
+        <meta property="og:description" content="Expert en certification Qualiopi, CPF et EDOF. Accompagnement personnalisé pour organismes de formation avec résultats prouvés." />
+        <meta property="og:url" content="https://edenconseilqualite.fr/" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+        <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'LocalBusiness',
@@ -61,6 +66,37 @@ export default function Accueil() {
               author: { '@type': 'Person', name: 'Fatima B.' },
               reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
               reviewBody: 'L\'équipe a tout géré pour la création de notre OF et le dépôt RS. Réactivité, expertise et résultats concrets.'
+            }
+          ]
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            {
+              '@type': 'Question',
+              name: 'Combien coûte un accompagnement RS ?',
+              acceptedAnswer: { '@type': 'Answer', text: 'Le tarif dépend du niveau d\'accompagnement et du dossier. Contactez-nous pour un devis personnalisé.' }
+            },
+            {
+              '@type': 'Question',
+              name: 'Comment obtenir Qualiopi du premier coup ?',
+              acceptedAnswer: { '@type': 'Answer', text: 'Nous vous guidons étape par étape, audit, préparation et suivi pour maximiser vos chances de réussite.' }
+            },
+            {
+              '@type': 'Question',
+              name: 'Peut-on rendre une formation CPF rapidement ?',
+              acceptedAnswer: { '@type': 'Answer', text: 'Oui, nous optimisons le dépôt EDOF et le référencement pour accélérer l\'éligibilité CPF.' }
+            },
+            {
+              '@type': 'Question',
+              name: 'Aidez-vous à la création d\'un CFA ?',
+              acceptedAnswer: { '@type': 'Answer', text: 'Oui, nous accompagnons la structuration, le NDA, l\'UAI et l\'ouverture de CFA.' }
+            },
+            {
+              '@type': 'Question',
+              name: 'Externalisez-vous la gestion Qualiopi ?',
+              acceptedAnswer: { '@type': 'Answer', text: 'Nous proposons des solutions d\'externalisation pour la conformité et la gestion continue.' }
             }
           ]
         })}</script>

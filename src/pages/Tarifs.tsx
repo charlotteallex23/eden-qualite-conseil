@@ -141,6 +141,21 @@ export default function Tarifs() {
         <title>Tarifs & Devis | Services Conseil Formation Qualiopi CPF EDOF</title>
         <meta name="description" content="Découvrez nos tarifs pour certification Qualiopi, développement formation, création organisme. Devis personnalisé sur demande." />
         <link rel="canonical" href="https://edenconseilqualite.fr/tarifs" />
+        <meta property="og:title" content="Tarifs & Devis | Eden Conseil Qualité" />
+        <meta property="og:description" content="Découvrez nos tarifs pour certification Qualiopi, développement formation, création organisme. Devis personnalisé sur demande." />
+        <meta property="og:url" content="https://edenconseilqualite.fr/tarifs" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          name: 'Tarifs Eden Conseil Qualité',
+          description: 'Nos offres de conseil pour organismes de formation',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Accompagnement Obtention NDA', description: 'Démarrez votre organisme de formation sur des bases solides', offers: { '@type': 'Offer', price: '500', priceCurrency: 'EUR', priceSpecification: { '@type': 'PriceSpecification', price: '500', priceCurrency: 'EUR', valueAddedTaxIncluded: false } } },
+            { '@type': 'ListItem', position: 2, name: 'Certification Qualiopi – Audit Initial', description: 'Préparation méthodique pour réussir l’audit du premier coup', offers: { '@type': 'Offer', price: '1990', priceCurrency: 'EUR', priceSpecification: { '@type': 'PriceSpecification', price: '1990', priceCurrency: 'EUR', valueAddedTaxIncluded: false } } },
+            { '@type': 'ListItem', position: 3, name: 'Éligibilité CPF & Référencement EDOF', offers: { '@type': 'Offer', price: '890', priceCurrency: 'EUR', priceSpecification: { '@type': 'PriceSpecification', price: '890', priceCurrency: 'EUR', valueAddedTaxIncluded: false } } }
+          ]
+        })}</script>
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">

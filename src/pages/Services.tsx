@@ -172,6 +172,10 @@ export default function Services() {
         <title>Services de Conseil Formation | Consultant Qualiopi CPF EDOF</title>
         <meta name="description" content="Création organisme formation, accompagnement Qualiopi, CPF, EDOF. Services complets pour développer votre activité de formation." />
         <link rel="canonical" href="https://edenconseilqualite.fr/services" />
+        <meta property="og:title" content="Services de Conseil Formation | Eden Conseil Qualité" />
+        <meta property="og:description" content="Création organisme formation, accompagnement Qualiopi, CPF, EDOF. Services complets pour développer votre activité de formation." />
+        <meta property="og:url" content="https://edenconseilqualite.fr/services" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}

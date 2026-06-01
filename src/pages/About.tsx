@@ -66,6 +66,35 @@ export default function About() {
         <title>À Propos | Eden Conseil Qualité - Experts Qualiopi CPF EDOF</title>
         <meta name="description" content="Qui sommes-nous ? Découvrez l'équipe Eden Conseil Qualité, experts en certification Qualiopi et développement d'organismes de formation." />
         <link rel="canonical" href="https://edenconseilqualite.fr/about" />
+        <meta property="og:title" content="À Propos | Eden Conseil Qualité" />
+        <meta property="og:description" content="Découvrez l'équipe Eden Conseil Qualité, experts en certification Qualiopi et développement d'organismes de formation." />
+        <meta property="og:url" content="https://edenconseilqualite.fr/about" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'Eden Conseil Qualité',
+          url: 'https://edenconseilqualite.fr',
+          logo: 'https://edenconseilqualite.fr/logo.png',
+          foundingDate: '2020',
+          description: 'Cabinet de conseil expert en certification Qualiopi, CPF et EDOF pour organismes de formation',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: '1 Avenue François 1er',
+            postalCode: '75008',
+            addressLocality: 'Paris',
+            addressCountry: 'FR'
+          },
+          contactPoint: {
+            '@type': 'ContactPoint',
+            telephone: '+33767058187',
+            contactType: 'customer service',
+            availableLanguage: 'French'
+          },
+          sameAs: [
+            'https://www.linkedin.com/company/eden-conseil-qualite'
+          ]
+        })}</script>
       </Helmet>
       {/* Hero */}
       <section className="bg-gradient-to-br from-red-900 to-red-600 text-white py-20 px-4">

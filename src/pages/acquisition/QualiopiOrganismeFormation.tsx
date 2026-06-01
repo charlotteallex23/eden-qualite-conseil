@@ -10,6 +10,17 @@ export default function QualiopiOrganismeFormationPage() {
         <title>Qualiopi pour organismes formation : Certification méthodique | Eden Conseil Qualité</title>
         <meta name="description" content="Qualiopi pour centre de formation, OPCO, département. Structuration + audit garantie. 3-6 mois, budget prévisible." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/qualiopi-organisme-formation" />
+        <meta property="og:url" content="https://edenconseilqualite.fr/acquisition/qualiopi-organisme-formation" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://edenconseilqualite.fr/' },
+            { '@type': 'ListItem', position: 2, name: 'Qualiopi Organisme de Formation', item: 'https://edenconseilqualite.fr/acquisition/qualiopi-organisme-formation' }
+          ]
+        })}</script>
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',

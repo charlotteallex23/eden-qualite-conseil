@@ -1,6 +1,7 @@
 import { MessageCircle, AlertCircle } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { config } from '../config/company';
+import { Helmet } from 'react-helmet-async';
 
 export function EdofReferencement() {
   const navigate = useNavigate();
@@ -14,6 +15,15 @@ export function EdofReferencement() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Référencement EDOF | Accéder à MonCompteFormation | Eden Conseil Qualité</title>
+        <meta name="description" content="Inscrivez vos formations sur EDOF et MonCompteFormation. Accompagnement complet pour le référencement CPF de votre organisme de formation." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/edof-referencement" />
+        <meta property="og:title" content="Référencement EDOF | Eden Conseil Qualité" />
+        <meta property="og:description" content="Inscrivez vos formations sur EDOF et MonCompteFormation avec l'aide de nos experts." />
+        <meta property="og:url" content="https://edenconseilqualite.fr/edof-referencement" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+      </Helmet>
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-amber-50 to-amber-100 py-16">
         <div className="max-w-4xl mx-auto px-4">

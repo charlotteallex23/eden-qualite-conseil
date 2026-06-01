@@ -10,6 +10,17 @@ export default function ReferencerFormationCpfPage() {
         <title>Référencer formations CPF : Mise en ligne conforme & éligibilité | Eden Conseil Qualité</title>
         <meta name="description" content="Référencer vos formations CPF sans refus. Dossier conforme, éligibilité validée, publication EDOF/MonCompteFormation." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/referencer-formation-cpf" />
+        <meta property="og:url" content="https://edenconseilqualite.fr/acquisition/referencer-formation-cpf" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://edenconseilqualite.fr/' },
+            { '@type': 'ListItem', position: 2, name: 'Référencer Formation CPF', item: 'https://edenconseilqualite.fr/acquisition/referencer-formation-cpf' }
+          ]
+        })}</script>
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'FAQPage',

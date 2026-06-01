@@ -3,6 +3,7 @@ import type { FormEvent } from 'react';
 import { Mail, Phone, Clock, MapPin, Send } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from 'react-google-recaptcha';
+import { Helmet } from 'react-helmet-async';
 import { useScrollToTop } from '../hooks/userHooks';
 
 const EMAILJS_PUBLIC_KEY = 'w0GiVe8V5k_sHZYwU';
@@ -110,6 +111,15 @@ export default function Contact() {
 
   return (
     <div className="py-20 bg-gray-50">
+      <Helmet>
+        <title>Contact | Eden Conseil Qualité - Consultant Qualiopi Paris</title>
+        <meta name="description" content="Contactez Eden Conseil Qualité pour un devis personnalisé. Experts en certification Qualiopi, CPF, EDOF pour organismes de formation." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/contact" />
+        <meta property="og:title" content="Contact | Eden Conseil Qualité" />
+        <meta property="og:description" content="Contactez nos experts en certification Qualiopi, CPF, EDOF pour un devis personnalisé." />
+        <meta property="og:url" content="https://edenconseilqualite.fr/contact" />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+      </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-red-600 mb-6">
