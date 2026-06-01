@@ -26,6 +26,10 @@ const ReferencerFormationCpf = lazy(() => import('./pages/acquisition/Referencer
 const AccederEdof = lazy(() => import('./pages/acquisition/AccederEdof'));
 const PackCreationOfQualiopi = lazy(() => import('./pages/acquisition/PackCreationOfQualiopi'));
 const QualiopiOrganismeFormation = lazy(() => import('./pages/acquisition/QualiopiOrganismeFormation'));
+const PrixCertificationQualiopi = lazy(() => import('./pages/acquisition/PrixCertificationQualiopi'));
+const ConsultantQualiopiParis = lazy(() => import('./pages/acquisition/ConsultantQualiopiParis'));
+const CreerOrganismeFormation = lazy(() => import('./pages/acquisition/CreerOrganismeFormation'));
+const AuditQualiopi = lazy(() => import('./pages/acquisition/AuditQualiopi'));
 const MentionsLegales = lazy(() => import('./pages/MentionsLegales'));
 const PolitiqueConfidentialite = lazy(() => import('./pages/PolitiqueConfidentialite'));
 const NotFound = lazy(() => import('./pages/NotFound'));
@@ -56,6 +60,10 @@ function App() {
             <Route path="/acquisition/acceder-edof" element={<AccederEdof />} />
             <Route path="/acquisition/pack-creation-of-qualiopi" element={<PackCreationOfQualiopi />} />
             <Route path="/acquisition/qualiopi-organisme-formation" element={<QualiopiOrganismeFormation />} />
+            <Route path="/acquisition/prix-certification-qualiopi" element={<PrixCertificationQualiopi />} />
+            <Route path="/acquisition/consultant-qualiopi-paris" element={<ConsultantQualiopiParis />} />
+            <Route path="/acquisition/creer-organisme-formation" element={<CreerOrganismeFormation />} />
+            <Route path="/acquisition/audit-qualiopi" element={<AuditQualiopi />} />
             <Route path="/ressources" element={<Ressources />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />

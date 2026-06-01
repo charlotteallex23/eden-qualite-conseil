@@ -680,14 +680,20 @@ export function ArticleDetail() {
         <title>{article.title} | Blog Eden Conseil Qualité</title>
         <meta name="description" content={article.excerpt} />
         <link rel="canonical" href={`https://edenconseilqualite.fr/blog/${article.id}`} />
+        <meta property="og:url" content={`https://edenconseilqualite.fr/blog/${article.id}`} />
+        <meta property="og:image" content="https://edenconseilqualite.fr/og-image.webp" />
+        <meta property="og:type" content="article" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'BlogPosting',
           headline: article.title,
           description: article.excerpt,
-          author: { '@type': 'Organization', name: article.author },
+          url: `https://edenconseilqualite.fr/blog/${article.id}`,
+          author: { '@type': 'Organization', name: 'Eden Conseil Qualité', url: 'https://edenconseilqualite.fr' },
+          publisher: { '@type': 'Organization', name: 'Eden Conseil Qualité', url: 'https://edenconseilqualite.fr' },
           datePublished: article.date,
-          image: 'https://edenconseilqualite.fr/blog-image.jpg'
+          image: 'https://edenconseilqualite.fr/og-image.webp',
+          mainEntityOfPage: { '@type': 'WebPage', '@id': `https://edenconseilqualite.fr/blog/${article.id}` }
         })}</script>
       </Helmet>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
