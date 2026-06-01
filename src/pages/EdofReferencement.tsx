@@ -246,6 +246,22 @@ export function EdofReferencement() {
             </ul>
           </div>
 
+          <h2 className="text-3xl font-bold text-red-900 mb-6">Nos accompagnements EDOF et CPF</h2>
+          <div className="grid md:grid-cols-3 gap-4 mb-8">
+            <Link to="/acquisition/acceder-edof" className="block p-4 bg-red-50 border border-red-200 rounded-lg hover:bg-red-100 transition">
+              <p className="font-bold text-red-600 mb-1">Accéder à EDOF</p>
+              <p className="text-sm text-gray-600">Inscription complète, zéro attente</p>
+            </Link>
+            <Link to="/acquisition/referencer-formation-cpf" className="block p-4 bg-red-50 border border-red-200 rounded-lg hover:bg-red-100 transition">
+              <p className="font-bold text-red-600 mb-1">Référencer une formation CPF</p>
+              <p className="text-sm text-gray-600">Éligibilité validée, publication EDOF</p>
+            </Link>
+            <Link to="/acquisition/pack-qualiopi-edof" className="block p-4 bg-red-50 border border-red-200 rounded-lg hover:bg-red-100 transition">
+              <p className="font-bold text-red-600 mb-1">Pack Qualiopi + EDOF</p>
+              <p className="text-sm text-gray-600">Un seul accompagnateur pour les deux</p>
+            </Link>
+          </div>
+
           <h2 className="text-3xl font-bold text-red-900 mb-6">Faisons fonctionner EDOF pour vous</h2>
           <div className="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-lg p-8 mb-8">
             <p className="mb-6 text-lg">

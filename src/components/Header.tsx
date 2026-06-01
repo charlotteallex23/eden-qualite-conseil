@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
-import logo from '../assets/eden-conseil-qualite-logo.png';
+import logo from '../assets/eden-conseil-qualite-logo.webp';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

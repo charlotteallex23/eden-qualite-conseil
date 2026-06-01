@@ -1,29 +1,4 @@
-import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, User, MessageCircle } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
-import { config } from '../config/company';
-
-interface BlogArticle {
-  id: string;
-  title: string;
-  excerpt: string;
-  content: string;
-  author: string;
-  date: string;
-  category: string;
-  readTime: string;
-}
-
-const articles: { [key: string]: BlogArticle } = {
-  'qualiopi-2024': {
-    id: 'qualiopi-2024',
-    title: 'Qualiopi 2024 : Les nouveaux critères à connaître',
-    excerpt: 'Découvrez les évolutions majeures de la certification Qualiopi et comment vous préparer aux nouveaux critères d\'audit.',
-    author: 'Équipe Eden Conseil Qualité',
-    date: '15 juin 2024',
-    category: 'Certification',
-    readTime: '8 min',
-    content: `
+import{j as e,c as a}from"./pages-main-B2nVsWxz.js";import{H as o,r as n,M as l,s as u,t as p}from"./vendor-ui-DUikLRPo.js";import{L as s,a as c}from"./vendor-react-CEj1KOBf.js";import"./vendor-forms-DPiq21AL.js";const r={"qualiopi-2024":{id:"qualiopi-2024",title:"Qualiopi 2024 : Les nouveaux critères à connaître",excerpt:"Découvrez les évolutions majeures de la certification Qualiopi et comment vous préparer aux nouveaux critères d'audit.",author:"Équipe Eden Conseil Qualité",date:"15 juin 2024",category:"Certification",readTime:"8 min",content:`
       <h2>Introduction aux nouveaux critères Qualiopi</h2>
       <p>La certification Qualiopi continue d'évoluer pour mieux répondre aux enjeux de la formation professionnelle. En 2024, de nouveaux critères ont été introduits pour renforcer la qualité des organismes de formation.</p>
       <h3>Les 6 domaines clés</h3>
@@ -41,64 +16,24 @@ const articles: { [key: string]: BlogArticle } = {
       <h3>Nos recommandations</h3>
       <p>Chez Eden Conseil Qualité, nous recommandons de : réaliser un audit blanc complet au moins 6 mois avant votre audit initial, mettre en place une démarche continue d'amélioration, former votre équipe aux nouveaux critères, et documenter tous vos processus et résultats.</p>
       <p>N'hésitez pas à nous contacter pour un diagnostic gratuit de votre conformité Qualiopi.</p>
-    `
-  },
-  'cpf-guide': {
-    id: 'cpf-guide',
-    title: 'CPF et EDOF : Guide complet pour les organismes de formation',
-    excerpt: 'Un guide détaillé sur le CPF et EDOF pour maximiser votre visibilité et vos opportunités de financement.',
-    author: 'Équipe Eden Conseil Qualité',
-    date: '3 mai 2024',
-    category: 'Financement',
-    readTime: '10 min',
-    content: `
+    `},"cpf-guide":{id:"cpf-guide",title:"CPF et EDOF : Guide complet pour les organismes de formation",excerpt:"Un guide détaillé sur le CPF et EDOF pour maximiser votre visibilité et vos opportunités de financement.",author:"Équipe Eden Conseil Qualité",date:"3 mai 2024",category:"Financement",readTime:"10 min",content:`
       <h2>Comprendre le CPF et EDOF</h2>
       <p>Le Compte Personnel de Formation (CPF) et l'Édition EDOF (Édition Électronique des Offres de Formation) sont deux éléments clés pour assurer la visibilité et le succès de votre organisme de formation.</p>
       <h3>Qu'est-ce que le CPF ?</h3>
       <p>Le CPF est un droit financier dont dispose chaque actif (salarié, travailleur indépendant, demandeur d'emploi) en France pour suivre une formation professionnelle. Depuis 2023, les droits sont crédités en euros (500 €/an).</p>
       <h3>L'importance du référencement CPF</h3>
       <p>Pour les organismes de formation, être référencé au CPF est essentiel pour : attirer une nouvelle clientèle, développer votre activité, et augmenter votre chiffre d'affaires avec des financements directs.</p>
-    `
-  },
-  'edof-referencing': {
-    id: 'edof-referencing',
-    title: 'EDOF : Comment bien enregistrer vos formations',
-    excerpt: 'Enregistrement sur EDOF, publication de vos offres et optimisation pour MonCompteFormation.',
-    author: 'Équipe Eden Conseil Qualité',
-    date: '12 avril 2024',
-    category: 'EDOF',
-    readTime: '7 min',
-    content: `
+    `},"edof-referencing":{id:"edof-referencing",title:"EDOF : Comment bien enregistrer vos formations",excerpt:"Enregistrement sur EDOF, publication de vos offres et optimisation pour MonCompteFormation.",author:"Équipe Eden Conseil Qualité",date:"12 avril 2024",category:"EDOF",readTime:"7 min",content:`
       <h2>EDOF : Le guide essentiel</h2>
       <p>EDOF est la plateforme officielle où les organismes de formation enregistrent leurs offres. C'est aussi le lien direct vers MonCompteFormation, la plateforme visible aux apprenants CPF.</p>
       <h3>Étapes d'enregistrement</h3>
       <p>Vous devez : créer un compte sur edof.gouv.fr, remplir le formulaire de déclaration, attendre validation DREETS, puis publier vos offres de formation.</p>
-    `
-  },
-  'bilan-pedagogique': {
-    id: 'bilan-pedagogique',
-    title: 'Bilan Pédagogique et Financier : Optimiser votre BPF',
-    excerpt: 'Le Bilan Pédagogique et Financier est un document clé pour votre Qualiopi. Comment le structurer et l\'optimiser ?',
-    author: 'Équipe Eden Conseil Qualité',
-    date: '25 mars 2024',
-    category: 'Documentation',
-    readTime: '9 min',
-    content: `
+    `},"bilan-pedagogique":{id:"bilan-pedagogique",title:"Bilan Pédagogique et Financier : Optimiser votre BPF",excerpt:"Le Bilan Pédagogique et Financier est un document clé pour votre Qualiopi. Comment le structurer et l'optimiser ?",author:"Équipe Eden Conseil Qualité",date:"25 mars 2024",category:"Documentation",readTime:"9 min",content:`
       <h2>Le Bilan Pédagogique et Financier</h2>
       <p>Le BPF est un document obligatoire pour tous les organismes de formation assujettis à la contribution unique de formation. Il doit être publié avant le 30 avril de chaque année.</p>
       <h3>Contenu obligatoire</h3>
       <p>Votre BPF doit inclure : les moyens mis en œuvre, les formations dispensées, les résultats pédagogiques, le contenu du bilan financier, et les actions à venir.</p>
-    `
-  },
-  'qualiopi-2025': {
-    id: 'qualiopi-2025',
-    title: 'Qualiopi 2025 : Les nouvelles exigences à connaître',
-    excerpt: 'Les critères Qualiopi évoluent en 2025. Découvrez les changements majeurs et comment adapter votre organisme.',
-    author: 'Équipe Eden Conseil Qualité',
-    date: '15 janvier 2025',
-    category: 'Certification',
-    readTime: '10 min',
-    content: `
+    `},"qualiopi-2025":{id:"qualiopi-2025",title:"Qualiopi 2025 : Les nouvelles exigences à connaître",excerpt:"Les critères Qualiopi évoluent en 2025. Découvrez les changements majeurs et comment adapter votre organisme.",author:"Équipe Eden Conseil Qualité",date:"15 janvier 2025",category:"Certification",readTime:"10 min",content:`
       <h2>Les évolutions majeures de Qualiopi en 2025</h2>
       <p>La certification Qualiopi continue d'évoluer pour mieux encadrer la qualité des formations professionnelles. En 2025, plusieurs changements importants entrent en vigueur.</p>
       <h3>1. Renforcement de la traçabilité numérique</h3>
@@ -109,17 +44,7 @@ const articles: { [key: string]: BlogArticle } = {
       <p>La satisfaction et l'insertion professionnelle des apprenants deviennent des critères d'audit. Vous devez justifier les résultats avec enquêtes et suivi à 6 mois.</p>
       <h3>4. Transparence tarifaire</h3>
       <p>Les tarifs doivent être clairement affichés et justifiés. Plus de tarifs opaques.</p>
-    `
-  },
-  'cpf-2025': {
-    id: 'cpf-2025',
-    title: 'CPF 2025 : Les changements majeurs pour les formations',
-    excerpt: 'Le CPF change en 2025. Quoi de nouveau pour les organismes de formation et les apprenants ?',
-    author: 'Équipe Eden Conseil Qualité',
-    date: '20 janvier 2025',
-    category: 'CPF',
-    readTime: '8 min',
-    content: `
+    `},"cpf-2025":{id:"cpf-2025",title:"CPF 2025 : Les changements majeurs pour les formations",excerpt:"Le CPF change en 2025. Quoi de nouveau pour les organismes de formation et les apprenants ?",author:"Équipe Eden Conseil Qualité",date:"20 janvier 2025",category:"CPF",readTime:"8 min",content:`
       <h2>CPF 2025 : Ce qui change pour vous</h2>
       <p>Le Compte Personnel de Formation (CPF) subit plusieurs modifications en 2025. Voici ce que vous devez savoir.</p>
       <h3>1. Ticket modérateur augmenté</h3>
@@ -130,17 +55,7 @@ const articles: { [key: string]: BlogArticle } = {
       <p>Toute formation CPF doit être inscrite sur EDOF et visible dans MonCompteFormation.</p>
       <h3>4. Contrôle renforcé</h3>
       <p>Les audits CPF/EDOF se multiplient. Les organismes doivent respecter scrupuleusement les règles.</p>
-    `
-  },
-  'edof-guide': {
-    id: 'edof-guide',
-    title: 'EDOF 2025 : Guide complet d\'enregistrement et de publication',
-    excerpt: 'Comment bien enregistrer vos formations sur EDOF et maximiser votre visibilité en 2025 ?',
-    author: 'Équipe Eden Conseil Qualité',
-    date: '25 janvier 2025',
-    category: 'EDOF',
-    readTime: '12 min',
-    content: `
+    `},"edof-guide":{id:"edof-guide",title:"EDOF 2025 : Guide complet d'enregistrement et de publication",excerpt:"Comment bien enregistrer vos formations sur EDOF et maximiser votre visibilité en 2025 ?",author:"Équipe Eden Conseil Qualité",date:"25 janvier 2025",category:"EDOF",readTime:"12 min",content:`
       <h2>EDOF 2025 : Le guide complet</h2>
       <p>EDOF est la plateforme centrale pour publier vos formations. Bien comprendre les exigences 2025 est crucial.</p>
       <h3>Qu'est-ce qu'EDOF exactement ?</h3>
@@ -151,17 +66,7 @@ const articles: { [key: string]: BlogArticle } = {
       <p><strong>Étape 3 : Mise à jour régulière</strong> - Mettre à jour places disponibles, ajouter dates, modifier tarifs, archiver formations terminées.</p>
       <h3>Champs importants dans EDOF</h3>
       <p>Intitulé formation (clair et SEO), Description (200+ caractères), Domaine (cohérent), Certification (RNCP si CPF), Durée (exacte), Tarif (transparent), Modalité (présentiel/distanciel), Accessibilité.</p>
-    `
-  },
-  'methodologie-ms': {
-    id: 'methodologie-ms',
-    title: 'Notre méthodologie : Comment Eden Conseil Qualité vous accompagne',
-    excerpt: 'Découvrez notre approche unique pour transformer votre organisme de formation et garantir le succès.',
-    author: 'Équipe Eden Conseil Qualité',
-    date: '30 janvier 2025',
-    category: 'Expertise',
-    readTime: '9 min',
-    content: `
+    `},"methodologie-ms":{id:"methodologie-ms",title:"Notre méthodologie : Comment Eden Conseil Qualité vous accompagne",excerpt:"Découvrez notre approche unique pour transformer votre organisme de formation et garantir le succès.",author:"Équipe Eden Conseil Qualité",date:"30 janvier 2025",category:"Expertise",readTime:"9 min",content:`
       <h2>Notre approche : Expertise + Résultats</h2>
       <p>Eden Conseil Qualité n'est pas un cabinet de conseil traditionnel. Nous nous engageons sur les résultats et accompagnons chaque organisme personnalisé.</p>
       <h3>Phase 1 : Audit & Diagnostic (Semaine 1-2)</h3>
@@ -174,18 +79,7 @@ const articles: { [key: string]: BlogArticle } = {
       <p>Nous vous préparons aux audits : Pré-audit complet, Corrections non-conformités, Préparation auditeurs, Suivi post-audit.</p>
       <h3>Cas d'usage : Exemple réel</h3>
       <p>Situation initiale : Petit organisme 5 personnes, Qualiopi expirée, 0 formations CPF. Après accompagnement M&S : Qualiopi re-certifié en 4 mois, 3 formations certifiées RNCP + CPF, Chiffre d'affaires +60%, Équipe autonome, Plan croissance en place.</p>
-    `
-  },
-
-  'comment-obtenir-qualiopi-2026': {
-    id: 'comment-obtenir-qualiopi-2026',
-    title: 'Comment obtenir Qualiopi en 2026 : guide complet étape par étape',
-    excerpt: 'Avec 1 600 recherches/mois, c\'est la question clé du secteur. Étapes exactes, délais réalistes et budget pour obtenir votre certification Qualiopi avec accompagnement expert.',
-    author: 'Équipe Eden Conseil Qualité',
-    date: '12 mars 2026',
-    category: 'Certification',
-    readTime: '12 min',
-    content: `
+    `},"comment-obtenir-qualiopi-2026":{id:"comment-obtenir-qualiopi-2026",title:"Comment obtenir Qualiopi en 2026 : guide complet étape par étape",excerpt:"Avec 1 600 recherches/mois, c'est la question clé du secteur. Étapes exactes, délais réalistes et budget pour obtenir votre certification Qualiopi avec accompagnement expert.",author:"Équipe Eden Conseil Qualité",date:"12 mars 2026",category:"Certification",readTime:"12 min",content:`
       <h2>Comment obtenir Qualiopi en 2026 ?</h2>
       <p>La certification Qualiopi est devenue le sésame incontournable pour tout organisme de formation souhaitant accéder aux financements publics. Avec <strong>1 600 recherches mensuelles</strong> sur "comment obtenir Qualiopi", cette question cristallise les préoccupations de milliers de professionnels de la formation. Ce guide complet vous explique les étapes, délais et budget pour obtenir votre certification Qualiopi en 2026.</p>
 
@@ -268,18 +162,7 @@ const articles: { [key: string]: BlogArticle } = {
           <li style="margin-bottom:8px"><a href="/acquisition/qualiopi-rapidement" style="color:#dc2626;font-weight:600">→ Qualiopi en 3 mois : plan accéléré réaliste</a></li>
         </ul>
       </div>
-    `
-  },
-
-  'creer-organisme-formation-2026': {
-    id: 'creer-organisme-formation-2026',
-    title: 'Comment créer un organisme de formation en 2026 : guide complet',
-    excerpt: '2 400 recherches/mois — le mot-clé le plus cherché du secteur. Tout ce qu\'il faut savoir sur la création légale, la déclaration d\'activité, Qualiopi et l\'accès au CPF.',
-    author: 'Équipe Eden Conseil Qualité',
-    date: '18 mars 2026',
-    category: 'Création OF',
-    readTime: '14 min',
-    content: `
+    `},"creer-organisme-formation-2026":{id:"creer-organisme-formation-2026",title:"Comment créer un organisme de formation en 2026 : guide complet",excerpt:"2 400 recherches/mois — le mot-clé le plus cherché du secteur. Tout ce qu'il faut savoir sur la création légale, la déclaration d'activité, Qualiopi et l'accès au CPF.",author:"Équipe Eden Conseil Qualité",date:"18 mars 2026",category:"Création OF",readTime:"14 min",content:`
       <h2>Créer un organisme de formation en 2026 : par où commencer ?</h2>
       <p>Avec <strong>2 400 recherches mensuelles</strong>, "créer un organisme de formation" est le mot-clé le plus cherché dans notre secteur. Et pour cause : la formation professionnelle en France représente un marché de 32 milliards d'euros, accessible à quiconque remplit les bonnes conditions. Ce guide vous détaille chaque étape de la création légale jusqu'à l'accès au CPF.</p>
 
@@ -364,18 +247,7 @@ const articles: { [key: string]: BlogArticle } = {
           <li style="margin-bottom:8px"><a href="/acquisition/acceder-edof" style="color:#dc2626;font-weight:600">→ Accéder à EDOF : inscription et publication CPF</a></li>
         </ul>
       </div>
-    `
-  },
-
-  'certification-edof-2026': {
-    id: 'certification-edof-2026',
-    title: 'Certification EDOF 2026 : inscription, exigences et accès au CPF',
-    excerpt: '900 recherches/mois. Comment s\'inscrire sur EDOF en 2026, les nouvelles exigences et comment publier vos formations sur MonCompteFormation pour accéder au CPF.',
-    author: 'Équipe Eden Conseil Qualité',
-    date: '25 mars 2026',
-    category: 'EDOF',
-    readTime: '11 min',
-    content: `
+    `},"certification-edof-2026":{id:"certification-edof-2026",title:"Certification EDOF 2026 : inscription, exigences et accès au CPF",excerpt:"900 recherches/mois. Comment s'inscrire sur EDOF en 2026, les nouvelles exigences et comment publier vos formations sur MonCompteFormation pour accéder au CPF.",author:"Équipe Eden Conseil Qualité",date:"25 mars 2026",category:"EDOF",readTime:"11 min",content:`
       <h2>EDOF 2026 : tout comprendre sur l'inscription et les exigences</h2>
       <p>Avec <strong>900 recherches mensuelles</strong> autour de "certification EDOF 2026", la plateforme EDOF concentre toutes les questions des organismes souhaitant accéder au CPF. Ce guide vous explique précisément comment vous inscrire, ce qui change en 2026, et comment optimiser votre présence sur MonCompteFormation.</p>
 
@@ -455,18 +327,7 @@ const articles: { [key: string]: BlogArticle } = {
           <li style="margin-bottom:8px"><a href="/acquisition/pack-qualiopi-edof" style="color:#dc2626;font-weight:600">→ Pack Qualiopi + EDOF : tout-en-un optimisé</a></li>
         </ul>
       </div>
-    `
-  },
-
-  'dossier-rncp-2026': {
-    id: 'dossier-rncp-2026',
-    title: 'Dossier RNCP 2026 : comment monter sa demande d\'inscription au répertoire',
-    excerpt: '700 recherches/mois. Guide pratique pour constituer un dossier RNCP conforme en 2026 : pièces obligatoires, délais, évaluateurs et lien avec l\'éligibilité CPF.',
-    author: 'Équipe Eden Conseil Qualité',
-    date: '1 avril 2026',
-    category: 'RNCP',
-    readTime: '13 min',
-    content: `
+    `},"dossier-rncp-2026":{id:"dossier-rncp-2026",title:"Dossier RNCP 2026 : comment monter sa demande d'inscription au répertoire",excerpt:"700 recherches/mois. Guide pratique pour constituer un dossier RNCP conforme en 2026 : pièces obligatoires, délais, évaluateurs et lien avec l'éligibilité CPF.",author:"Équipe Eden Conseil Qualité",date:"1 avril 2026",category:"RNCP",readTime:"13 min",content:`
       <h2>Dossier RNCP 2026 : comment monter sa demande d'inscription</h2>
       <p>Avec <strong>700 recherches mensuelles</strong>, "dossier RNCP comment faire" révèle la difficulté ressentie par les organismes face à ce processus réputé complexe. Pourtant, en comprenant précisément la structure du dossier et les attentes de France Compétences, la démarche devient accessible. Ce guide vous détaille chaque étape.</p>
 
@@ -556,18 +417,7 @@ const articles: { [key: string]: BlogArticle } = {
           <li style="margin-bottom:8px"><a href="/acquisition/acceder-edof" style="color:#dc2626;font-weight:600">→ Accéder à EDOF : inscription et validation garantie</a></li>
         </ul>
       </div>
-    `
-  },
-
-  'cpf-mon-compte-formation-organisme': {
-    id: 'cpf-mon-compte-formation-organisme',
-    title: 'CPF et Mon Compte Formation : guide complet pour organismes en 2026',
-    excerpt: 'Tout ce qu\'un organisme de formation doit savoir sur le CPF en 2026 : éligibilité, inscription EDOF, publication, ticket modérateur et optimisation de la visibilité sur MonCompteFormation.',
-    author: 'Équipe Eden Conseil Qualité',
-    date: '8 avril 2026',
-    category: 'CPF',
-    readTime: '13 min',
-    content: `
+    `},"cpf-mon-compte-formation-organisme":{id:"cpf-mon-compte-formation-organisme",title:"CPF et Mon Compte Formation : guide complet pour organismes en 2026",excerpt:"Tout ce qu'un organisme de formation doit savoir sur le CPF en 2026 : éligibilité, inscription EDOF, publication, ticket modérateur et optimisation de la visibilité sur MonCompteFormation.",author:"Équipe Eden Conseil Qualité",date:"8 avril 2026",category:"CPF",readTime:"13 min",content:`
       <h2>CPF et Mon Compte Formation en 2026 : le guide pour les organismes</h2>
       <p>Le Compte Personnel de Formation (CPF) représente une opportunité majeure pour les organismes de formation. Chaque année, des milliards d'euros sont mobilisés par les actifs français pour financer leur montée en compétences. Ce guide vous explique comment votre organisme peut accéder à ce marché et optimiser sa présence sur <strong>MonCompteFormation</strong>.</p>
 
@@ -651,180 +501,4 @@ const articles: { [key: string]: BlogArticle } = {
           <li style="margin-bottom:8px"><a href="/acquisition/pack-qualiopi-edof" style="color:#dc2626;font-weight:600">→ Pack Qualiopi + EDOF : tout-en-un en 6 mois</a></li>
         </ul>
       </div>
-    `
-  }
-};
-
-export function ArticleDetail() {
-  const { id } = useParams<{ id: string }>();
-  const article = id ? articles[id] : null;
-
-  if (!article) {
-    return (
-      <div className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-2xl font-bold text-red-600 mb-4">Article non trouvé</h1>
-            <Link to="/blog" className="text-red-600 hover:text-amber-800">
-              Retour au blog
-            </Link>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="pt-24 pb-20 bg-gradient-to-br from-gray-50 to-white">
-      <Helmet>
-        <title>{article.title} | Blog Eden Conseil Qualité</title>
-        <meta name="description" content={article.excerpt} />
-        <link rel="canonical" href={`https://edenconseilqualite.fr/blog/${article.id}`} />
-        <script type="application/ld+json">{JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'BlogPosting',
-          headline: article.title,
-          description: article.excerpt,
-          author: { '@type': 'Organization', name: article.author },
-          datePublished: article.date,
-          image: 'https://edenconseilqualite.fr/blog-image.jpg'
-        })}</script>
-      </Helmet>
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Link
-          to="/blog"
-          className="inline-flex items-center text-red-600 hover:text-amber-800 mb-6 group"
-        >
-          <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
-          Retour au blog
-        </Link>
-
-        <article className="prose max-w-none">
-          <h1 className="text-4xl font-bold text-red-600 mb-4">{article.title}</h1>
-          
-          <div className="flex items-center gap-6 mb-8 pb-8 border-b border-gray-200 text-gray-600">
-            <div className="flex items-center gap-2">
-              <Calendar className="w-5 h-5" />
-              <span>{article.date}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <User className="w-5 h-5" />
-              <span>{article.author}</span>
-            </div>
-            <span className="px-3 py-1 bg-amber-100 text-red-600 rounded-full text-sm font-medium">{article.category}</span>
-            <span className="text-sm">{article.readTime} de lecture</span>
-          </div>
-
-          <div 
-            className="text-gray-700 leading-relaxed space-y-6"
-            dangerouslySetInnerHTML={{ __html: article.content }}
-          />
-
-          <div className="mt-12 pt-8 border-t border-gray-200">
-            <div className="bg-amber-50 rounded-lg p-8">
-              <h3 className="text-lg font-bold text-red-600 mb-2">Besoin d'aide ?</h3>
-              <p className="text-gray-600 mb-4">
-                Eden Conseil Qualité accompagne les organismes de formation pour optimiser leur Qualiopi, CPF, EDOF et bien plus encore.
-              </p>
-              <Link
-                to="/contact"
-                className="inline-block bg-red-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-amber-800 transition-colors"
-              >
-                Contactez-nous
-              </Link>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  );
-}
-
-export default function BlogPage() {
-  return (
-    <div className="pt-24 pb-20 bg-gradient-to-br from-amber-50 to-gray-50">
-      <Helmet>
-        <title>Blog | Eden Conseil Qualité</title>
-        <meta name="description" content="Découvrez nos articles sur Qualiopi, CPF, EDOF et la formation professionnelle." />
-        <link rel="canonical" href="https://edenconseilqualite.fr/blog" />
-        <script type="application/ld+json">{JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'Blog',
-          name: 'Blog Eden Conseil Qualité',
-          description: 'Articles experts sur la certification Qualiopi et le financement des formations'
-        })}</script>
-      </Helmet>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-red-600 mb-4">
-            Blog Eden Conseil Qualité
-          </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Articles experts sur la certification Qualiopi, le CPF, EDOF et la gestion des organismes de formation
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {Object.values(articles).map((article) => (
-            <Link
-              key={article.id}
-              to={`/blog/${article.id}`}
-              className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden hover:-translate-y-1 group"
-            >
-              <div className="bg-gradient-to-r from-red-600 to-amber-800 p-6 h-32 flex items-start">
-                <span className="px-3 py-1 bg-white/20 text-white rounded-full text-sm font-medium">
-                  {article.category}
-                </span>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-red-600 mb-3 group-hover:text-amber-800">
-                  {article.title}
-                </h3>
-                <p className="text-gray-600 mb-4 line-clamp-2">{article.excerpt}</p>
-
-                <div className="flex items-center justify-between text-sm text-gray-500">
-                  <div className="flex items-center gap-4">
-                    <div className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
-                      <span>{article.date}</span>
-                    </div>
-                    <span>{article.readTime}</span>
-                  </div>
-                </div>
-
-                <div className="mt-4 flex items-center gap-2 text-red-600 group-hover:text-amber-800 font-medium">
-                  Lire l'article →
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-
-        {/* CTA */}
-        <div className="mt-16 bg-gradient-to-r from-red-600 to-amber-800 rounded-lg p-8 text-center text-white">
-          <h2 className="text-2xl font-bold mb-4">Vous avez une question spécifique ?</h2>
-          <p className="text-amber-100 mb-6">
-            Notre équipe est disponible pour discuter de votre projet ou de vos préoccupations
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="inline-block bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-amber-50 transition-colors"
-            >
-              Prendre rendez-vous
-            </Link>
-            <a
-              href={`https://wa.me/33${config.company.phone.replace(/\D/g, '').slice(-9)}?text=${encodeURIComponent('Bonjour, j\'aimerais discuter de mes besoins en formation.')}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#25D366] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#20BA5A] transition-colors flex items-center justify-center gap-2"
-            >
-              <MessageCircle size={20} />
-              WhatsApp
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+    `}};function v(){const{id:t}=c(),i=t?r[t]:null;return i?e.jsxs("div",{className:"pt-24 pb-20 bg-gradient-to-br from-gray-50 to-white",children:[e.jsxs(o,{children:[e.jsxs("title",{children:[i.title," | Blog Eden Conseil Qualité"]}),e.jsx("meta",{name:"description",content:i.excerpt}),e.jsx("link",{rel:"canonical",href:`https://edenconseilqualite.fr/blog/${i.id}`}),e.jsx("script",{type:"application/ld+json",children:JSON.stringify({"@context":"https://schema.org","@type":"BlogPosting",headline:i.title,description:i.excerpt,author:{"@type":"Organization",name:i.author},datePublished:i.date,image:"https://edenconseilqualite.fr/blog-image.jpg"})})]}),e.jsxs("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8",children:[e.jsxs(s,{to:"/blog",className:"inline-flex items-center text-red-600 hover:text-amber-800 mb-6 group",children:[e.jsx(u,{className:"w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform"}),"Retour au blog"]}),e.jsxs("article",{className:"prose max-w-none",children:[e.jsx("h1",{className:"text-4xl font-bold text-red-600 mb-4",children:i.title}),e.jsxs("div",{className:"flex items-center gap-6 mb-8 pb-8 border-b border-gray-200 text-gray-600",children:[e.jsxs("div",{className:"flex items-center gap-2",children:[e.jsx(n,{className:"w-5 h-5"}),e.jsx("span",{children:i.date})]}),e.jsxs("div",{className:"flex items-center gap-2",children:[e.jsx(p,{className:"w-5 h-5"}),e.jsx("span",{children:i.author})]}),e.jsx("span",{className:"px-3 py-1 bg-amber-100 text-red-600 rounded-full text-sm font-medium",children:i.category}),e.jsxs("span",{className:"text-sm",children:[i.readTime," de lecture"]})]}),e.jsx("div",{className:"text-gray-700 leading-relaxed space-y-6",dangerouslySetInnerHTML:{__html:i.content}}),e.jsx("div",{className:"mt-12 pt-8 border-t border-gray-200",children:e.jsxs("div",{className:"bg-amber-50 rounded-lg p-8",children:[e.jsx("h3",{className:"text-lg font-bold text-red-600 mb-2",children:"Besoin d'aide ?"}),e.jsx("p",{className:"text-gray-600 mb-4",children:"Eden Conseil Qualité accompagne les organismes de formation pour optimiser leur Qualiopi, CPF, EDOF et bien plus encore."}),e.jsx(s,{to:"/contact",className:"inline-block bg-red-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-amber-800 transition-colors",children:"Contactez-nous"})]})})]})]})]}):e.jsx("div",{className:"py-20 bg-gray-50",children:e.jsx("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8",children:e.jsxs("div",{className:"text-center",children:[e.jsx("h1",{className:"text-2xl font-bold text-red-600 mb-4",children:"Article non trouvé"}),e.jsx(s,{to:"/blog",className:"text-red-600 hover:text-amber-800",children:"Retour au blog"})]})})})}function h(){return e.jsxs("div",{className:"pt-24 pb-20 bg-gradient-to-br from-amber-50 to-gray-50",children:[e.jsxs(o,{children:[e.jsx("title",{children:"Blog | Eden Conseil Qualité"}),e.jsx("meta",{name:"description",content:"Découvrez nos articles sur Qualiopi, CPF, EDOF et la formation professionnelle."}),e.jsx("link",{rel:"canonical",href:"https://edenconseilqualite.fr/blog"}),e.jsx("script",{type:"application/ld+json",children:JSON.stringify({"@context":"https://schema.org","@type":"Blog",name:"Blog Eden Conseil Qualité",description:"Articles experts sur la certification Qualiopi et le financement des formations"})})]}),e.jsxs("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[e.jsxs("div",{className:"text-center mb-16",children:[e.jsx("h1",{className:"text-4xl font-bold text-red-600 mb-4",children:"Blog Eden Conseil Qualité"}),e.jsx("p",{className:"text-xl text-gray-600 max-w-2xl mx-auto",children:"Articles experts sur la certification Qualiopi, le CPF, EDOF et la gestion des organismes de formation"})]}),e.jsx("div",{className:"grid md:grid-cols-2 lg:grid-cols-3 gap-8",children:Object.values(r).map(t=>e.jsxs(s,{to:`/blog/${t.id}`,className:"bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden hover:-translate-y-1 group",children:[e.jsx("div",{className:"bg-gradient-to-r from-red-600 to-amber-800 p-6 h-32 flex items-start",children:e.jsx("span",{className:"px-3 py-1 bg-white/20 text-white rounded-full text-sm font-medium",children:t.category})}),e.jsxs("div",{className:"p-6",children:[e.jsx("h3",{className:"text-xl font-bold text-red-600 mb-3 group-hover:text-amber-800",children:t.title}),e.jsx("p",{className:"text-gray-600 mb-4 line-clamp-2",children:t.excerpt}),e.jsx("div",{className:"flex items-center justify-between text-sm text-gray-500",children:e.jsxs("div",{className:"flex items-center gap-4",children:[e.jsxs("div",{className:"flex items-center gap-1",children:[e.jsx(n,{className:"w-4 h-4"}),e.jsx("span",{children:t.date})]}),e.jsx("span",{children:t.readTime})]})}),e.jsx("div",{className:"mt-4 flex items-center gap-2 text-red-600 group-hover:text-amber-800 font-medium",children:"Lire l'article →"})]})]},t.id))}),e.jsxs("div",{className:"mt-16 bg-gradient-to-r from-red-600 to-amber-800 rounded-lg p-8 text-center text-white",children:[e.jsx("h2",{className:"text-2xl font-bold mb-4",children:"Vous avez une question spécifique ?"}),e.jsx("p",{className:"text-amber-100 mb-6",children:"Notre équipe est disponible pour discuter de votre projet ou de vos préoccupations"}),e.jsxs("div",{className:"flex flex-col sm:flex-row gap-4 justify-center",children:[e.jsx(s,{to:"/contact",className:"inline-block bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-amber-50 transition-colors",children:"Prendre rendez-vous"}),e.jsxs("a",{href:`https://wa.me/33${a.company.phone.replace(/\D/g,"").slice(-9)}?text=${encodeURIComponent("Bonjour, j'aimerais discuter de mes besoins en formation.")}`,target:"_blank",rel:"noopener noreferrer",className:"inline-block bg-[#25D366] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#20BA5A] transition-colors flex items-center justify-center gap-2",children:[e.jsx(l,{size:20}),"WhatsApp"]})]})]})]})]})}export{v as ArticleDetail,h as default};

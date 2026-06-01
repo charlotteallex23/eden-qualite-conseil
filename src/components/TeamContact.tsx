@@ -1,6 +1,6 @@
 import { MessageCircle, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import teamPhoto from '../assets/eden-conseil-qualite-logo.png';
+import teamPhoto from '../assets/eden-conseil-qualite-logo.webp';
 import { config } from '../config/company';
 
 export default function TeamContact() {

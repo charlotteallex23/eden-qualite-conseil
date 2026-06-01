@@ -271,6 +271,34 @@ export function Qualiopi() {
             </ul>
           </div>
 
+          <h2 className="text-3xl font-bold text-red-600 mb-6">Nos accompagnements Qualiopi</h2>
+          <div className="grid md:grid-cols-3 gap-4 mb-8">
+            <Link to="/acquisition/obtenir-qualiopi" className="block p-4 bg-red-50 border border-red-200 rounded-lg hover:bg-red-100 transition">
+              <p className="font-bold text-red-600 mb-1">Obtenir Qualiopi</p>
+              <p className="text-sm text-gray-600">Accompagnement complet étape par étape</p>
+            </Link>
+            <Link to="/acquisition/etre-certifie-qualiopi" className="block p-4 bg-red-50 border border-red-200 rounded-lg hover:bg-red-100 transition">
+              <p className="font-bold text-red-600 mb-1">Être certifié Qualiopi</p>
+              <p className="text-sm text-gray-600">Méthode éprouvée, zéro surcharge</p>
+            </Link>
+            <Link to="/acquisition/qualiopi-rapidement" className="block p-4 bg-red-50 border border-red-200 rounded-lg hover:bg-red-100 transition">
+              <p className="font-bold text-red-600 mb-1">Qualiopi en 3 mois</p>
+              <p className="text-sm text-gray-600">Plan accéléré, résultats garantis</p>
+            </Link>
+            <Link to="/acquisition/qualiopi-formateur-independant" className="block p-4 bg-red-50 border border-red-200 rounded-lg hover:bg-red-100 transition">
+              <p className="font-bold text-red-600 mb-1">Qualiopi formateur indépendant</p>
+              <p className="text-sm text-gray-600">Processus allégé pour solo-preneurs</p>
+            </Link>
+            <Link to="/acquisition/qualiopi-organisme-formation" className="block p-4 bg-red-50 border border-red-200 rounded-lg hover:bg-red-100 transition">
+              <p className="font-bold text-red-600 mb-1">Qualiopi pour organisme</p>
+              <p className="text-sm text-gray-600">Accompagnement structuré, audit inclus</p>
+            </Link>
+            <Link to="/acquisition/pack-creation-of-qualiopi" className="block p-4 bg-red-50 border border-red-200 rounded-lg hover:bg-red-100 transition">
+              <p className="font-bold text-red-600 mb-1">Créer un OF + Qualiopi</p>
+              <p className="text-sm text-gray-600">Pack complet création + certification</p>
+            </Link>
+          </div>
+
           <h2 className="text-3xl font-bold text-red-600 mb-6">Prêt à obtenir Qualiopi ?</h2>
           <div className="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-lg p-8 mb-8">
             <p className="mb-6 text-lg">
