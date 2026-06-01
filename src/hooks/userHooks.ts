@@ -1,4 +1,9 @@
 import { useCallback, useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
+
+const EMAILJS_SERVICE_ID = 'service_3o7wsxl';
+const EMAILJS_TEMPLATE_ID = 'template_31vea09';
+const EMAILJS_PUBLIC_KEY = 'w0GiVe8V5k_sHZYwU';
 
 // Hook pour scroll automatique vers le haut
 export function useScrollToTop() {
@@ -9,14 +14,37 @@ export function useScrollToTop() {
 
 // Hook pour capture email (newsletter/devis)
 export function useCaptureEmail() {
-  const captureEmail = useCallback((e: React.FormEvent<HTMLFormElement>) => {
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const captureEmail = useCallback(async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.target as HTMLFormElement;
     const email = (form.elements.namedItem('email') as HTMLInputElement)?.value;
-    // Ici, envoyer l'email à votre backend ou service
-    alert(`Merci ! Nous avons bien reçu votre email : ${email}`);
+    if (!email) return;
+
+    setStatus('loading');
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: 'Demande de devis (page d\'accueil)',
+          from_email: email,
+          reply_to: email,
+          telephone: '',
+          besoin: 'Devis personnalisé',
+          message: `Une personne souhaite recevoir un devis personnalisé.\nEmail : ${email}`,
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+      setStatus('success');
+      (form.elements.namedItem('email') as HTMLInputElement).value = '';
+    } catch {
+      setStatus('error');
+    }
   }, []);
-  return { captureEmail };
+
+  return { captureEmail, status };
 }
 
 // Hook pour bouton RDV Calendly

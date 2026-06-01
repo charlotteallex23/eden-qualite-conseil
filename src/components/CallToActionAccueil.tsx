@@ -4,7 +4,7 @@ import { useCaptureEmail } from '../hooks/userHooks';
 import { config } from '../config/company';
 
 export default function CallToActionAccueil() {
-  const { captureEmail } = useCaptureEmail();
+  const { captureEmail, status } = useCaptureEmail();
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(
@@ -76,10 +76,21 @@ export default function CallToActionAccueil() {
             />
             <button
               type="submit"
-              className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg"
+              disabled={status === 'loading' || status === 'success'}
+              className="bg-red-600 hover:bg-red-700 disabled:opacity-60 text-white font-bold py-3 px-8 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg"
             >
-              Recevoir mon devis
+              {status === 'loading' ? 'Envoi en cours...' : 'Recevoir mon devis'}
             </button>
+            {status === 'success' && (
+              <p className="text-green-600 text-center font-medium">
+                ✓ Votre demande a bien été envoyée ! Nous vous répondrons sous 24h.
+              </p>
+            )}
+            {status === 'error' && (
+              <p className="text-red-600 text-center font-medium">
+                Une erreur est survenue. Veuillez réessayer ou nous contacter directement.
+              </p>
+            )}
           </form>
         </div>
       </div>
