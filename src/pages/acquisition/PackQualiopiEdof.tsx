@@ -10,6 +10,16 @@ export default function PackQualiopiEdofPage() {
         <title>Pack Qualiopi + EDOF : Certification + accès CPF complet | Eden Conseil Qualité</title>
         <meta name="description" content="Pack tout-en-un : Obtenez Qualiopi ET accédez à EDOF/CPF. Parcours complet, délais optimisés, un seul accompagnateur." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/pack-qualiopi-edof" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            { '@type': 'Question', name: 'Quelle est la différence entre Qualiopi et EDOF ?', acceptedAnswer: { '@type': 'Answer', text: 'Qualiopi est la certification qualité obligatoire pour les financements publics. EDOF est la plateforme où vous publiez vos formations CPF. Ils sont liés mais distincts.' } },
+            { '@type': 'Question', name: 'Peut-on obtenir Qualiopi sans s inscrire à EDOF ?', acceptedAnswer: { '@type': 'Answer', text: 'Oui, mais vous perdez l accès au CPF. Il est conseillé de faire Qualiopi puis EDOF. Ce pack réalise les deux.' } },
+            { '@type': 'Question', name: 'Combien de temps prend le pack Qualiopi et EDOF ?', acceptedAnswer: { '@type': 'Answer', text: 'Environ 6 mois pour une structure standard. Micro-organisme : 3-4 mois. Grande structure : 6-8 mois.' } },
+            { '@type': 'Question', name: 'Y a-t-il un support après le pack Qualiopi EDOF ?', acceptedAnswer: { '@type': 'Answer', text: '3 mois de support sont inclus. Une maintenance annuelle optionnelle est disponible ensuite.' } }
+          ]
+        })}</script>
       </Helmet>
       <section className="pt-24 pb-16 bg-gradient-to-b from-red-600 via-amber-800 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

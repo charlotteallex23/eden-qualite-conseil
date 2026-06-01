@@ -19,6 +19,18 @@ export default function ObtenerQualiopiPage() {
           areaServed: 'FR',
           serviceType: 'Conformité et Certification'
         })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            { '@type': 'Question', name: 'Quel est le coût d un accompagnement Qualiopi ?', acceptedAnswer: { '@type': 'Answer', text: 'Le coût dépend de votre contexte. Un micro-organisme : 2 000 à 5 000 euros. Un organisme structuré : 5 000 à 12 000 euros. Ce tarif couvre : audit, roadmap, documents, accompagnement, audit blanc et suivi.' } },
+            { '@type': 'Question', name: 'Combien de temps faut-il pour obtenir Qualiopi ?', acceptedAnswer: { '@type': 'Answer', text: 'Diagnostic + roadmap : 2-3 semaines. Mise en oeuvre : 4-12 semaines. Audit blanc + corrections : 2-4 semaines. Total typique : 3 à 6 mois.' } },
+            { '@type': 'Question', name: 'Que se passe-t-il si l audit Qualiopi se passe mal ?', acceptedAnswer: { '@type': 'Answer', text: 'L audit blanc réalisé avant l audit officiel élimine les surprises. Les problèmes sont identifiés et corrigés en amont. Vous arrivez à l audit réel avec la certitude d être conforme.' } },
+            { '@type': 'Question', name: 'Quel engagement en temps pour mon équipe pendant Qualiopi ?', acceptedAnswer: { '@type': 'Answer', text: 'Typiquement 2 à 4 heures par semaine. Nous étalons le travail pour éviter toute surcharge. Après le 1er audit, la charge décroît rapidement.' } },
+            { '@type': 'Question', name: 'Comment choisir son certificateur Qualiopi ?', acceptedAnswer: { '@type': 'Answer', text: 'Nous vous proposons des certificateurs qualifiés proches de votre domaine (CNEFOP, Dekra, Bureau Veritas). Vous comparez prix, délais et réputation. Vous restez maître du choix.' } },
+            { '@type': 'Question', name: 'Y a-t-il un accompagnement après l audit Qualiopi ?', acceptedAnswer: { '@type': 'Answer', text: 'Oui. Nous proposons des packs de maintenance annuels : veille réglementaire, audits internes, pré-audits de surveillance, formation équipe.' } }
+          ]
+        })}</script>
       </Helmet>
       {/* HERO */}
       <section className="pt-24 pb-16 bg-gradient-to-b from-red-600 via-amber-800 to-amber-50">

@@ -10,6 +10,16 @@ export default function QuialiopiRapidementPage() {
         <title>Obtenir Qualiopi rapidement : Plan accéléré réaliste | Eden Conseil Qualité</title>
         <meta name="description" content="Qualiopi en moins de 3 mois ? C'est possible. Plan accéléré réaliste, sans raccourcis. Démarrez immédiatement." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/qualiopi-rapidement" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            { '@type': 'Question', name: 'Est-il possible d obtenir Qualiopi en 3 mois ?', acceptedAnswer: { '@type': 'Answer', text: 'Oui, mais il faut de la mobilisation interne : 4 à 6 heures par semaine. C est gérable sans surcharge.' } },
+            { '@type': 'Question', name: 'Un parcours Qualiopi accéléré sacrifie-t-il la qualité ?', acceptedAnswer: { '@type': 'Answer', text: 'Non. L audit blanc reste rigoureux. On raccourcit l analyse préalable et on utilise des modèles, mais on ne sacrifie pas la conformité.' } },
+            { '@type': 'Question', name: 'Le certificateur peut-il refuser pour un dossier monté trop vite ?', acceptedAnswer: { '@type': 'Answer', text: 'Non, aucun risque lié à la rapidité. Un accompagnement express demande de la discipline, mais avec un suivi adapté, les résultats sont là.' } },
+            { '@type': 'Question', name: 'Qui peut bénéficier du plan Qualiopi en 3 mois ?', acceptedAnswer: { '@type': 'Answer', text: 'Les organismes matures ou déjà structurés. Si vous partez de zéro, 3 mois est trop court. Nous vous le disons honnêtement.' } }
+          ]
+        })}</script>
       </Helmet>
       <section className="pt-24 pb-16 bg-gradient-to-b from-red-600 via-amber-800 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

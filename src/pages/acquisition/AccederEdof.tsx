@@ -10,6 +10,16 @@ export default function AccederEdofPage() {
         <title>Accéder à EDOF : Inscription pour organismes formation | Eden Conseil Qualité</title>
         <meta name="description" content="Inscription EDOF complet. Accès MonCompteFormation, CPF, financement public. Dossier conforme, validation garantie." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/acceder-edof" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            { '@type': 'Question', name: 'Quelle est la différence entre EDOF et Mon Compte Formation ?', acceptedAnswer: { '@type': 'Answer', text: 'EDOF est la base de données officielle où les organismes déclarent leurs formations. Mon Compte Formation est la plateforme visuelle pour les apprenants, alimentée par les données EDOF.' } },
+            { '@type': 'Question', name: 'Une petite structure peut-elle s inscrire à EDOF ?', acceptedAnswer: { '@type': 'Answer', text: 'Oui. Toute structure avec des certifications ou formations éligibles peut s inscrire à EDOF. Il n y a aucun minimum de taille.' } },
+            { '@type': 'Question', name: 'Comment modifier ses formations ou ses tarifs sur EDOF ?', acceptedAnswer: { '@type': 'Answer', text: 'Une déclaration annuelle est obligatoire, mais des modifications sont possibles tout au long de l année. EDOF est souple.' } },
+            { '@type': 'Question', name: 'L inscription EDOF est-elle rentable pour un organisme de formation ?', acceptedAnswer: { '@type': 'Answer', text: 'Oui. Un seul apprenant CPF génère 3 000 à 5 000 euros. Le coût d inscription (1 500 à 3 000 euros) est récupéré dès 1 ou 2 apprenants.' } }
+          ]
+        })}</script>
       </Helmet>
       <section className="pt-24 pb-16 bg-gradient-to-b from-red-600 via-amber-800 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

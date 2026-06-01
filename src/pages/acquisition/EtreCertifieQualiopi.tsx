@@ -10,6 +10,16 @@ export default function EtreCertifieQualiopiPage() {
         <title>Être certifié Qualiopi : Méthode simple & plan d'action | Eden Conseil Qualité</title>
         <meta name="description" content="Devenir certifié Qualiopi simplement. Méthode éprouvée, plan d'action clair, zéro charge cachée. Accompagnement complet jusqu'à la certification." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/etre-certifie-qualiopi" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            { '@type': 'Question', name: 'Combien de temps pour obtenir Qualiopi ?', acceptedAnswer: { '@type': 'Answer', text: '3 à 6 mois selon votre maturité. Diagnostic + roadmap : 2-3 semaines. Mise en oeuvre : 4-8 semaines. Audit blanc + corrections : 2-4 semaines.' } },
+            { '@type': 'Question', name: 'Quel budget prévoir pour la certification Qualiopi ?', acceptedAnswer: { '@type': 'Answer', text: 'Accompagnement : 2 000 à 12 000 € selon votre taille. Certificateur : 1 000 à 5 000 €. Total : 3 000 à 17 000 € environ.' } },
+            { '@type': 'Question', name: 'Que se passe-t-il si on rate l audit Qualiopi ?', acceptedAnswer: { '@type': 'Answer', text: 'L audit blanc empêche ce cas de figure. On identifie les problèmes avant, vous les corrigez, on valide. Vous arrivez à l audit réel en confiance.' } },
+            { '@type': 'Question', name: 'Combien d heures par semaine pour préparer Qualiopi ?', acceptedAnswer: { '@type': 'Answer', text: '2 à 4 heures en moyenne. On étale le travail pour minimiser la charge. Après le 1er audit, la charge baisse drastiquement.' } }
+          ]
+        })}</script>
       </Helmet>
       <section className="pt-24 pb-16 bg-gradient-to-b from-red-600 via-amber-800 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

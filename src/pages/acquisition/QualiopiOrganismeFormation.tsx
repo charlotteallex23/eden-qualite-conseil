@@ -10,6 +10,16 @@ export default function QualiopiOrganismeFormationPage() {
         <title>Qualiopi pour organismes formation : Certification méthodique | Eden Conseil Qualité</title>
         <meta name="description" content="Qualiopi pour centre de formation, OPCO, département. Structuration + audit garantie. 3-6 mois, budget prévisible." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/qualiopi-organisme-formation" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            { '@type': 'Question', name: 'Que faire si notre organisme de formation n est pas encore prêt pour Qualiopi ?', acceptedAnswer: { '@type': 'Answer', text: 'On établit un plan d amélioration progressif. Pas d urgence imposée. Le coût final sera moindre si vous avez déjà des bases.' } },
+            { '@type': 'Question', name: 'L auditeur externe peut-il refuser la certification Qualiopi ?', acceptedAnswer: { '@type': 'Answer', text: 'Rarement. Il demande plutôt des corrections. Un refus est exceptionnel (fraude ou non-conformités évidentes). Nous vous prévenons avant l audit.' } },
+            { '@type': 'Question', name: 'Quelle différence entre audit interne et audit externe Qualiopi ?', acceptedAnswer: { '@type': 'Answer', text: 'L audit interne est notre diagnostic et outil d amélioration. L audit externe (tiers agréé) est l évaluation officielle qui délivre la certification.' } },
+            { '@type': 'Question', name: 'La certification Qualiopi est-elle permanente ?', acceptedAnswer: { '@type': 'Answer', text: 'Non. Un audit annuel de surveillance est obligatoire. La certification dure 3 ans, puis un renouvellement complet est requis.' } }
+          ]
+        })}</script>
       </Helmet>
       <section className="pt-24 pb-16 bg-gradient-to-b from-red-600 via-amber-800 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

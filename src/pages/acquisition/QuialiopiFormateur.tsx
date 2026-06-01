@@ -10,6 +10,16 @@ export default function QuialiopiFormateurIndependantPage() {
         <title>Qualiopi formateur indépendant : Processus light & budget adapté | Eden Conseil Qualité</title>
         <meta name="description" content="Formateur indépendant ? Obtenez Qualiopi sans surcharge. Processus light, budget réaliste, accompagnement solo-preneur." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/qualiopi-formateur-independant" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            { '@type': 'Question', name: 'Un formateur indépendant peut-il obtenir Qualiopi ?', acceptedAnswer: { '@type': 'Answer', text: 'Oui, absolument. Les auditeurs connaissent la réalité des formateurs indépendants. Il n y a pas de prérequis de taille d équipe minimum.' } },
+            { '@type': 'Question', name: 'Combien de preuves fournir pour Qualiopi en solo ?', acceptedAnswer: { '@type': 'Answer', text: 'La qualité prime sur la quantité. 5 à 10 formations bien documentées valent mieux que 50 formations mal suivies.' } },
+            { '@type': 'Question', name: 'Comment gérer le Bilan Pédagogique et Financier seul ?', acceptedAnswer: { '@type': 'Answer', text: 'Vous rapportez : formations dispensées, profils apprenants, satisfaction, insertion après. C est honnête et suffisant pour les auditeurs.' } },
+            { '@type': 'Question', name: 'Quels délais pour Qualiopi en tant que formateur indépendant ?', acceptedAnswer: { '@type': 'Answer', text: '3 à 4 mois typiquement pour un solo, plus court qu une grosse structure car moins de lenteurs administratives.' } }
+          ]
+        })}</script>
       </Helmet>
       <section className="pt-24 pb-16 bg-gradient-to-b from-red-600 via-amber-800 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

@@ -10,6 +10,16 @@ export default function ReferencerFormationCpfPage() {
         <title>Référencer formations CPF : Mise en ligne conforme & éligibilité | Eden Conseil Qualité</title>
         <meta name="description" content="Référencer vos formations CPF sans refus. Dossier conforme, éligibilité validée, publication EDOF/MonCompteFormation." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/referencer-formation-cpf" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            { '@type': 'Question', name: 'Comment savoir si ma certification est éligible au CPF ?', acceptedAnswer: { '@type': 'Answer', text: 'Elle doit être inscrite au RNCP (titres professionnels) ou au RS (certifications métier). Nous vérifions gratuitement en 24 heures.' } },
+            { '@type': 'Question', name: 'Eden Conseil Qualité peut-il déposer la demande EDOF à ma place ?', acceptedAnswer: { '@type': 'Answer', text: 'Oui, c est inclus dans l accompagnement. Nous gérons le dépôt du dossier et les échanges avec EDOF.' } },
+            { '@type': 'Question', name: 'Que se passe-t-il si EDOF refuse le référencement de ma formation CPF ?', acceptedAnswer: { '@type': 'Answer', text: 'Nous identifions la raison du refus et corrigeons le dossier. Un refus définitif est rare : il s agit généralement d informations manquantes.' } },
+            { '@type': 'Question', name: 'Combien de formations CPF peut-on référencer en même temps sur EDOF ?', acceptedAnswer: { '@type': 'Answer', text: 'Autant que vous souhaitez. Chaque formation supplémentaire est facturée 300 euros, ce qui reste plus avantageux qu un référencement individuel.' } }
+          ]
+        })}</script>
       </Helmet>
       <section className="pt-24 pb-16 bg-gradient-to-b from-red-600 via-amber-800 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

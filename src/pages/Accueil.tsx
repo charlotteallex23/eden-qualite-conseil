@@ -18,9 +18,51 @@ export default function Accueil() {
           '@context': 'https://schema.org',
           '@type': 'LocalBusiness',
           name: 'Eden Conseil Qualité',
-          description: 'Cabinet de conseil expert en certification Qualiopi, CPF et EDOF',
+          description: 'Cabinet de conseil expert en certification Qualiopi, CPF et EDOF pour organismes de formation',
           url: 'https://edenconseilqualite.fr',
-          areaServed: { '@type': 'Country', name: 'FR' }
+          telephone: '+33767058187',
+          email: 'contact@eden-conseil-qualite.fr',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: '1 Avenue François 1er',
+            postalCode: '75008',
+            addressLocality: 'Paris',
+            addressCountry: 'FR'
+          },
+          openingHoursSpecification: [{
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+            opens: '09:00',
+            closes: '18:00'
+          }],
+          areaServed: { '@type': 'Country', name: 'FR' },
+          priceRange: '€€',
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '5',
+            bestRating: '5',
+            reviewCount: '3'
+          },
+          review: [
+            {
+              '@type': 'Review',
+              author: { '@type': 'Person', name: 'Sophie L.' },
+              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+              reviewBody: 'Grâce à Eden Conseil Qualité, notre CFA a obtenu Qualiopi du premier coup. Accompagnement ultra pro et humain.'
+            },
+            {
+              '@type': 'Review',
+              author: { '@type': 'Person', name: 'Julien M.' },
+              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+              reviewBody: 'Un vrai partenaire pour structurer notre offre, obtenir le CPF et réussir l\'audit Qualiopi. Je recommande à 100 %.'
+            },
+            {
+              '@type': 'Review',
+              author: { '@type': 'Person', name: 'Fatima B.' },
+              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+              reviewBody: 'L\'équipe a tout géré pour la création de notre OF et le dépôt RS. Réactivité, expertise et résultats concrets.'
+            }
+          ]
         })}</script>
       </Helmet>
       {/* Section 1 — Hero (accroche) */}

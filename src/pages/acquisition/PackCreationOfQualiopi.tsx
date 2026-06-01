@@ -10,6 +10,16 @@ export default function PackCreationOfQualiopiPage() {
         <title>Pack Création OF + Qualiopi : Tout en 1 | Eden Conseil Qualité</title>
         <meta name="description" content="Pack complet : créer organisme formation + obtenir Qualiopi. Tout inclus, pas de pièces manquantes. Budget clair, délai 3-4 mois." />
         <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/pack-creation-of-qualiopi" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            { '@type': 'Question', name: 'Faut-il créer sa structure avant de lancer Qualiopi ?', acceptedAnswer: { '@type': 'Answer', text: 'Non, les deux peuvent avancer en parallèle. Dès que vous avez SIRET et déclaration d activité, on lance Qualiopi. Gain de 2 à 3 mois.' } },
+            { '@type': 'Question', name: 'Ce pack fonctionne-t-il si la structure existe déjà sans Qualiopi ?', acceptedAnswer: { '@type': 'Answer', text: 'Oui, on adapte le pack uniquement sur Qualiopi + EDOF. Moins cher et délai de 3 à 4 mois.' } },
+            { '@type': 'Question', name: 'Eden Conseil Qualité gère-t-il les démarches administratives de création d OF ?', acceptedAnswer: { '@type': 'Answer', text: 'Oui, tout : remplissage des dossiers, suivi avec préfecture, URSSAF, assurances. Vous signez uniquement.' } },
+            { '@type': 'Question', name: 'Que se passe-t-il après l obtention de Qualiopi ?', acceptedAnswer: { '@type': 'Answer', text: 'Qualiopi est valable 3 ans avec audit annuel de surveillance obligatoire. Nous proposons un suivi continu en option.' } }
+          ]
+        })}</script>
       </Helmet>
       <section className="pt-24 pb-16 bg-gradient-to-b from-red-600 via-amber-800 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
