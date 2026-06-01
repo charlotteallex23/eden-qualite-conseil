@@ -96,7 +96,7 @@ export default function PolitiqueConfidentialite() {
               Pour exercer l'un de vos droits, contactez-nous à :
             </p>
             <div className="bg-amber-50 p-4 rounded-lg">
-              <p><strong>Email :</strong> contact@eden-conseil-qualite.fr</p>
+              <p><strong>Email :</strong> edenconseilqualite@gmail.com</p>
               <p><strong>Téléphone :</strong> 07 67 05 81 87</p>
             </div>
             <p className="text-gray-700 mt-4">
@@ -155,7 +155,7 @@ export default function PolitiqueConfidentialite() {
             </p>
             <div className="bg-amber-50 p-4 rounded-lg">
               <p><strong>Email :</strong> dpo@eden-conseil-qualite.fr</p>
-              <p className="text-sm mt-2">Si absent, contactez : contact@eden-conseil-qualite.fr</p>
+              <p className="text-sm mt-2">Si absent, contactez : edenconseilqualite@gmail.com</p>
             </div>
           </section>
 

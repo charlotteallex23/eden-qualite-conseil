@@ -15,7 +15,7 @@ export default function MentionsLegales() {
               <p><strong>Numéro de TVA intracommunautaire :</strong> Non applicable</p>
               <p><strong>Adresse du siège social :</strong> 1 Avenue François 1er, 75008, Paris</p>
               <p><strong>Téléphone :</strong> 07 67 05 81 87</p>
-              <p><strong>Email :</strong> contact@eden-conseil-qualite.fr</p>
+              <p><strong>Email :</strong> edenconseilqualite@gmail.com</p>
               <p><strong>Responsable de la publication :</strong> Charlotte Allexandre</p>
             </div>
           </section>
@@ -110,7 +110,7 @@ export default function MentionsLegales() {
               Pour toute question concernant ce site ou ces mentions légales, vous pouvez nous contacter à :
             </p>
             <div className="bg-amber-50 p-4 rounded-lg">
-              <p><strong>Email :</strong> contact@eden-conseil-qualite.fr</p>
+              <p><strong>Email :</strong> edenconseilqualite@gmail.com</p>
               <p><strong>Téléphone :</strong> 07 67 05 81 87</p>
             </div>
           </section>

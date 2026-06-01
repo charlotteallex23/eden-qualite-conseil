@@ -2,7 +2,7 @@
 export const config = {
   company: {
     name: 'Eden Conseil Qualité',
-    email: 'contact@eden-conseil-qualite.fr',
+    email: 'edenconseilqualite@gmail.com',
     emailContact: 'edenconseilqualite@gmail.com',
     phone: '0767058187',
     whatsapp: '+33767058187',

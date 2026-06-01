@@ -26,7 +26,7 @@ export default function Accueil() {
           description: 'Cabinet de conseil expert en certification Qualiopi, CPF et EDOF pour organismes de formation',
           url: 'https://edenconseilqualite.fr',
           telephone: '+33767058187',
-          email: 'contact@eden-conseil-qualite.fr',
+          email: 'edenconseilqualite@gmail.com',
           address: {
             '@type': 'PostalAddress',
             streetAddress: '1 Avenue François 1er',
