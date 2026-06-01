@@ -1,17 +1,16 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, Users, Briefcase } from 'lucide-react';
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { config } from '../../config/company';
 
 export default function QuialiopiFormateurIndependantPage() {
-  useEffect(() => {
-    document.title = 'Qualiopi formateur indépendant : Processus light & budget adapté | Eden Conseil Qualité';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Formateur indépendant ? Obtenez Qualiopi sans surcharge. Processus light, budget réaliste, accompagnement solo-preneur.');
-  }, []);
-
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Qualiopi formateur indépendant : Processus light & budget adapté | Eden Conseil Qualité</title>
+        <meta name="description" content="Formateur indépendant ? Obtenez Qualiopi sans surcharge. Processus light, budget réaliste, accompagnement solo-preneur." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/qualiopi-formateur-independant" />
+      </Helmet>
       <section className="pt-24 pb-16 bg-gradient-to-b from-red-600 via-amber-800 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">

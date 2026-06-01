@@ -1,17 +1,16 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, Zap, Shield } from 'lucide-react';
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { config } from '../../config/company';
 
 export default function QuialiopiRapidementPage() {
-  useEffect(() => {
-    document.title = 'Obtenir Qualiopi rapidement : Plan accéléré réaliste | Eden Conseil Qualité';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Qualiopi en moins de 3 mois ? C\'est possible. Plan accéléré réaliste, sans raccourcis. Démarrez immédiatement.');
-  }, []);
-
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Obtenir Qualiopi rapidement : Plan accéléré réaliste | Eden Conseil Qualité</title>
+        <meta name="description" content="Qualiopi en moins de 3 mois ? C'est possible. Plan accéléré réaliste, sans raccourcis. Démarrez immédiatement." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/qualiopi-rapidement" />
+      </Helmet>
       <section className="pt-24 pb-16 bg-gradient-to-b from-red-600 via-amber-800 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">

@@ -1,0 +1,10 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "git push": true,
+        "git rm": true,
+        "true": true,
+        "git add": true,
+        "timeout": true,
+        "mv": true
+    }
+}

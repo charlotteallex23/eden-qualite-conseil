@@ -1,17 +1,16 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, Award, Users } from 'lucide-react';
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { config } from '../../config/company';
 
 export default function AccederEdofPage() {
-  useEffect(() => {
-    document.title = 'Accéder à EDOF : Inscription pour organismes formation | Eden Conseil Qualité';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Inscription EDOF complet. Accès MonCompteFormation, CPF, financement public. Dossier conforme, validation garantie.');
-  }, []);
-
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Accéder à EDOF : Inscription pour organismes formation | Eden Conseil Qualité</title>
+        <meta name="description" content="Inscription EDOF complet. Accès MonCompteFormation, CPF, financement public. Dossier conforme, validation garantie." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/acceder-edof" />
+      </Helmet>
       <section className="pt-24 pb-16 bg-gradient-to-b from-red-600 via-amber-800 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">

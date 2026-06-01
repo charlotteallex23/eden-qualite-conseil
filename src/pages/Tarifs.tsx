@@ -1,16 +1,10 @@
 import { Check, ArrowRight, ChevronDown, MessageCircle } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { config } from '../config/company';
 
 export default function Tarifs() {
-  useEffect(() => {
-    // Meta tags
-    document.title = 'Tarifs & Devis | Services Conseil Formation Qualiopi CPF EDOF';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Découvrez nos tarifs pour certification Qualiopi, développement formation, création organisme. Devis personnalisé sur demande.');
-  }, []);
-
   const navigate = useNavigate();
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
   const devisRef = useRef<HTMLDivElement>(null);
@@ -143,6 +137,11 @@ export default function Tarifs() {
 
   return (
     <div className="py-20 bg-gray-50">
+      <Helmet>
+        <title>Tarifs & Devis | Services Conseil Formation Qualiopi CPF EDOF</title>
+        <meta name="description" content="Découvrez nos tarifs pour certification Qualiopi, développement formation, création organisme. Devis personnalisé sur demande." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/tarifs" />
+      </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-red-600 mb-6">

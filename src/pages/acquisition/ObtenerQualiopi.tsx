@@ -1,36 +1,25 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, Clock, FileText, AlertCircle } from 'lucide-react';
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { config } from '../../config/company';
 
 export default function ObtenerQualiopiPage() {
-  useEffect(() => {
-    document.title = 'Obtenir Qualiopi : Accompagnement pas à pas | Eden Conseil Qualité';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Obtenir votre certification Qualiopi simplement. Plan étape par étape, documents prêts, accompagnement jusqu\'au succès. Démarrez votre conformité dès aujourd\'hui.');
-    
-    const schema = {
-      '@context': 'https://schema.org',
-      '@type': 'Service',
-      name: 'Obtenir Qualiopi',
-      description: 'Service d\'accompagnement complet vers la certification Qualiopi',
-      provider: { '@type': 'Organization', name: 'Eden Conseil Qualité' },
-      areaServed: 'FR',
-      serviceType: 'Conformité et Certification'
-    };
-    
-    let schemaScript = document.querySelector('script[data-page="obtenir-qualiopi"]');
-    if (schemaScript) schemaScript.remove();
-    
-    schemaScript = document.createElement('script');
-    (schemaScript as HTMLScriptElement).type = 'application/ld+json';
-    schemaScript.setAttribute('data-page', 'obtenir-qualiopi');
-    schemaScript.innerHTML = JSON.stringify(schema);
-    document.head.appendChild(schemaScript);
-  }, []);
-
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Obtenir Qualiopi : Accompagnement pas à pas | Eden Conseil Qualité</title>
+        <meta name="description" content="Obtenir votre certification Qualiopi simplement. Plan étape par étape, documents prêts, accompagnement jusqu'au succès. Démarrez votre conformité dès aujourd'hui." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/obtenir-qualiopi" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: 'Obtenir Qualiopi',
+          description: 'Service d\'accompagnement complet vers la certification Qualiopi',
+          provider: { '@type': 'Organization', name: 'Eden Conseil Qualité' },
+          areaServed: 'FR',
+          serviceType: 'Conformité et Certification'
+        })}</script>
+      </Helmet>
       {/* HERO */}
       <section className="pt-24 pb-16 bg-gradient-to-b from-red-600 via-amber-800 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

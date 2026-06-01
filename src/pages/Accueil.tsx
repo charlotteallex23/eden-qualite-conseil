@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import HeroAccueil from '../components/HeroAccueil';
 import ServicesGrid from '../components/ServicesGrid';
 import StatsSection from '../components/StatsSection';
@@ -8,34 +8,21 @@ import FAQAccueil from '../components/FAQAccueil';
 import CallToActionAccueil from '../components/CallToActionAccueil';
 
 export default function Accueil() {
-  useEffect(() => {
-    // Meta tags
-    document.title = 'Consultant Qualiopi Paris | Accompagnement CPF EDOF | Eden Conseil Qualité';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Expert en certification Qualiopi, CPF et EDOF. Accompagnement personnalisé pour organismes de formation avec résultats prouvés.');
-    
-    // Schema markup - Organization
-    const schema = {
-      '@context': 'https://schema.org',
-      '@type': 'LocalBusiness',
-      name: 'Eden Conseil Qualité',
-      description: 'Cabinet de conseil expert en certification Qualiopi, CPF et EDOF',
-      url: 'https://eden-conseil-qualite.fr',
-      areaServed: { '@type': 'Country', name: 'FR' }
-    };
-    
-    let schemaScript = document.querySelector('script[data-page="accueil"]');
-    if (!schemaScript) {
-      schemaScript = document.createElement('script');
-      (schemaScript as HTMLScriptElement).type = 'application/ld+json';
-      schemaScript.setAttribute('data-page', 'accueil');
-      schemaScript.innerHTML = JSON.stringify(schema);
-      document.head.appendChild(schemaScript);
-    }
-  }, []);
-
   return (
     <main>
+      <Helmet>
+        <title>Consultant Qualiopi Paris | Accompagnement CPF EDOF | Eden Conseil Qualité</title>
+        <meta name="description" content="Expert en certification Qualiopi, CPF et EDOF. Accompagnement personnalisé pour organismes de formation avec résultats prouvés." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'LocalBusiness',
+          name: 'Eden Conseil Qualité',
+          description: 'Cabinet de conseil expert en certification Qualiopi, CPF et EDOF',
+          url: 'https://edenconseilqualite.fr',
+          areaServed: { '@type': 'Country', name: 'FR' }
+        })}</script>
+      </Helmet>
       {/* Section 1 — Hero (accroche) */}
       <HeroAccueil />
 

@@ -1,17 +1,16 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, Building2, Users } from 'lucide-react';
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { config } from '../../config/company';
 
 export default function QualiopiOrganismeFormationPage() {
-  useEffect(() => {
-    document.title = 'Qualiopi pour organismes formation : Certification méthodique | Eden Conseil Qualité';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Qualiopi pour centre de formation, OPCO, département. Structuration + audit garantie. 3-6 mois, budget prévisible.');
-  }, []);
-
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Qualiopi pour organismes formation : Certification méthodique | Eden Conseil Qualité</title>
+        <meta name="description" content="Qualiopi pour centre de formation, OPCO, département. Structuration + audit garantie. 3-6 mois, budget prévisible." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/qualiopi-organisme-formation" />
+      </Helmet>
       <section className="pt-24 pb-16 bg-gradient-to-b from-red-600 via-amber-800 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">

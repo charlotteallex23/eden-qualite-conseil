@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, User, MessageCircle } from 'lucide-react';
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { config } from '../config/company';
 
 interface BlogArticle {
@@ -182,33 +182,6 @@ export function ArticleDetail() {
   const { id } = useParams<{ id: string }>();
   const article = id ? articles[id] : null;
 
-  useEffect(() => {
-    if (article) {
-      document.title = `${article.title} | Blog Eden Conseil Qualité`;
-      const metaDesc = document.querySelector('meta[name="description"]');
-      if (metaDesc) metaDesc.setAttribute('content', article.excerpt);
-      
-      const schema = {
-        '@context': 'https://schema.org',
-        '@type': 'BlogPosting',
-        headline: article.title,
-        description: article.excerpt,
-        author: { '@type': 'Organization', name: article.author },
-        datePublished: article.date,
-        image: 'https://eden-conseil-qualite.fr/blog-image.jpg'
-      };
-      
-      let schemaScript: Element | null = document.querySelector('script[data-page="blog-article"]');
-      if (schemaScript) schemaScript.remove();
-      
-      schemaScript = document.createElement('script');
-      (schemaScript as HTMLScriptElement).type = 'application/ld+json';
-      schemaScript.setAttribute('data-page', 'blog-article');
-      schemaScript.innerHTML = JSON.stringify(schema);
-      document.head.appendChild(schemaScript);
-    }
-  }, [article]);
-
   if (!article) {
     return (
       <div className="py-20 bg-gray-50">
@@ -226,6 +199,20 @@ export function ArticleDetail() {
 
   return (
     <div className="pt-24 pb-20 bg-gradient-to-br from-gray-50 to-white">
+      <Helmet>
+        <title>{article.title} | Blog Eden Conseil Qualité</title>
+        <meta name="description" content={article.excerpt} />
+        <link rel="canonical" href={`https://edenconseilqualite.fr/blog/${article.id}`} />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: article.title,
+          description: article.excerpt,
+          author: { '@type': 'Organization', name: article.author },
+          datePublished: article.date,
+          image: 'https://edenconseilqualite.fr/blog-image.jpg'
+        })}</script>
+      </Helmet>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link
           to="/blog"
@@ -277,30 +264,19 @@ export function ArticleDetail() {
 }
 
 export default function BlogPage() {
-  useEffect(() => {
-    document.title = 'Blog | Eden Conseil Qualité';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Découvrez nos articles sur Qualiopi, CPF, EDOF et la formation professionnelle.');
-    
-    const schema = {
-      '@context': 'https://schema.org',
-      '@type': 'Blog',
-      name: 'Blog Eden Conseil Qualité',
-      description: 'Articles experts sur la certification Qualiopi et le financement des formations'
-    };
-    
-    let schemaScript: Element | null = document.querySelector('script[data-page="blog"]');
-    if (schemaScript) schemaScript.remove();
-    
-    schemaScript = document.createElement('script');
-    (schemaScript as HTMLScriptElement).type = 'application/ld+json';
-    schemaScript.setAttribute('data-page', 'blog');
-    schemaScript.innerHTML = JSON.stringify(schema);
-    document.head.appendChild(schemaScript);
-  }, []);
-
   return (
     <div className="pt-24 pb-20 bg-gradient-to-br from-amber-50 to-gray-50">
+      <Helmet>
+        <title>Blog | Eden Conseil Qualité</title>
+        <meta name="description" content="Découvrez nos articles sur Qualiopi, CPF, EDOF et la formation professionnelle." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/blog" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Blog',
+          name: 'Blog Eden Conseil Qualité',
+          description: 'Articles experts sur la certification Qualiopi et le financement des formations'
+        })}</script>
+      </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-red-600 mb-4">

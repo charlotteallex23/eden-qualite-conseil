@@ -1,15 +1,9 @@
 import { Users, Award, Lightbulb, Target, CheckCircle, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { config } from '../config/company';
 
 export default function About() {
-  useEffect(() => {
-    // Meta tags
-    document.title = 'À Propos | Eden Conseil Qualité - Experts Qualiopi CPF EDOF';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Qui sommes-nous ? Découvrez l\'équipe Eden Conseil Qualité, experts en certification Qualiopi et développement d\'organismes de formation.');
-  }, []);
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(
@@ -68,6 +62,11 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>À Propos | Eden Conseil Qualité - Experts Qualiopi CPF EDOF</title>
+        <meta name="description" content="Qui sommes-nous ? Découvrez l'équipe Eden Conseil Qualité, experts en certification Qualiopi et développement d'organismes de formation." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/about" />
+      </Helmet>
       {/* Hero */}
       <section className="bg-gradient-to-br from-red-900 to-red-600 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">

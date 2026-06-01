@@ -1,16 +1,10 @@
 import { Building2, TrendingUp, Shield, FileCheck, Award, Search, Target, BookOpen, FileText, Users, MessageCircle, ChevronDown } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { config } from '../config/company';
 
 export default function Services() {
-  useEffect(() => {
-    // Meta tags
-    document.title = 'Services de Conseil Formation | Consultant Qualiopi CPF EDOF';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Création organisme formation, accompagnement Qualiopi, CPF, EDOF. Services complets pour développer votre activité de formation.');
-  }, []);
-
   const navigate = useNavigate();
   const [expandedFaqIndex, setExpandedFaqIndex] = useState<number | null>(null);
 
@@ -174,6 +168,11 @@ export default function Services() {
 
   return (
     <div className="min-h-screen bg-gray-50 py-20">
+      <Helmet>
+        <title>Services de Conseil Formation | Consultant Qualiopi CPF EDOF</title>
+        <meta name="description" content="Création organisme formation, accompagnement Qualiopi, CPF, EDOF. Services complets pour développer votre activité de formation." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/services" />
+      </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="text-center mb-16">

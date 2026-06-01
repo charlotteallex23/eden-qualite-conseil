@@ -1,17 +1,16 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, Clock, TrendingUp } from 'lucide-react';
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { config } from '../../config/company';
 
 export default function EtreCertifieQualiopiPage() {
-  useEffect(() => {
-    document.title = 'Être certifié Qualiopi : Méthode simple & plan d\'action | Eden Conseil Qualité';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Devenir certifié Qualiopi simplement. Méthode éprouvée, plan d\'action clair, zéro charge cachée. Accompagnement complet jusqu\'à la certification.');
-  }, []);
-
   return (
     <div className="bg-white">
+      <Helmet>
+        <title>Être certifié Qualiopi : Méthode simple & plan d'action | Eden Conseil Qualité</title>
+        <meta name="description" content="Devenir certifié Qualiopi simplement. Méthode éprouvée, plan d'action clair, zéro charge cachée. Accompagnement complet jusqu'à la certification." />
+        <link rel="canonical" href="https://edenconseilqualite.fr/acquisition/etre-certifie-qualiopi" />
+      </Helmet>
       <section className="pt-24 pb-16 bg-gradient-to-b from-red-600 via-amber-800 to-amber-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
