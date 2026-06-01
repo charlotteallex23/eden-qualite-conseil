@@ -11,8 +11,8 @@ const services = [
   },
   {
     id: 2,
-    title: 'RS',
-    description: 'Montage et dépôt de dossiers RS, suivi, optimisation et validation du premier coup.',
+    title: 'RS/RNCP',
+    description: 'Proposez à vos apprenants des certifications professionnelles enregistrées au RS ou RNCP reconnues auprès de l\'État.',
     link: '/services',
     icon: CheckCircle2
   },
@@ -39,9 +39,9 @@ const services = [
   },
   {
     id: 6,
-    title: 'EDOF',
-    description: 'Dépôt, gestion et optimisation de votre catalogue sur EDOF pour maximiser la visibilité.',
-    link: '/edof-referencement',
+    title: 'NDA',
+    description: 'Obtenez votre numéro de déclaration d\'activité auprès de la DRIEETS et devenez officiellement centre de formation.',
+    link: '/services',
     icon: CheckCircle2
   }
 ];

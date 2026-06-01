@@ -68,14 +68,14 @@ export default function Accueil() {
       {/* Section 1 — Hero (accroche) */}
       <HeroAccueil />
 
-      {/* Section 2 — Nos expertises */}
-      <ServicesGrid />
+      {/* Section 2 — Services phares */}
+      <ServicesHighlights />
 
       {/* Section 3 — Chiffres clés / résultats */}
       <StatsSection />
 
-      {/* Section 4 — Services phares */}
-      <ServicesHighlights />
+      {/* Section 4 — Nos expertises */}
+      <ServicesGrid />
 
       {/* Section 5 — Témoignages clients */}
       <TemoignagesCarousel />

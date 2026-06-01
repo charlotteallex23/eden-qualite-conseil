@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MessageCircle, CheckCircle } from 'lucide-react';
 import { config } from '../config/company';
+import imageAccueil from '../assets/gemini-generated-eden-conseil.webp';
 
 export default function HeroAccueil() {
   const handleWhatsApp = () => {
@@ -29,52 +30,61 @@ export default function HeroAccueil() {
         }}
       />
 
-      <div className="relative max-w-7xl mx-auto px-4 md:px-8 py-20 md:py-32">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="relative max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
+        
+        {/* H1 invisible pour le SEO */}
+        <h1 className="sr-only">
+          Eden Conseil Qualité — Conseil expert pour OF & CFA
+        </h1>
+
+        {/* IMAGE — centrée au-dessus de tout */}
+        <div className="flex justify-center mb-12">
+          <img
+            src={imageAccueil}
+            alt="Eden Conseil Qualité — Conseil expert pour OF & CFA"
+            className="h-[40vh] w-auto drop-shadow-2xl rounded-2xl"
+            width={2128}
+            height={900}
+          />
+        </div>
+
+        {/* 2 COLONNES : texte gauche | trust badges droite */}
+        <div className="grid md:grid-cols-2 gap-10 items-center mb-10">
           
-          {/* LEFT COLUMN: Text + CTA */}
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-                Eden Conseil Qualité — Conseil expert pour OF & CFA
-              </h1>
-              <p className="text-xl md:text-2xl text-amber-100 leading-relaxed">
-                Accompagnement complet pour créer, développer et sécuriser votre organisme de formation. Qualiopi, CPF, EDOF, RS/RNCP : nous maîtrisons tous les domaines.
-              </p>
-            </div>
+          {/* GAUCHE : description */}
+          <p className="text-xl md:text-2xl text-amber-100 leading-relaxed text-center">
+            Accompagnement complet pour créer, développer et sécuriser votre organisme de formation. Qualiopi, CPF, EDOF, RS/RNCP : nous maîtrisons tous les domaines.
+          </p>
 
-            {/* CTA: Primaire + Secondaire */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button
-                onClick={handleWhatsApp}
-                className="bg-[#25D366] hover:bg-[#20BA5A] text-white font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2"
-              >
-                <MessageCircle size={20} />
-                Discuter sur WhatsApp
-              </button>
-              <Link
-                to="/contact"
-                className="border-2 border-white text-white hover:bg-white hover:text-red-600 font-bold py-4 px-8 rounded-lg transition-all duration-200 text-center flex items-center justify-center"
-              >
-                Prendre RDV gratuit
-              </Link>
-            </div>
-          </div>
-
-          {/* RIGHT COLUMN: Trust Badges */}
-          <div className="space-y-6 md:pl-8">
+          {/* DROITE : Pourquoi nous faire confiance */}
+          <div className="space-y-4">
             <div className="text-sm font-semibold text-amber-200 uppercase tracking-wider">
               Pourquoi nous faire confiance
             </div>
-            <div className="space-y-4">
-              {trustBadges.map((badge, idx) => (
-                <div key={idx} className="flex items-start gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 hover:border-white/40 transition-all">
-                  <CheckCircle className="w-6 h-6 text-violet-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-base font-medium text-white">{badge.text}</span>
-                </div>
-              ))}
-            </div>
+            {trustBadges.map((badge, idx) => (
+              <div key={idx} className="flex items-start gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 hover:border-white/40 transition-all">
+                <CheckCircle className="w-6 h-6 text-violet-400 flex-shrink-0 mt-0.5" />
+                <span className="text-base font-medium text-white">{badge.text}</span>
+              </div>
+            ))}
           </div>
+        </div>
+
+        {/* BOUTONS — centrés en bas */}
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <button
+            onClick={handleWhatsApp}
+            className="bg-[#25D366] hover:bg-[#20BA5A] text-white font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2"
+          >
+            <MessageCircle size={20} />
+            Discuter sur WhatsApp
+          </button>
+          <Link
+            to="/contact"
+            className="border-2 border-white text-white hover:bg-white hover:text-red-600 font-bold py-4 px-8 rounded-lg transition-all duration-200 text-center flex items-center justify-center"
+          >
+            Prendre RDV gratuit
+          </Link>
         </div>
       </div>
 

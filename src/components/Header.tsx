@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
-import logo from '../assets/eden-conseil-qualite-logo.webp';
+import logo from '../assets/logo-eden-conseil-copy.webp';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -27,10 +27,10 @@ export default function Header() {
   return (
     <header className="bg-white shadow-md fixed w-full top-0 z-50">
       <nav className="w-full px-3 sm:px-4 md:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-auto sm:h-20 md:h-24 py-3 sm:py-4">
-          <Link to="/" className="flex items-center gap-1 sm:gap-2 md:gap-3 cursor-pointer flex-shrink-0">
-            <img src={logo} alt="Eden Conseil Qualité" className="h-20 sm:h-24 md:h-28 w-auto transition-all duration-300" />
-            <span className="text-xs sm:text-sm md:text-base font-bold text-red-600 hidden sm:inline">Eden Conseil Qualité</span>
+        <div className="flex justify-between items-center h-16 sm:h-20 py-2">
+          <Link to="/" className="flex items-center gap-2 sm:gap-3 cursor-pointer flex-shrink-0">
+            <img src={logo} alt="Eden Conseil Qualité" className="h-12 sm:h-14 w-auto transition-all duration-300" />
+            <span className="text-sm sm:text-base md:text-lg font-bold hidden sm:inline" style={{color:'#8B1A1A'}}>Eden Conseil Qualité</span>
           </Link>
 
           <div className="hidden lg:flex items-center gap-2 xl:gap-6">

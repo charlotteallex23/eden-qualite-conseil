@@ -49,8 +49,7 @@ export function Ressources() {
                 <Download className="text-red-600" size={24} />
               </div>
               <p className="text-gray-700 text-sm mb-4">
-                116 points de vérification couvrant tous les 6 domaines Qualiopi. 
-                Outil d'auto-diagnostic avant audit.
+                Cet outil couvre l'ensemble des critères Qualiopi répartis sur les 7 domaines. Il vous permet de réaliser un auto-diagnostic complet avant votre audit.
               </p>
               <button className="text-red-600 hover:text-red-700 font-semibold text-sm flex items-center gap-2">
                 <Download size={16} />
@@ -68,8 +67,7 @@ export function Ressources() {
                 <Download className="text-red-600" size={24} />
               </div>
               <p className="text-gray-700 text-sm mb-4">
-                Template pour organiser vos corrections. Incluent tâches, responsables, 
-                délais et suivi de conformité.
+                Ce modèle vous permet d'organiser vos actions correctives. Il inclut les tâches à réaliser, les responsables, les délais et le suivi de conformité.
               </p>
               <button className="text-red-600 hover:text-red-700 font-semibold text-sm flex items-center gap-2">
                 <Download size={16} />
@@ -87,8 +85,7 @@ export function Ressources() {
                 <Download className="text-red-600" size={24} />
               </div>
               <p className="text-gray-700 text-sm mb-4">
-                Instructions détaillées pour créer compte EDOF, importer formations, 
-                optimiser descriptions pour la visibilité.
+                Ce guide détaille les étapes pour créer votre compte EDOF, importer vos formations et optimiser vos descriptions afin d'améliorer votre visibilité.
               </p>
               <button className="text-red-600 hover:text-red-700 font-semibold text-sm flex items-center gap-2">
                 <Download size={16} />
@@ -106,8 +103,7 @@ export function Ressources() {
                 <Download className="text-red-600" size={24} />
               </div>
               <p className="text-gray-700 text-sm mb-4">
-                Guide complet du BPF avec explication de chaque section. 
-                Épargnez du temps dans la préparation de votre déclaration annuelle.
+                Ce modèle explique chaque section du BPF et vous guide dans la préparation de votre déclaration annuelle pour gagner du temps et éviter les erreurs.
               </p>
               <button className="text-red-600 hover:text-red-700 font-semibold text-sm flex items-center gap-2">
                 <Download size={16} />
@@ -125,8 +121,7 @@ export function Ressources() {
                 <Download className="text-red-600" size={24} />
               </div>
               <p className="text-gray-700 text-sm mb-4">
-                Benchmarking des tarifs CPF par secteur. 
-                Incluent analyses compétitives et stratégies de positionnement prix.
+                Ce document présente un benchmarking des tarifs CPF par secteur. Il inclut des analyses comparatives et des recommandations pour positionner vos prix efficacement.
               </p>
               <button className="text-red-600 hover:text-red-700 font-semibold text-sm flex items-center gap-2">
                 <Download size={16} />

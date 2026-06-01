@@ -107,7 +107,7 @@ export default function Services() {
         },
         {
           q: 'Je dois être sur EDOF ?',
-          a: 'Oui si vous avez déclenchement une activité OF. C\'est la base pour accéder aux financements publics.'
+          a: 'Si vous souhaitez que vos apprenants puissent mobiliser leur Compte Professionnel de Formation, il est indispensable d\'être inscrit sur EDOF.'
         },
         {
           q: 'Combien peut m\'apporter une nouvelle RS ?',
@@ -148,7 +148,7 @@ export default function Services() {
       faqItems: [
         {
           q: 'Combien coûte une préparation Qualiopi ?',
-          a: 'Entre 3k€ et 8k€ selon taille organisme. Eden Conseil Qualité propose des forfaits flexibles.'
+          a: 'Cela dépend de votre structure, contactez-nous pour obtenir votre devis sur-mesure.'
         },
         {
           q: 'Combien de temps pour préparer un audit Qualiopi ?',
@@ -160,7 +160,7 @@ export default function Services() {
         },
         {
           q: 'BPF : est-ce obligatoire ?',
-          a: 'Oui pour tous les OF déclarés. À déposer avant 30 juin pour année précédente.'
+          a: 'Oui, la déclaration du BPF est obligatoire chaque année, entre le 1er avril et le 31 mai.'
         }
       ]
     }
