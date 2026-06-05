@@ -38,7 +38,7 @@ export default function HeroAccueil() {
           // Mobile: Image statique (plus léger)
           <div 
             className="absolute inset-0 bg-gradient-to-br from-red-600 via-amber-800 to-violet-950"
-            style={{ backgroundImage: 'url(/fond-hero-1.png)', backgroundSize: 'cover', backgroundPosition: 'right center' }}
+            style={{ backgroundImage: 'url(/fond-hero-1.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}
           />
         ) : (
           // Desktop: Vidéo animée
@@ -48,14 +48,14 @@ export default function HeroAccueil() {
             loop
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            style={{ opacity: 0.9, objectPosition: 'right center' }}
+            style={{ opacity: 0.9, objectPosition: 'center' }}
           >
             <source src="/video-hero.webm" type="video/webm" />
             <source src="/video-hero.mp4" type="video/mp4" />
             {/* Fallback */}
             <div 
               className="absolute inset-0 bg-gradient-to-br from-red-600 via-amber-800 to-violet-950"
-              style={{ backgroundImage: 'url(/fond-hero-1.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+              style={{ backgroundImage: 'url(/fond-hero-1.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}
             />
           </video>
         )}
