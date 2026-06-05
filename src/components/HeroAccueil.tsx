@@ -1,9 +1,19 @@
 import { Link } from 'react-router-dom';
 import { MessageCircle, CheckCircle } from 'lucide-react';
+import { useState, useEffect } from 'react';
 import { config } from '../config/company';
 import logoAccueil from '../assets/logo-eden-conseil-copy.webp';
 
 export default function HeroAccueil() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const handleWhatsApp = () => {
     const message = encodeURIComponent(
       'Bonjour, je suis intéressé par les services de Eden Conseil Qualité pour mon organisme de formation. Pouvez-vous me fournir plus d\'informations ?'
@@ -21,19 +31,48 @@ export default function HeroAccueil() {
   ];
 
   return (
-    <section className="relative bg-gradient-to-br from-red-600 via-amber-800 to-violet-950 text-white overflow-hidden" style={{ backgroundImage: 'url(/fond-hero-1.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
-      {/* Overlay gradient — opacité réduite */}
-      <div 
-        className="absolute inset-0 opacity-40 bg-gradient-to-br from-red-600 via-amber-800 to-violet-950"
-      />
-      
-      {/* Texture subtile background */}
-      <div 
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.1"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-        }}
-      />
+    <section className="relative text-white overflow-hidden" style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)' }}>
+      {/* BACKGROUND: Vidéo sur desktop, image sur mobile */}
+      <div className="absolute inset-0">
+        {isMobile ? (
+          // Mobile: Image statique (plus léger)
+          <div 
+            className="absolute inset-0 bg-gradient-to-br from-red-600 via-amber-800 to-violet-950"
+            style={{ backgroundImage: 'url(/fond-hero-1.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+          />
+        ) : (
+          // Desktop: Vidéo animée
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ opacity: 0.9 }}
+          >
+            <source src="/video-hero.webm" type="video/webm" />
+            <source src="/video-hero.mp4" type="video/mp4" />
+            {/* Fallback */}
+            <div 
+              className="absolute inset-0 bg-gradient-to-br from-red-600 via-amber-800 to-violet-950"
+              style={{ backgroundImage: 'url(/fond-hero-1.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+            />
+          </video>
+        )}
+
+        {/* Overlay gradient — opacité uniforme */}
+        <div 
+          className="absolute inset-0 opacity-40 bg-gradient-to-br from-red-600 via-amber-800 to-violet-950"
+        />
+        
+        {/* Texture subtile background */}
+        <div 
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.1"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+          }}
+        />
+      </div>
 
       <div className="relative max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24">
         
