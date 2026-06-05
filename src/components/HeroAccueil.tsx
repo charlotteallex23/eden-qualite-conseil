@@ -21,7 +21,12 @@ export default function HeroAccueil() {
   ];
 
   return (
-    <section className="relative bg-gradient-to-br from-red-600 via-amber-800 to-violet-950 text-white overflow-hidden">
+    <section className="relative bg-gradient-to-br from-red-600 via-amber-800 to-violet-950 text-white overflow-hidden" style={{ backgroundImage: 'url(/fond-hero-1.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+      {/* Overlay gradient — opacité réduite */}
+      <div 
+        className="absolute inset-0 opacity-40 bg-gradient-to-br from-red-600 via-amber-800 to-violet-950"
+      />
+      
       {/* Texture subtile background */}
       <div 
         className="absolute inset-0 opacity-5"
