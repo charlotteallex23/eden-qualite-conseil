@@ -38,7 +38,7 @@ export default function HeroAccueil() {
           // Mobile: Image statique (plus léger)
           <div 
             className="absolute inset-0 bg-gradient-to-br from-red-600 via-amber-800 to-violet-950"
-            style={{ backgroundImage: 'url(/fond-hero-1.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+            style={{ backgroundImage: 'url(/fond-hero-1.png)', backgroundSize: 'cover', backgroundPosition: 'right center' }}
           />
         ) : (
           // Desktop: Vidéo animée
@@ -48,7 +48,7 @@ export default function HeroAccueil() {
             loop
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
-            style={{ opacity: 0.9 }}
+            style={{ opacity: 0.9, objectPosition: 'right center' }}
           >
             <source src="/video-hero.webm" type="video/webm" />
             <source src="/video-hero.mp4" type="video/mp4" />
@@ -91,7 +91,7 @@ export default function HeroAccueil() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-3" style={{ fontFamily: 'Montserrat, sans-serif', letterSpacing: '0.15em', textTransform: 'uppercase', fontWeight: 700, textShadow: '2px 2px 8px rgba(0, 0, 0, 0.5)' }}>
             Eden Conseil Qualité
           </h2>
-          <p className="text-xl md:text-2xl text-white text-center font-light" style={{ fontFamily: 'Montserrat, sans-serif', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
+          <p className="text-xl md:text-2xl text-white text-center font-light" style={{ fontFamily: 'Montserrat, sans-serif', letterSpacing: '0.15em', textTransform: 'uppercase', textShadow: '2px 2px 8px rgba(0, 0, 0, 0.5)' }}>
             Votre conseiller en formation professionnelle
           </p>
         </div>
@@ -100,19 +100,19 @@ export default function HeroAccueil() {
         <div className="grid md:grid-cols-2 gap-10 items-center mb-10">
           
           {/* GAUCHE : description */}
-          <p className="text-xl md:text-2xl text-amber-100 leading-relaxed text-center font-light" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <p className="text-xl md:text-2xl text-amber-100 leading-relaxed text-center font-light" style={{ fontFamily: 'Montserrat, sans-serif', textShadow: '2px 2px 8px rgba(0, 0, 0, 0.5)' }}>
             Accompagnement complet pour créer, développer et sécuriser votre organisme de formation. Qualiopi, CPF, EDOF, RS/RNCP : nous maîtrisons tous les domaines.
           </p>
 
           {/* DROITE : Pourquoi nous faire confiance */}
           <div className="space-y-4">
-            <div className="text-sm font-semibold text-amber-200 uppercase tracking-wider">
+            <div className="text-sm font-semibold text-amber-200 uppercase tracking-wider" style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.5)' }}>
               Pourquoi nous faire confiance
             </div>
             {trustBadges.map((badge, idx) => (
               <div key={idx} className="flex items-start gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 hover:border-white/40 transition-all">
                 <CheckCircle className="w-6 h-6 text-violet-400 flex-shrink-0 mt-0.5" />
-                <span className="text-base font-medium text-white">{badge.text}</span>
+                <span className="text-base font-medium text-white" style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.5)' }}>{badge.text}</span>
               </div>
             ))}
           </div>
@@ -123,6 +123,7 @@ export default function HeroAccueil() {
           <button
             onClick={handleWhatsApp}
             className="bg-[#25D366] hover:bg-[#20BA5A] text-white font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2"
+            style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.3)' }}
           >
             <MessageCircle size={20} />
             Discuter sur WhatsApp
@@ -130,6 +131,7 @@ export default function HeroAccueil() {
           <Link
             to="/contact"
             className="border-2 border-white text-white hover:bg-white hover:text-red-600 font-bold py-4 px-8 rounded-lg transition-all duration-200 text-center flex items-center justify-center"
+            style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.3)' }}
           >
             Prendre RDV gratuit
           </Link>
