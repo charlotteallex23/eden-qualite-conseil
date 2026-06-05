@@ -44,10 +44,10 @@ export default function HeroAccueil() {
             alt="Eden Conseil Qualité logo"
             className="h-24 w-auto drop-shadow-lg mb-6"
           />
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-3" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-            EDEN CONSEIL QUALITÉ
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-3" style={{ fontFamily: 'Montserrat, sans-serif', letterSpacing: '0.15em', textTransform: 'uppercase', fontWeight: 700, textShadow: '2px 2px 8px rgba(0, 0, 0, 0.5)' }}>
+            Eden Conseil Qualité
           </h2>
-          <p className="text-xl md:text-2xl text-amber-100 text-center font-light" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <p className="text-xl md:text-2xl text-white text-center font-light" style={{ fontFamily: 'Montserrat, sans-serif', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
             Votre conseiller en formation professionnelle
           </p>
         </div>
