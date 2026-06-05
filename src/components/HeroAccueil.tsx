@@ -35,11 +35,16 @@ export default function HeroAccueil() {
       {/* BACKGROUND: Vidéo sur desktop, image sur mobile */}
       <div className="absolute inset-0">
         {isMobile ? (
-          // Mobile: Image statique (plus léger)
-          <div 
-            className="absolute inset-0 bg-gradient-to-br from-red-600 via-amber-800 to-violet-950"
-            style={{ backgroundImage: 'url(/fond-hero-1.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}
-          />
+          // Mobile: Image optimisée — WebP + JPG fallback
+          <picture className="absolute inset-0 w-full h-full">
+            <source srcSet="/fond-hero-mobile.webp" type="image/webp" />
+            <img
+              src="/fond-hero-mobile.jpg"
+              alt="Background"
+              className="absolute inset-0 w-full h-full object-cover"
+              style={{ objectPosition: 'center' }}
+            />
+          </picture>
         ) : (
           // Desktop: Vidéo animée
           <video
@@ -53,9 +58,10 @@ export default function HeroAccueil() {
             <source src="/video-hero.webm" type="video/webm" />
             <source src="/video-hero.mp4" type="video/mp4" />
             {/* Fallback */}
-            <div 
-              className="absolute inset-0 bg-gradient-to-br from-red-600 via-amber-800 to-violet-950"
-              style={{ backgroundImage: 'url(/fond-hero-1.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+            <img
+              src="/fond-hero-1.jpg"
+              alt="Background"
+              className="absolute inset-0 w-full h-full object-cover"
             />
           </video>
         )}
