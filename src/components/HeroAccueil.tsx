@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MessageCircle, CheckCircle } from 'lucide-react';
 import { config } from '../config/company';
-import imageAccueil from '../assets/gemini-generated-eden-conseil.webp';
+import logoAccueil from '../assets/logo-eden-conseil-copy.webp';
 
 export default function HeroAccueil() {
   const handleWhatsApp = () => {
@@ -37,22 +37,26 @@ export default function HeroAccueil() {
           Eden Conseil Qualité — Conseil expert pour OF & CFA
         </h1>
 
-        {/* IMAGE — centrée au-dessus de tout */}
-        <div className="flex justify-center mb-12">
+        {/* LOGO + TITRE — centrés au-dessus de tout */}
+        <div className="flex flex-col items-center mb-12">
           <img
-            src={imageAccueil}
-            alt="Eden Conseil Qualité — Conseil expert pour OF & CFA"
-            className="h-[40vh] w-auto drop-shadow-2xl rounded-2xl"
-            width={2128}
-            height={900}
+            src={logoAccueil}
+            alt="Eden Conseil Qualité logo"
+            className="h-24 w-auto drop-shadow-lg mb-6"
           />
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-3" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            EDEN CONSEIL QUALITÉ
+          </h2>
+          <p className="text-xl md:text-2xl text-amber-100 text-center font-light" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            Votre conseiller en formation professionnelle
+          </p>
         </div>
 
         {/* 2 COLONNES : texte gauche | trust badges droite */}
         <div className="grid md:grid-cols-2 gap-10 items-center mb-10">
           
           {/* GAUCHE : description */}
-          <p className="text-xl md:text-2xl text-amber-100 leading-relaxed text-center">
+          <p className="text-xl md:text-2xl text-amber-100 leading-relaxed text-center font-light" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             Accompagnement complet pour créer, développer et sécuriser votre organisme de formation. Qualiopi, CPF, EDOF, RS/RNCP : nous maîtrisons tous les domaines.
           </p>
 

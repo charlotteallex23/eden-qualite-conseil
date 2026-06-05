@@ -5,7 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        bodoni: ['BodoniModa', 'serif'],
+      },
+      fontWeight: {
+        light: 300,
+        normal: 400,
+        semibold: 600,
+        bold: 700,
+        extrabold: 800,
+      },
+    },
   },
   plugins: [],
 }

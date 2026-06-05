@@ -30,7 +30,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16 sm:h-20 py-2">
           <Link to="/" className="flex items-center gap-2 sm:gap-3 cursor-pointer flex-shrink-0">
             <img src={logo} alt="Eden Conseil Qualité" className="h-12 sm:h-14 w-auto transition-all duration-300" />
-            <span className="text-sm sm:text-base md:text-lg font-bold hidden sm:inline" style={{color:'#8B1A1A'}}>Eden Conseil Qualité</span>
+            <span className="text-sm sm:text-base md:text-lg font-bold hidden sm:inline" style={{color:'#8B1A1A', fontFamily: 'Montserrat, sans-serif'}}>EDEN CONSEIL QUALITÉ</span>
           </Link>
 
           <div className="hidden lg:flex items-center gap-2 xl:gap-6">

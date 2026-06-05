@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Default font: Montserrat Light */
+@layer base {
+  body {
+    @apply font-light;
+  }
+  
+  html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+  }
+}
+
 @keyframes slideUp {
   from {
     transform: translateY(100%);
