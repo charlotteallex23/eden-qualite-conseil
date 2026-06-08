@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle, TrendingUp, FileText, Zap } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { config } from '../../config/company';
 
@@ -102,7 +102,7 @@ export default function PublierOffreCPF() {
           <div className="bg-gradient-to-r from-red-50 to-amber-50 p-6 rounded-lg mb-8">
             <p className="text-gray-700 mb-4">L'algorithme MonCompteFormation favorise :</p>
             <ul className="space-y-2 text-gray-700">
-              <li>✓ <strong>Avis apprenants</strong> > 4/5 (collecte systématique)</li>
+              <li>✓ <strong>Avis apprenants</strong> &gt; 4/5 (collecte systématique)</li>
               <li>✓ <strong>Sessions disponibles</strong> dans les 30 jours</li>
               <li>✓ <strong>Prix cohérent</strong> avec marché</li>
               <li>✓ <strong>Descriptions complètes</strong> et bien rédigées</li>

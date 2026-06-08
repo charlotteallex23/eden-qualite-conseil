@@ -1,4 +1,4 @@
-import{j as e,c as a}from"./pages-main--bTuJdbh.js";import{H as o,r as n,M as l,s as u,t as p}from"./vendor-ui-BYSlDUyR.js";import{L as s,a as c}from"./vendor-react-CEj1KOBf.js";import"./vendor-forms-DPiq21AL.js";const r={"qualiopi-2024":{id:"qualiopi-2024",title:"Qualiopi 2024 : Les nouveaux critères à connaître",excerpt:"Découvrez les évolutions majeures de la certification Qualiopi et comment vous préparer aux nouveaux critères d'audit.",author:"Équipe Eden Conseil Qualité",date:"15 juin 2024",category:"Certification",readTime:"8 min",content:`
+import{j as e,c as a}from"./pages-main-BhWetg_i.js";import{H as o,r as n,M as l,s as u,t as p}from"./vendor-ui-BYSlDUyR.js";import{L as s,a as c}from"./vendor-react-CEj1KOBf.js";import"./vendor-forms-DPiq21AL.js";const r={"qualiopi-2024":{id:"qualiopi-2024",title:"Qualiopi 2024 : Les nouveaux critères à connaître",excerpt:"Découvrez les évolutions majeures de la certification Qualiopi et comment vous préparer aux nouveaux critères d'audit.",author:"Équipe Eden Conseil Qualité",date:"15 juin 2024",category:"Certification",readTime:"8 min",content:`
       <h2>Introduction aux nouveaux critères Qualiopi</h2>
       <p>La certification Qualiopi continue d'évoluer pour mieux répondre aux enjeux de la formation professionnelle. En 2024, de nouveaux critères ont été introduits pour renforcer la qualité des organismes de formation.</p>
       <h3>Les 6 domaines clés</h3>
@@ -499,6 +499,167 @@ import{j as e,c as a}from"./pages-main--bTuJdbh.js";import{H as o,r as n,M as l,
           <li style="margin-bottom:8px"><a href="/acquisition/referencer-formation-cpf" style="color:#dc2626;font-weight:600">→ Référencer une formation CPF : dossier conforme, zéro refus</a></li>
           <li style="margin-bottom:8px"><a href="/acquisition/acceder-edof" style="color:#dc2626;font-weight:600">→ Accéder à EDOF : inscription complète pour organismes</a></li>
           <li style="margin-bottom:8px"><a href="/acquisition/pack-qualiopi-edof" style="color:#dc2626;font-weight:600">→ Pack Qualiopi + EDOF : tout-en-un en 6 mois</a></li>
+        </ul>
+      </div>
+    `},"certification-qualiopi":{id:"certification-qualiopi",title:"Certification Qualiopi 2026 : Guide complet de préparation étape par étape",excerpt:"Comment obtenir votre certification Qualiopi ? Étapes exactes, délais, budget, audit blanc, documents obligatoires et erreurs à éviter. Guide pour réussir du premier coup.",author:"Équipe Eden Conseil Qualité",date:"5 juin 2026",category:"Certification",readTime:"14 min",content:`
+      <h2>Certification Qualiopi 2026 : Parcours complet de préparation</h2>
+      <p>La certification Qualiopi est l'incontournable pour tout organisme de formation. Ce guide détaillé vous explique comment vous préparer efficacement, étape par étape, en 2026.</p>
+
+      <h3>Les 7 critères de Qualiopi à maîtriser</h3>
+      <p>Qualiopi repose sur 7 critères fondamentaux que l'auditeur examine systématiquement :</p>
+      <ul>
+        <li><strong>Critère 1 : Conditions d'information du public</strong> - Transparence tarifaire, accessibilité, information sur les formations</li>
+        <li><strong>Critère 2 : Définition et mise en oeuvre de la politique qualité</strong> - Document formalisé, objectifs clairs</li>
+        <li><strong>Critère 3 : Identification des besoins et ingénierie de formation</strong> - Diagnostic, adaptation au public</li>
+        <li><strong>Critère 4 : Adéquation des ressources pédagogiques, techniques et d'encadrement</strong> - Formateurs qualifiés, outils adaptés</li>
+        <li><strong>Critère 5 : Implication des apprenants dans leur parcours de formation</strong> - Évaluation, suivi, adaptation personnalisée</li>
+        <li><strong>Critère 6 : Investissement dans le développement de compétences des formateurs</strong> - Formation continue, plan de développement</li>
+        <li><strong>Critère 7 : Évaluation et amélioration continue des effets de la formation</strong> - Satisfaction, insertion professionnelle, BPF</li>
+      </ul>
+
+      <h3>Phase 1 : L'audit blanc (4-8 semaines)</h3>
+      <p>L'audit blanc est votre simulation avant le vrai audit. C'est obligatoire pour 95% des organismes qui réussissent du premier coup.</p>
+      <p><strong>Qui le fait ?</strong> Un consultant externe qui joue le rôle de l'auditeur officiel.</p>
+      <p><strong>Coût :</strong> 1 200 – 3 000 € HT selon la taille de l'organisme.</p>
+      <p><strong>Durée :</strong> 1 à 3 jours sur site selon le nombre de formations et d'apprenants.</p>
+      <p><strong>Livrables :</strong> Rapport détaillé, liste des non-conformités, plan d'action.</p>
+
+      <h3>Phase 2 : Correction des écarts (4-8 semaines)</h3>
+      <p>Après l'audit blanc, vous disposez de toutes les informations pour corriger :</p>
+      <ul>
+        <li>Rédaction des documents manquants (politique qualité, procédures)</li>
+        <li>Mise en place des processus (traçabilité, évaluations)</li>
+        <li>Formation de l'équipe sur les exigences</li>
+        <li>Collecte et organisation des preuves</li>
+      </ul>
+
+      <h3>Phase 3 : Audit officiel Qualiopi (1-2 jours)</h3>
+      <p>L'auditeur certifié par un organisme accrédité (Bureau Veritas, Dekra, AFNOR, etc.) vérifie votre conformité.</p>
+      <p><strong>Coût :</strong> 1 200 – 3 500 € HT selon la taille.</p>
+      <p><strong>Résultat :</strong> Conformité totale ou non-conformités (mineures / majeures).</p>
+
+      <h3>10 erreurs à éviter absolument</h3>
+      <ul>
+        <li><strong>Ne pas faire d'audit blanc</strong> - 40% d'échec sans préparation</li>
+        <li><strong>Copier des documents d'autres organismes</strong> - Non-conformités flagrantes</li>
+        <li><strong>Manque de traçabilité</strong> - Pas de preuves = échecsûr</li>
+        <li><strong>Équipe non préparée</strong> - Auditeur pose des questions à votre équipe</li>
+        <li><strong>Tarifs non justifiés</strong> - Exigence du critère 1</li>
+        <li><strong>Pas de plan d'amélioration</strong> - Critère 7 obligatoire</li>
+        <li><strong>BPF incomplet ou inexistant</strong> - Document clé du dossier</li>
+        <li><strong>Feuilles d'émargement manquantes</strong> - Preuves fondamentales</li>
+        <li><strong>Formations datées ou sans résultats</strong> - Peu crédible pour l'auditeur</li>
+        <li><strong>Accessibilité non documentée</strong> - Critère de plus en plus contrôlé</li>
+      </ul>
+
+      <h3>Budget réaliste pour Qualiopi en 2026</h3>
+      <ul>
+        <li>Accompagnement consultant : 2 500 – 6 000 €</li>
+        <li>Audit blanc : 1 200 – 3 000 €</li>
+        <li>Audit officiel : 1 200 – 3 500 €</li>
+        <li>Formation équipe interne : 500 – 1 500 €</li>
+        <li><strong>Total : 5 400 – 14 000 €</strong> tout compris</li>
+      </ul>
+
+      <h3>Délais réalistes</h3>
+      <ul>
+        <li>Avec accompagnement : 3-5 mois du diagnostic à la certification</li>
+        <li>Sans accompagnement : 6-12 mois avec risque élevé d'échec</li>
+        <li>En cas de non-conformités : +2-4 mois pour corriger et redéposer</li>
+      </ul>
+
+      <div style="background:#fef3c7;border:1px solid #f59e0b;border-radius:8px;padding:20px;margin-top:32px">
+        <p style="font-weight:bold;color:#dc2626;margin-bottom:12px">Besoin d'aide pour Qualiopi ?</p>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li style="margin-bottom:8px"><a href="/acquisition/obtenir-qualiopi" style="color:#dc2626;font-weight:600">→ Obtenir Qualiopi : accompagnement expert</a></li>
+          <li style="margin-bottom:8px"><a href="/acquisition/etre-certifie-qualiopi" style="color:#dc2626;font-weight:600">→ Être certifié Qualiopi : méthode simple</a></li>
+          <li style="margin-bottom:8px"><a href="/contact" style="color:#dc2626;font-weight:600">→ Contactez-nous pour un devis gratuit</a></li>
+        </ul>
+      </div>
+    `},"qualiopi-cfa":{id:"qualiopi-cfa",title:"Qualiopi pour CFA : Spécificités, exigences et accompagnement",excerpt:"Certification Qualiopi pour un CFA en 2026. Quelles sont les spécificités ? Exigences supplémentaires ? Délais et budget ? Guide complet pour CFA et centres d'apprentissage.",author:"Équipe Eden Conseil Qualité",date:"8 juin 2026",category:"Certification",readTime:"13 min",content:`
+      <h2>Qualiopi pour CFA : Guide complet pour centres d'apprentissage</h2>
+      <p>Les CFA (Centres de Formation d'Apprentis) ont des exigences Qualiopi légèrement différentes des organismes de formation traditionnels. Ce guide explique les spécificités.</p>
+
+      <h3>Qualiopi s'applique-t-il aux CFA ?</h3>
+      <p>Oui absolument. Depuis 2022, tous les CFA doivent être certifiés Qualiopi pour : percevoir les financements OPCO, recevoir des alternants financés par l'État, être référencés sur des plateformes publiques.</p>
+      <p>C'est un élément clé pour la viabilité financière du CFA.</p>
+
+      <h3>Les 7 critères Qualiopi pour CFA</h3>
+      <p>Les critères sont les mêmes, mais leur application tient compte du contexte apprentissage :</p>
+      <ul>
+        <li><strong>Critère 1 : Information</strong> - Transparence sur le contrat d'apprentissage, tarifs, conditions</li>
+        <li><strong>Critère 2 : Politique qualité</strong> - Document formalisé avec objectifs CFA</li>
+        <li><strong>Critère 3 : Ingénierie</strong> - Adaptation aux durées d'alternance, prise en compte du milieu professionnel</li>
+        <li><strong>Critère 4 : Ressources</strong> - Formateurs qualifiés, locaux adaptés, équipements</li>
+        <li><strong>Critère 5 : Implication des apprenants</strong> - Suivi de l'alternant, coordination CFA/entreprise</li>
+        <li><strong>Critère 6 : Développement formateurs</strong> - Plan de développement des formateurs CFA</li>
+        <li><strong>Critère 7 : Amélioration continue</strong> - Résultats d'insertion (taux d'emploi après diplôme)</li>
+      </ul>
+
+      <h3>Spécificités des CFA face à Qualiopi</h3>
+      <ul>
+        <li><strong>Coordination CFA/Entreprise</strong> - Critique pour l'auditeur. Processus formalisé obligatoire</li>
+        <li><strong>Alternance : 50/50</strong> - Preuves que l'alternance est respectée (jours CFA / jours entreprise)</li>
+        <li><strong>Suivi pédagogique renforcé</strong> - Évaluations plus fréquentes, suivi durant l'alternance</li>
+        <li><strong>Taux d'insertion</strong> - Résultats post-diplôme critiques (où travaillent les jeunes diplômés ?)</li>
+        <li><strong>Taille du dossier</strong> - Plus complexe que OF traditionnel (preuves alternance, conventions, suivi entreprise)</li>
+      </ul>
+
+      <h3>Documents obligatoires pour un CFA Qualiopi</h3>
+      <ul>
+        <li>Politique qualité du CFA</li>
+        <li>Procédures d'alternance (CFA ↔ Entreprise)</li>
+        <li>Contrats d'apprentissage signés (au moins 5-10 exemples récents)</li>
+        <li>Conventions de formation avec les UFA (Unités de Formation en Alternance)</li>
+        <li>Programmes de formation détaillés</li>
+        <li>Fiches de suivi des alternants</li>
+        <li>Évaluations des apprentis</li>
+        <li>Bilan d'insertion professionnelle (où sont-ils 3 mois après ?)</li>
+        <li>Preuves de coordination CFA/Entreprise (emails, réunions)</li>
+        <li>CV des formateurs + plan de développement</li>
+      </ul>
+
+      <h3>Délais et coûts spécifiques CFA</h3>
+      <ul>
+        <li>Diagnostic complet : 1 000 – 2 000 €</li>
+        <li>Accompagnement complet : 4 000 – 8 000 €</li>
+        <li>Audit blanc CFA : 2 000 – 4 000 €</li>
+        <li>Audit officiel : 2 000 – 4 500 €</li>
+        <li><strong>Total budget : 8 000 – 18 000 €</strong> (plus complexe qu'OF traditionnel)</li>
+      </ul>
+
+      <h3>Taux de réussite en 2026</h3>
+      <ul>
+        <li>CFA avec accompagnement expert : 92% de réussite au 1er audit</li>
+        <li>CFA sans accompagnement : 35% de réussite au 1er audit</li>
+        <li>Erreurs les plus fréquentes : coordination CFA/Entreprise mal documentée, absence de suivi insertion</li>
+      </ul>
+
+      <h3>Les 5 erreurs CFA les plus coûteuses</h3>
+      <ul>
+        <li><strong>Coordination CFA/Entreprise insuffisamment documentée</strong> - C'est la première critique des auditeurs</li>
+        <li><strong>Pas de preuve d'alternance 50/50</strong> - L'auditeur demande les plannings</li>
+        <li><strong>Absence de suivi d'insertion</strong> - Le taux d'emploi post-diplôme est attendu</li>
+        <li><strong>Contrats d'apprentissage incomplets ou mal remplis</strong> - Document légal fondamental</li>
+        <li><strong>Pas de procédure de remontée des problèmes**  - Entre CFA et entreprises</li>
+      </ul>
+
+      <h3>Questions fréquentes CFA Qualiopi</h3>
+      <p><strong>Faut-il que le CFA ait sa propre certification Qualiopi ?</strong><br/>
+      Oui absolument. Même si vous travaillez avec une structure mère, le CFA doit avoir sa propre certification Qualiopi avec son SIRET.</p>
+
+      <p><strong>Les UFA (unités en alternance) doivent-elles aussi être certifiées ?</strong><br/>
+      Non. Seul le CFA (la structure responsable) est audité. Les UFA (entreprises) sont auditées uniquement sur leur conformité légale à accueillir un apprenti.</p>
+
+      <p><strong>Qualiopi CFA : 3 ans de validité ?</strong><br/>
+      Oui, comme pour tout organisme de formation. Audit initial, puis audit de surveillance à 18 mois, renouvellement à 3 ans.</p>
+
+      <div style="background:#fef3c7;border:1px solid #f59e0b;border-radius:8px;padding:20px;margin-top:32px">
+        <p style="font-weight:bold;color:#dc2626;margin-bottom:12px">Nous accompagnons les CFA depuis 10 ans</p>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li style="margin-bottom:8px"><a href="/acquisition/qualiopi-organisme-formation" style="color:#dc2626;font-weight:600">→ Qualiopi pour organismes : accompagnement CFA</a></li>
+          <li style="margin-bottom:8px"><a href="/acquisition/obtenir-qualiopi" style="color:#dc2626;font-weight:600">→ Obtenir Qualiopi : CFA + OF confondus</a></li>
+          <li style="margin-bottom:8px"><a href="/contact" style="color:#dc2626;font-weight:600">→ Contactez-nous pour CFA</a></li>
         </ul>
       </div>
     `}};function v(){const{id:t}=c(),i=t?r[t]:null;return i?e.jsxs("div",{className:"pt-24 pb-20 bg-gradient-to-br from-gray-50 to-white",children:[e.jsxs(o,{children:[e.jsxs("title",{children:[i.title," | Blog Eden Conseil Qualité"]}),e.jsx("meta",{name:"description",content:i.excerpt}),e.jsx("link",{rel:"canonical",href:`https://edenconseilqualite.fr/blog/${i.id}`}),e.jsx("meta",{property:"og:url",content:`https://edenconseilqualite.fr/blog/${i.id}`}),e.jsx("meta",{property:"og:image",content:"https://edenconseilqualite.fr/og-image.webp"}),e.jsx("meta",{property:"og:type",content:"article"}),e.jsx("script",{type:"application/ld+json",children:JSON.stringify({"@context":"https://schema.org","@type":"BlogPosting",headline:i.title,description:i.excerpt,url:`https://edenconseilqualite.fr/blog/${i.id}`,author:{"@type":"Organization",name:"Eden Conseil Qualité",url:"https://edenconseilqualite.fr"},publisher:{"@type":"Organization",name:"Eden Conseil Qualité",url:"https://edenconseilqualite.fr"},datePublished:i.date,image:"https://edenconseilqualite.fr/og-image.webp",mainEntityOfPage:{"@type":"WebPage","@id":`https://edenconseilqualite.fr/blog/${i.id}`}})})]}),e.jsxs("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8",children:[e.jsxs(s,{to:"/blog",className:"inline-flex items-center text-red-600 hover:text-amber-800 mb-6 group",children:[e.jsx(u,{className:"w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform"}),"Retour au blog"]}),e.jsxs("article",{className:"prose max-w-none",children:[e.jsx("h1",{className:"text-4xl font-bold text-red-600 mb-4",children:i.title}),e.jsxs("div",{className:"flex items-center gap-6 mb-8 pb-8 border-b border-gray-200 text-gray-600",children:[e.jsxs("div",{className:"flex items-center gap-2",children:[e.jsx(n,{className:"w-5 h-5"}),e.jsx("span",{children:i.date})]}),e.jsxs("div",{className:"flex items-center gap-2",children:[e.jsx(p,{className:"w-5 h-5"}),e.jsx("span",{children:i.author})]}),e.jsx("span",{className:"px-3 py-1 bg-amber-100 text-red-600 rounded-full text-sm font-medium",children:i.category}),e.jsxs("span",{className:"text-sm",children:[i.readTime," de lecture"]})]}),e.jsx("div",{className:"text-gray-700 leading-relaxed space-y-6",dangerouslySetInnerHTML:{__html:i.content}}),e.jsx("div",{className:"mt-12 pt-8 border-t border-gray-200",children:e.jsxs("div",{className:"bg-amber-50 rounded-lg p-8",children:[e.jsx("h3",{className:"text-lg font-bold text-red-600 mb-2",children:"Besoin d'aide ?"}),e.jsx("p",{className:"text-gray-600 mb-4",children:"Eden Conseil Qualité accompagne les organismes de formation pour optimiser leur Qualiopi, CPF, EDOF et bien plus encore."}),e.jsx(s,{to:"/contact",className:"inline-block bg-red-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-amber-800 transition-colors",children:"Contactez-nous"})]})})]})]})]}):e.jsx("div",{className:"py-20 bg-gray-50",children:e.jsx("div",{className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8",children:e.jsxs("div",{className:"text-center",children:[e.jsx("h1",{className:"text-2xl font-bold text-red-600 mb-4",children:"Article non trouvé"}),e.jsx(s,{to:"/blog",className:"text-red-600 hover:text-amber-800",children:"Retour au blog"})]})})})}function h(){return e.jsxs("div",{className:"pt-24 pb-20 bg-gradient-to-br from-amber-50 to-gray-50",children:[e.jsxs(o,{children:[e.jsx("title",{children:"Blog | Eden Conseil Qualité"}),e.jsx("meta",{name:"description",content:"Découvrez nos articles sur Qualiopi, CPF, EDOF et la formation professionnelle."}),e.jsx("link",{rel:"canonical",href:"https://edenconseilqualite.fr/blog"}),e.jsx("script",{type:"application/ld+json",children:JSON.stringify({"@context":"https://schema.org","@type":"Blog",name:"Blog Eden Conseil Qualité",description:"Articles experts sur la certification Qualiopi et le financement des formations"})})]}),e.jsxs("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",children:[e.jsxs("div",{className:"text-center mb-16",children:[e.jsx("h1",{className:"text-4xl font-bold text-red-600 mb-4",children:"Blog Eden Conseil Qualité"}),e.jsx("p",{className:"text-xl text-gray-600 max-w-2xl mx-auto",children:"Articles experts sur la certification Qualiopi, le CPF, EDOF et la gestion des organismes de formation"})]}),e.jsx("div",{className:"grid md:grid-cols-2 lg:grid-cols-3 gap-8",children:Object.values(r).map(t=>e.jsxs(s,{to:`/blog/${t.id}`,className:"bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden hover:-translate-y-1 group",children:[e.jsx("div",{className:"bg-gradient-to-r from-red-600 to-amber-800 p-6 h-32 flex items-start",children:e.jsx("span",{className:"px-3 py-1 bg-white/20 text-white rounded-full text-sm font-medium",children:t.category})}),e.jsxs("div",{className:"p-6",children:[e.jsx("h3",{className:"text-xl font-bold text-red-600 mb-3 group-hover:text-amber-800",children:t.title}),e.jsx("p",{className:"text-gray-600 mb-4 line-clamp-2",children:t.excerpt}),e.jsx("div",{className:"flex items-center justify-between text-sm text-gray-500",children:e.jsxs("div",{className:"flex items-center gap-4",children:[e.jsxs("div",{className:"flex items-center gap-1",children:[e.jsx(n,{className:"w-4 h-4"}),e.jsx("span",{children:t.date})]}),e.jsx("span",{children:t.readTime})]})}),e.jsx("div",{className:"mt-4 flex items-center gap-2 text-red-600 group-hover:text-amber-800 font-medium",children:"Lire l'article →"})]})]},t.id))}),e.jsxs("div",{className:"mt-16 bg-gradient-to-r from-red-600 to-amber-800 rounded-lg p-8 text-center text-white",children:[e.jsx("h2",{className:"text-2xl font-bold mb-4",children:"Vous avez une question spécifique ?"}),e.jsx("p",{className:"text-amber-100 mb-6",children:"Notre équipe est disponible pour discuter de votre projet ou de vos préoccupations"}),e.jsxs("div",{className:"flex flex-col sm:flex-row gap-4 justify-center",children:[e.jsx(s,{to:"/contact",className:"inline-block bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-amber-50 transition-colors",children:"Prendre rendez-vous"}),e.jsxs("a",{href:`https://wa.me/33${a.company.phone.replace(/\D/g,"").slice(-9)}?text=${encodeURIComponent("Bonjour, j'aimerais discuter de mes besoins en formation.")}`,target:"_blank",rel:"noopener noreferrer",className:"inline-block bg-[#25D366] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#20BA5A] transition-colors flex items-center justify-center gap-2",children:[e.jsx(l,{size:20}),"WhatsApp"]})]})]})]})]})}export{v as ArticleDetail,h as default};

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle, AlertCircle, FileText, Search } from 'lucide-react';
+import { CheckCircle, AlertCircle } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { config } from '../../config/company';
 

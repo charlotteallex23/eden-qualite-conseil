@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle, Target, Award, TrendingUp } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { config } from '../../config/company';
 
