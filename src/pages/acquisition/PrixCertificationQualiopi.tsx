@@ -37,7 +37,7 @@ function FAQItem({ faq }: { faq: typeof faqs[0] }) {
     <div className="border border-gray-200 rounded-lg overflow-hidden">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full text-left px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-50 font-semibold text-gray-900"
+        className="w-full text-left px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-50 font-semibold text-gray-700"
       >
         <span>{faq.q}</span>
         <span className="ml-4 text-red-600 text-xl flex-shrink-0">{open ? '−' : '+'}</span>
@@ -119,13 +119,13 @@ export default function PrixCertificationQualiopi() {
       {/* RÉSUMÉ CHIFFRES CLÉS */}
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Les 3 coûts à prévoir pour Qualiopi</h2>
+          <h2 className="text-3xl font-bold text-center text-red-600 mb-12">Les 3 coûts à prévoir pour Qualiopi</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="border-2 border-red-100 rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-shadow">
               <div className="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Euro size={28} className="text-red-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Consultant / cabinet</h3>
+              <h3 className="text-xl font-bold text-red-600 mb-2">Consultant / cabinet</h3>
               <p className="text-3xl font-bold text-red-600 mb-3">2 000 – 8 000 €</p>
               <p className="text-gray-600 text-sm leading-relaxed">Préparation documentaire, audit blanc, accompagnement complet jusqu'à l'obtention. Le plus variable selon votre contexte.</p>
             </div>
@@ -133,7 +133,7 @@ export default function PrixCertificationQualiopi() {
               <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FileText size={28} className="text-amber-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Organisme certificateur</h3>
+              <h3 className="text-xl font-bold text-red-600 mb-2">Organisme certificateur</h3>
               <p className="text-3xl font-bold text-amber-600 mb-3">800 – 2 500 €</p>
               <p className="text-gray-600 text-sm leading-relaxed">Frais d'audit réglementaire (Bureau Veritas, Dekra, AFNOR…). Obligatoire. Fixé par le certificateur, non négociable.</p>
             </div>
@@ -141,7 +141,7 @@ export default function PrixCertificationQualiopi() {
               <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock size={28} className="text-green-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Temps interne</h3>
+              <h3 className="text-xl font-bold text-red-600 mb-2">Temps interne</h3>
               <p className="text-3xl font-bold text-green-600 mb-3">2 – 4 h/semaine</p>
               <p className="text-gray-600 text-sm leading-relaxed">Votre temps (ou celui de votre équipe) pour fournir les documents et valider les procédures. Réduit au minimum avec notre méthode.</p>
             </div>
@@ -152,7 +152,7 @@ export default function PrixCertificationQualiopi() {
       {/* DÉTAIL PAR PROFIL */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Quel budget selon votre profil ?</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-4 text-center">Quel budget selon votre profil ?</h2>
           <p className="text-center text-gray-600 mb-12 text-lg">Le coût de Qualiopi dépend principalement de 3 facteurs : taille de la structure, maturité documentaire, délai souhaité.</p>
 
           <div className="space-y-6">
@@ -161,7 +161,7 @@ export default function PrixCertificationQualiopi() {
                 profil: 'Formateur indépendant / micro-OF',
                 budget: '2 000 – 3 500 €',
                 detail: 'Processus simplifié, peu de procédures, dossier léger. Accompagnement concentré sur 2 à 3 mois. Idéal pour les OF qui débutent ou ont moins de 5 formations au catalogue.',
-                couleur: 'border-blue-400 bg-blue-50'
+                couleur: 'border-amber-400 bg-amber-50'
               },
               {
                 profil: 'Organisme de formation structuré (3–20 salariés)',
@@ -179,11 +179,11 @@ export default function PrixCertificationQualiopi() {
               <div key={i} className={`border-l-4 rounded-xl p-6 ${item.couleur}`}>
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">{item.profil}</h3>
+                    <h3 className="text-xl font-bold text-red-600 mb-2">{item.profil}</h3>
                     <p className="text-gray-700 leading-relaxed">{item.detail}</p>
                   </div>
                   <div className="text-right flex-shrink-0">
-                    <span className="text-2xl font-bold text-gray-900">{item.budget}</span>
+                    <span className="text-2xl font-bold text-red-600">{item.budget}</span>
                     <p className="text-sm text-gray-500">HT tout compris</p>
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export default function PrixCertificationQualiopi() {
       {/* FINANCEMENT */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Réduire le coût : les financements disponibles</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-4 text-center">Réduire le coût : les financements disponibles</h2>
           <p className="text-gray-600 text-center mb-10 text-lg">La certification Qualiopi n'est pas toujours à 100 % à votre charge. Voici les leviers à activer.</p>
           <div className="grid md:grid-cols-2 gap-6">
             {[
@@ -224,7 +224,7 @@ export default function PrixCertificationQualiopi() {
               <div key={i} className="flex gap-4 p-6 border border-gray-200 rounded-xl">
                 <span className="text-3xl flex-shrink-0">{item.icon}</span>
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">{item.titre}</h3>
+                  <h3 className="font-bold text-red-600 mb-2">{item.titre}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
@@ -261,7 +261,7 @@ export default function PrixCertificationQualiopi() {
       {/* FAQ */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">Questions sur le prix de Qualiopi</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-10 text-center">Questions sur le prix de Qualiopi</h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => <FAQItem key={i} faq={faq} />)}
           </div>
@@ -271,7 +271,7 @@ export default function PrixCertificationQualiopi() {
       {/* CTA FINAL */}
       <section className="py-16 bg-amber-50 border-t border-amber-200">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Obtenez votre devis personnalisé en 24h</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-4">Obtenez votre devis personnalisé en 24h</h2>
           <p className="text-gray-600 mb-8 text-lg">
             Chaque structure est unique. Dites-nous en quelques mots où vous en êtes,
             et nous vous proposons un devis transparent adapté à votre situation.

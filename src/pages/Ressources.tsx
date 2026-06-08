@@ -16,8 +16,8 @@ export function Ressources() {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Ressources Gratuites | Guides Qualiopi CPF EDOF | Eden Conseil Qualité</title>
-        <meta name="description" content="Téléchargez nos ressources gratuites : checklist Qualiopi, guide EDOF, modèle BPF, stratégie tarifaire CPF. Outils pratiques pour organismes de formation." />
+        <title>Ressources Gratuites Qualiopi : Checklist, Guide EDOF, Modèles | Eden Conseil Qualité</title>
+        <meta name="description" content="5 ressources gratuites pour votre OF : checklist Qualiopi complet, guide EDOF 2026, modèle BPF, stratégie CPF. Téléchargez maintenant et gagnez 40h de travail." />
         <link rel="canonical" href="https://edenconseilqualite.fr/ressources" />
         <meta property="og:title" content="Ressources Gratuites Qualiopi CPF EDOF | Eden Conseil Qualité" />
         <meta property="og:description" content="Checklist Qualiopi, guide EDOF, modèle BPF. Ressources gratuites pour organismes de formation." />

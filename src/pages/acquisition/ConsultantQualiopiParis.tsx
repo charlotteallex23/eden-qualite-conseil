@@ -33,7 +33,7 @@ function FAQItem({ faq }: { faq: typeof faqs[0] }) {
     <div className="border border-gray-200 rounded-lg overflow-hidden">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full text-left px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-50 font-semibold text-gray-900"
+        className="w-full text-left px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-50 font-semibold text-gray-700"
       >
         <span>{faq.q}</span>
         <span className="ml-4 text-red-600 text-xl flex-shrink-0">{open ? '−' : '+'}</span>
@@ -155,7 +155,7 @@ export default function ConsultantQualiopiParis() {
       {/* POURQUOI PARIS */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Pourquoi un consultant Qualiopi local à Paris ?</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-4 text-center">Pourquoi un consultant Qualiopi local à Paris ?</h2>
           <p className="text-gray-600 text-center mb-12 text-lg max-w-2xl mx-auto">
             La certification Qualiopi demande une connaissance fine du contexte réglementaire, des certificateurs actifs
             dans votre secteur et des spécificités du marché francilien.
@@ -186,7 +186,7 @@ export default function ConsultantQualiopiParis() {
               <div key={i} className="flex gap-4 p-6 bg-white border border-gray-200 rounded-xl shadow-sm">
                 <span className="text-3xl flex-shrink-0">{item.icon}</span>
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">{item.titre}</h3>
+                  <h3 className="font-bold text-red-600 mb-2">{item.titre}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
@@ -198,7 +198,7 @@ export default function ConsultantQualiopiParis() {
       {/* SECTEURS */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">Secteurs accompagnés en Île-de-France</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-10 text-center">Secteurs accompagnés en Île-de-France</h2>
           <div className="flex flex-wrap gap-3 justify-center">
             {[
               'Formation professionnelle continue', 'Bilan de compétences', 'Langues étrangères',
@@ -218,7 +218,7 @@ export default function ConsultantQualiopiParis() {
       {/* ÉTAPES */}
       <section className="py-16 bg-amber-50">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Notre accompagnement, étape par étape</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-12 text-center">Notre accompagnement, étape par étape</h2>
           <div className="space-y-6">
             {[
               { num: '1', titre: 'Appel diagnostic (gratuit, 30 min)', desc: 'Nous analysons votre situation actuelle, identifions les points forts et les manques par rapport au référentiel Qualiopi. Vous repartez avec une vision claire du travail à accomplir.' },
@@ -232,7 +232,7 @@ export default function ConsultantQualiopiParis() {
                   {step.num}
                 </div>
                 <div className="pt-1">
-                  <h3 className="font-bold text-gray-900 text-lg mb-1">{step.titre}</h3>
+                  <h3 className="font-bold text-red-600 text-lg mb-1">{step.titre}</h3>
                   <p className="text-gray-600 leading-relaxed">{step.desc}</p>
                 </div>
               </div>
@@ -247,19 +247,19 @@ export default function ConsultantQualiopiParis() {
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div className="flex flex-col items-center gap-2">
               <MapPin size={24} className="text-red-600" />
-              <p className="font-semibold text-gray-900">Adresse</p>
+              <p className="font-semibold text-red-600">Adresse</p>
               <p className="text-gray-600 text-sm">1 Avenue François 1er<br />75008 Paris</p>
             </div>
             <div className="flex flex-col items-center gap-2">
               <Phone size={24} className="text-red-600" />
-              <p className="font-semibold text-gray-900">Téléphone</p>
+              <p className="font-semibold text-red-600">Téléphone</p>
               <a href={`tel:+33${config.company.phone}`} className="text-red-600 font-medium hover:underline">
                 {config.company.phone.replace(/(\d{2})(?=\d)/g, '$1 ').trim()}
               </a>
             </div>
             <div className="flex flex-col items-center gap-2">
               <Clock size={24} className="text-red-600" />
-              <p className="font-semibold text-gray-900">Horaires</p>
+              <p className="font-semibold text-red-600">Horaires</p>
               <p className="text-gray-600 text-sm">Lun–Sam · 9h–18h</p>
             </div>
           </div>
@@ -269,7 +269,7 @@ export default function ConsultantQualiopiParis() {
       {/* FAQ */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">Vos questions sur l'accompagnement Qualiopi à Paris</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-10 text-center">Vos questions sur l'accompagnement Qualiopi à Paris</h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => <FAQItem key={i} faq={faq} />)}
           </div>

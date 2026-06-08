@@ -6,7 +6,7 @@ const services = [
     id: 1,
     title: 'Qualiopi',
     description: 'Audit, préparation, conformité et accompagnement pour obtenir et maintenir la certification Qualiopi.',
-    link: '/qualiopi',
+    link: '/acquisition/obtenir-qualiopi',
     icon: CheckCircle2
   },
   {
@@ -20,7 +20,7 @@ const services = [
     id: 3,
     title: 'CPF',
     description: 'Rendre vos formations éligibles CPF, dépôt EDOF, gestion et suivi des référencements.',
-    link: '/cpf-eligibilite',
+    link: '/acquisition/referencer-formation-cpf',
     icon: CheckCircle2
   },
   {
@@ -34,14 +34,14 @@ const services = [
     id: 5,
     title: 'Création OF',
     description: 'Accompagnement complet pour créer votre organisme de formation ou CFA, NDA, UAI, cadrage.',
-    link: '/services',
+    link: '/acquisition/pack-creation-of-qualiopi',
     icon: CheckCircle2
   },
   {
     id: 6,
     title: 'NDA',
     description: 'Obtenez votre numéro de déclaration d\'activité auprès de la DRIEETS et devenez officiellement centre de formation.',
-    link: '/services',
+    link: '/acquisition/creer-organisme-formation',
     icon: CheckCircle2
   }
 ];

@@ -652,6 +652,189 @@ const articles: { [key: string]: BlogArticle } = {
         </ul>
       </div>
     `
+  },
+
+  'certification-qualiopi': {
+    id: 'certification-qualiopi',
+    title: 'Certification Qualiopi 2026 : Guide complet de préparation étape par étape',
+    excerpt: 'Comment obtenir votre certification Qualiopi ? Étapes exactes, délais, budget, audit blanc, documents obligatoires et erreurs à éviter. Guide pour réussir du premier coup.',
+    author: 'Équipe Eden Conseil Qualité',
+    date: '5 juin 2026',
+    category: 'Certification',
+    readTime: '14 min',
+    content: `
+      <h2>Certification Qualiopi 2026 : Parcours complet de préparation</h2>
+      <p>La certification Qualiopi est l'incontournable pour tout organisme de formation. Ce guide détaillé vous explique comment vous préparer efficacement, étape par étape, en 2026.</p>
+
+      <h3>Les 7 critères de Qualiopi à maîtriser</h3>
+      <p>Qualiopi repose sur 7 critères fondamentaux que l'auditeur examine systématiquement :</p>
+      <ul>
+        <li><strong>Critère 1 : Conditions d'information du public</strong> - Transparence tarifaire, accessibilité, information sur les formations</li>
+        <li><strong>Critère 2 : Définition et mise en oeuvre de la politique qualité</strong> - Document formalisé, objectifs clairs</li>
+        <li><strong>Critère 3 : Identification des besoins et ingénierie de formation</strong> - Diagnostic, adaptation au public</li>
+        <li><strong>Critère 4 : Adéquation des ressources pédagogiques, techniques et d'encadrement</strong> - Formateurs qualifiés, outils adaptés</li>
+        <li><strong>Critère 5 : Implication des apprenants dans leur parcours de formation</strong> - Évaluation, suivi, adaptation personnalisée</li>
+        <li><strong>Critère 6 : Investissement dans le développement de compétences des formateurs</strong> - Formation continue, plan de développement</li>
+        <li><strong>Critère 7 : Évaluation et amélioration continue des effets de la formation</strong> - Satisfaction, insertion professionnelle, BPF</li>
+      </ul>
+
+      <h3>Phase 1 : L'audit blanc (4-8 semaines)</h3>
+      <p>L'audit blanc est votre simulation avant le vrai audit. C'est obligatoire pour 95% des organismes qui réussissent du premier coup.</p>
+      <p><strong>Qui le fait ?</strong> Un consultant externe qui joue le rôle de l'auditeur officiel.</p>
+      <p><strong>Coût :</strong> 1 200 – 3 000 € HT selon la taille de l'organisme.</p>
+      <p><strong>Durée :</strong> 1 à 3 jours sur site selon le nombre de formations et d'apprenants.</p>
+      <p><strong>Livrables :</strong> Rapport détaillé, liste des non-conformités, plan d'action.</p>
+
+      <h3>Phase 2 : Correction des écarts (4-8 semaines)</h3>
+      <p>Après l'audit blanc, vous disposez de toutes les informations pour corriger :</p>
+      <ul>
+        <li>Rédaction des documents manquants (politique qualité, procédures)</li>
+        <li>Mise en place des processus (traçabilité, évaluations)</li>
+        <li>Formation de l'équipe sur les exigences</li>
+        <li>Collecte et organisation des preuves</li>
+      </ul>
+
+      <h3>Phase 3 : Audit officiel Qualiopi (1-2 jours)</h3>
+      <p>L'auditeur certifié par un organisme accrédité (Bureau Veritas, Dekra, AFNOR, etc.) vérifie votre conformité.</p>
+      <p><strong>Coût :</strong> 1 200 – 3 500 € HT selon la taille.</p>
+      <p><strong>Résultat :</strong> Conformité totale ou non-conformités (mineures / majeures).</p>
+
+      <h3>10 erreurs à éviter absolument</h3>
+      <ul>
+        <li><strong>Ne pas faire d'audit blanc</strong> - 40% d'échec sans préparation</li>
+        <li><strong>Copier des documents d'autres organismes</strong> - Non-conformités flagrantes</li>
+        <li><strong>Manque de traçabilité</strong> - Pas de preuves = échecsûr</li>
+        <li><strong>Équipe non préparée</strong> - Auditeur pose des questions à votre équipe</li>
+        <li><strong>Tarifs non justifiés</strong> - Exigence du critère 1</li>
+        <li><strong>Pas de plan d'amélioration</strong> - Critère 7 obligatoire</li>
+        <li><strong>BPF incomplet ou inexistant</strong> - Document clé du dossier</li>
+        <li><strong>Feuilles d'émargement manquantes</strong> - Preuves fondamentales</li>
+        <li><strong>Formations datées ou sans résultats</strong> - Peu crédible pour l'auditeur</li>
+        <li><strong>Accessibilité non documentée</strong> - Critère de plus en plus contrôlé</li>
+      </ul>
+
+      <h3>Budget réaliste pour Qualiopi en 2026</h3>
+      <ul>
+        <li>Accompagnement consultant : 2 500 – 6 000 €</li>
+        <li>Audit blanc : 1 200 – 3 000 €</li>
+        <li>Audit officiel : 1 200 – 3 500 €</li>
+        <li>Formation équipe interne : 500 – 1 500 €</li>
+        <li><strong>Total : 5 400 – 14 000 €</strong> tout compris</li>
+      </ul>
+
+      <h3>Délais réalistes</h3>
+      <ul>
+        <li>Avec accompagnement : 3-5 mois du diagnostic à la certification</li>
+        <li>Sans accompagnement : 6-12 mois avec risque élevé d'échec</li>
+        <li>En cas de non-conformités : +2-4 mois pour corriger et redéposer</li>
+      </ul>
+
+      <div style="background:#fef3c7;border:1px solid #f59e0b;border-radius:8px;padding:20px;margin-top:32px">
+        <p style="font-weight:bold;color:#dc2626;margin-bottom:12px">Besoin d'aide pour Qualiopi ?</p>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li style="margin-bottom:8px"><a href="/acquisition/obtenir-qualiopi" style="color:#dc2626;font-weight:600">→ Obtenir Qualiopi : accompagnement expert</a></li>
+          <li style="margin-bottom:8px"><a href="/acquisition/etre-certifie-qualiopi" style="color:#dc2626;font-weight:600">→ Être certifié Qualiopi : méthode simple</a></li>
+          <li style="margin-bottom:8px"><a href="/contact" style="color:#dc2626;font-weight:600">→ Contactez-nous pour un devis gratuit</a></li>
+        </ul>
+      </div>
+    `
+  },
+
+  'qualiopi-cfa': {
+    id: 'qualiopi-cfa',
+    title: 'Qualiopi pour CFA : Spécificités, exigences et accompagnement',
+    excerpt: 'Certification Qualiopi pour un CFA en 2026. Quelles sont les spécificités ? Exigences supplémentaires ? Délais et budget ? Guide complet pour CFA et centres d\'apprentissage.',
+    author: 'Équipe Eden Conseil Qualité',
+    date: '8 juin 2026',
+    category: 'Certification',
+    readTime: '13 min',
+    content: `
+      <h2>Qualiopi pour CFA : Guide complet pour centres d'apprentissage</h2>
+      <p>Les CFA (Centres de Formation d'Apprentis) ont des exigences Qualiopi légèrement différentes des organismes de formation traditionnels. Ce guide explique les spécificités.</p>
+
+      <h3>Qualiopi s'applique-t-il aux CFA ?</h3>
+      <p>Oui absolument. Depuis 2022, tous les CFA doivent être certifiés Qualiopi pour : percevoir les financements OPCO, recevoir des alternants financés par l'État, être référencés sur des plateformes publiques.</p>
+      <p>C'est un élément clé pour la viabilité financière du CFA.</p>
+
+      <h3>Les 7 critères Qualiopi pour CFA</h3>
+      <p>Les critères sont les mêmes, mais leur application tient compte du contexte apprentissage :</p>
+      <ul>
+        <li><strong>Critère 1 : Information</strong> - Transparence sur le contrat d'apprentissage, tarifs, conditions</li>
+        <li><strong>Critère 2 : Politique qualité</strong> - Document formalisé avec objectifs CFA</li>
+        <li><strong>Critère 3 : Ingénierie</strong> - Adaptation aux durées d'alternance, prise en compte du milieu professionnel</li>
+        <li><strong>Critère 4 : Ressources</strong> - Formateurs qualifiés, locaux adaptés, équipements</li>
+        <li><strong>Critère 5 : Implication des apprenants</strong> - Suivi de l'alternant, coordination CFA/entreprise</li>
+        <li><strong>Critère 6 : Développement formateurs</strong> - Plan de développement des formateurs CFA</li>
+        <li><strong>Critère 7 : Amélioration continue</strong> - Résultats d'insertion (taux d'emploi après diplôme)</li>
+      </ul>
+
+      <h3>Spécificités des CFA face à Qualiopi</h3>
+      <ul>
+        <li><strong>Coordination CFA/Entreprise</strong> - Critique pour l'auditeur. Processus formalisé obligatoire</li>
+        <li><strong>Alternance : 50/50</strong> - Preuves que l'alternance est respectée (jours CFA / jours entreprise)</li>
+        <li><strong>Suivi pédagogique renforcé</strong> - Évaluations plus fréquentes, suivi durant l'alternance</li>
+        <li><strong>Taux d'insertion</strong> - Résultats post-diplôme critiques (où travaillent les jeunes diplômés ?)</li>
+        <li><strong>Taille du dossier</strong> - Plus complexe que OF traditionnel (preuves alternance, conventions, suivi entreprise)</li>
+      </ul>
+
+      <h3>Documents obligatoires pour un CFA Qualiopi</h3>
+      <ul>
+        <li>Politique qualité du CFA</li>
+        <li>Procédures d'alternance (CFA ↔ Entreprise)</li>
+        <li>Contrats d'apprentissage signés (au moins 5-10 exemples récents)</li>
+        <li>Conventions de formation avec les UFA (Unités de Formation en Alternance)</li>
+        <li>Programmes de formation détaillés</li>
+        <li>Fiches de suivi des alternants</li>
+        <li>Évaluations des apprentis</li>
+        <li>Bilan d'insertion professionnelle (où sont-ils 3 mois après ?)</li>
+        <li>Preuves de coordination CFA/Entreprise (emails, réunions)</li>
+        <li>CV des formateurs + plan de développement</li>
+      </ul>
+
+      <h3>Délais et coûts spécifiques CFA</h3>
+      <ul>
+        <li>Diagnostic complet : 1 000 – 2 000 €</li>
+        <li>Accompagnement complet : 4 000 – 8 000 €</li>
+        <li>Audit blanc CFA : 2 000 – 4 000 €</li>
+        <li>Audit officiel : 2 000 – 4 500 €</li>
+        <li><strong>Total budget : 8 000 – 18 000 €</strong> (plus complexe qu'OF traditionnel)</li>
+      </ul>
+
+      <h3>Taux de réussite en 2026</h3>
+      <ul>
+        <li>CFA avec accompagnement expert : 92% de réussite au 1er audit</li>
+        <li>CFA sans accompagnement : 35% de réussite au 1er audit</li>
+        <li>Erreurs les plus fréquentes : coordination CFA/Entreprise mal documentée, absence de suivi insertion</li>
+      </ul>
+
+      <h3>Les 5 erreurs CFA les plus coûteuses</h3>
+      <ul>
+        <li><strong>Coordination CFA/Entreprise insuffisamment documentée</strong> - C'est la première critique des auditeurs</li>
+        <li><strong>Pas de preuve d'alternance 50/50</strong> - L'auditeur demande les plannings</li>
+        <li><strong>Absence de suivi d'insertion</strong> - Le taux d'emploi post-diplôme est attendu</li>
+        <li><strong>Contrats d'apprentissage incomplets ou mal remplis</strong> - Document légal fondamental</li>
+        <li><strong>Pas de procédure de remontée des problèmes**  - Entre CFA et entreprises</li>
+      </ul>
+
+      <h3>Questions fréquentes CFA Qualiopi</h3>
+      <p><strong>Faut-il que le CFA ait sa propre certification Qualiopi ?</strong><br/>
+      Oui absolument. Même si vous travaillez avec une structure mère, le CFA doit avoir sa propre certification Qualiopi avec son SIRET.</p>
+
+      <p><strong>Les UFA (unités en alternance) doivent-elles aussi être certifiées ?</strong><br/>
+      Non. Seul le CFA (la structure responsable) est audité. Les UFA (entreprises) sont auditées uniquement sur leur conformité légale à accueillir un apprenti.</p>
+
+      <p><strong>Qualiopi CFA : 3 ans de validité ?</strong><br/>
+      Oui, comme pour tout organisme de formation. Audit initial, puis audit de surveillance à 18 mois, renouvellement à 3 ans.</p>
+
+      <div style="background:#fef3c7;border:1px solid #f59e0b;border-radius:8px;padding:20px;margin-top:32px">
+        <p style="font-weight:bold;color:#dc2626;margin-bottom:12px">Nous accompagnons les CFA depuis 10 ans</p>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li style="margin-bottom:8px"><a href="/acquisition/qualiopi-organisme-formation" style="color:#dc2626;font-weight:600">→ Qualiopi pour organismes : accompagnement CFA</a></li>
+          <li style="margin-bottom:8px"><a href="/acquisition/obtenir-qualiopi" style="color:#dc2626;font-weight:600">→ Obtenir Qualiopi : CFA + OF confondus</a></li>
+          <li style="margin-bottom:8px"><a href="/contact" style="color:#dc2626;font-weight:600">→ Contactez-nous pour CFA</a></li>
+        </ul>
+      </div>
+    `
   }
 };
 

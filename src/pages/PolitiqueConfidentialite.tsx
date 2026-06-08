@@ -1,6 +1,14 @@
+import { Helmet } from 'react-helmet-async';
+
 export default function PolitiqueConfidentialite() {
   return (
     <div className="py-20 bg-gray-50">
+      <Helmet>
+        <title>Politique de Confidentialité | Eden Conseil Qualité</title>
+        <meta name="description" content="Politique de confidentialité et RGPD du site Eden Conseil Qualité." />
+        <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://edenconseilqualite.fr/politique-confidentialite" />
+      </Helmet>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-red-600 mb-12">Politique de Confidentialité</h1>
 

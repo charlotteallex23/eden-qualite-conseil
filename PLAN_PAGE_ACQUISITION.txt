@@ -2,19 +2,17 @@ TODO | THEME | SLUG | MOT-CLE PRINCIPAL | ANGLE | OBJECTIONS PRINCIPALES
 
 QUALIOPI : INTENTIONS “OBTENIR / ÊTRE CERTIFIÉ / PRÉPARER AUDIT”
 
-TODO | QUALIOPI | certification-qualiopi | certification qualiopi | parcours complet de préparation | organisme certificateur, coûts, indicateurs
-TODO | QUALIOPI | qualiopi-cfa | qualiopi cfa | spécificités CFA | exigences, preuves, audits
+
 TODO | QUALIOPI | qualiopi-bilan-competences | qualiopi bilan de compétences | périmètre bilan | indicateurs, preuves, audit
 TODO | QUALIOPI | qualiopi-vae | qualiopi VAE | périmètre VAE | process, preuves, audit
 TODO | QUALIOPI | qualiopi-apprentissage | qualiopi apprentissage | CFA et apprentissage | conformité, audit, délais
 TODO | QUALIOPI | qualiopi-sous-traitance | qualiopi sous-traitant | conformité sous-traitance | obligations, risques, preuves
-TODO | QUALIOPI | qualiopi-preaudit | pré-audit qualiopi | audit blanc + plan correctif | coût, utilité, délais
-TODO | QUALIOPI | audit-initial-qualiopi | audit initial qualiopi | préparation et checklists | stress, docs, indicateurs
+
 TODO | QUALIOPI | audit-surveillance-qualiopi | audit de surveillance qualiopi | maintien conformité | échéances, preuves, non-conformités
 TODO | QUALIOPI | audit-renouvellement-qualiopi | audit de renouvellement qualiopi | renouveler sans stress | échéances, changements, preuves
 TODO | QUALIOPI | non-conformite-qualiopi | non-conformité qualiopi | corriger vite et proprement | gravité, délais, reprise
 TODO | QUALIOPI | plan-action-qualiopi | plan d’action qualiopi | roadmap 30-60-90 jours | organisation, charge, priorité
-TODO | QUALIOPI | documents-qualiopi | documents qualiopi | liste + modèles + méthode | quoi fournir, comment rédiger
+
 TODO | QUALIOPI | procedures-qualiopi | procédures qualiopi | kit procédures complet | peur paperasse, cohérence
 TODO | QUALIOPI | indicateurs-qualiopi | indicateurs qualiopi | comprendre et prouver | interprétation, exemples
 TODO | QUALIOPI | processus-qualiopi | processus qualiopi | du NDA à l’audit | étapes, timings
@@ -38,12 +36,12 @@ TODO | QUALIOPI | audit-qualiopi-preuves | preuves audit qualiopi | exemples de 
 
 EDOF/CPF : INTENTIONS “ACCÉDER / S’INSCRIRE / RÉFÉRENCER / PUBLIER / ÊTRE CONFORME”
 
-TODO | EDOF | inscription-edof | inscription EDOF | étape par étape | blocages, justificatifs
+
 TODO | EDOF | creer-compte-edof | créer compte EDOF | parcours d’ouverture | délais, pièces, validation
 TODO | EDOF | demande-acces-edof | demande accès EDOF | check-list avant dépôt | incomplet, rejets
 TODO | EDOF | delai-acces-edof | délai accès EDOF | planifier et anticiper | attente, relances
 TODO | EDOF | conditions-acces-edof | conditions accès EDOF | prérequis clairs | NDA, Qualiopi, BPF, capacité
-TODO | CPF | publier-offre-cpf | publier une offre CPF | process publication | qualité, conformité, délais
+
 TODO | CPF | catalogue-cpf | catalogue CPF | structurer son catalogue | lisibilité, conversion
 TODO | CPF | edof-parametrage | paramétrage EDOF | config compte + rôles | erreurs, droits
 TODO | CPF | edof-sessions | créer une session CPF | sessions et dates | délais, règles
@@ -52,7 +50,7 @@ TODO | CPF | edof-documents | documents EDOF | pièces et justificatifs | confus
 TODO | CPF | edof-refus | refus EDOF | comprendre et corriger | motifs, plan correctif
 TODO | CPF | edof-blocage | compte EDOF bloqué | débloquer proprement | causes, preuves
 TODO | CPF | edof-dereferencement | déréférencement CPF | éviter sanctions | conformité, preuves
-TODO | CPF | conformite-cpf | conformité CPF | se mettre en conformité | contrôles, traçabilité
+
 TODO | CPF | cgu-cpf-organisme | CGU CPF organisme | obligations clés | délais, process
 TODO | CPF | delai-11-jours-cpf | délai 11 jours ouvrés CPF | sécuriser la planification | calendrier, sessions
 TODO | CPF | qualio pi-et-cpf | qualiopi et CPF | lien et prérequis | ordre des étapes, délais
@@ -70,6 +68,3 @@ TODO | CPF | edof-preuves | preuves CPF | constituer un dossier preuves | audits
 TODO | CPF | edof-amelioration | amélioration continue CPF | process qualité | indicateurs, actions
 
 PAGES HYBRIDES “PACK” (TRÈS CONVERSION)
-TODO | PACK | pack-of-cpf | organisme de formation CPF | accès CPF + offre | éligibilité, conformité
-TODO | PACK | pack-rs-rncp-cpf | RS RNCP CPF | stratégie certification | choix, délais, coûts
-TODO | PACK | pack-surveillance-renouvellement | surveillance renouvellement qualiopi | maintien + renouvellement | échéances, charge, preuves

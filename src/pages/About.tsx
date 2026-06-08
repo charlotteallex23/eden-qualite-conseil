@@ -1,4 +1,4 @@
-import { Users, Award, Lightbulb, Target, CheckCircle, MessageCircle } from 'lucide-react';
+import { Users, Award, Lightbulb, Target, CheckCircle, MessageCircle, Building2, FileCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { config } from '../config/company';
@@ -233,6 +233,71 @@ export default function About() {
                 <p className="text-gray-700">Templates, guides et outils prêts à l'emploi</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Nos Offres */}
+      <section className="py-20 px-4 bg-amber-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-red-600 mb-4 text-center">Nos offres d'accompagnement</h2>
+          <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
+            Du diagnostic à la certification, nous proposons des solutions complètes adaptées à chaque étape de votre parcours
+          </p>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Link to="/acquisition/obtenir-qualiopi" className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg hover:border-red-600 border-2 border-transparent transition-all">
+              <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                <Award className="w-6 h-6 text-red-600" />
+              </div>
+              <h3 className="text-xl font-bold text-red-600 mb-2">Obtenir Qualiopi</h3>
+              <p className="text-gray-700 mb-4">Certification audit blanc, accompagnement complet jusqu'à l'audit officiel</p>
+              <span className="text-red-600 font-semibold">En savoir plus →</span>
+            </Link>
+
+            <Link to="/acquisition/pack-qualiopi-edof" className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg hover:border-red-600 border-2 border-transparent transition-all">
+              <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                <Target className="w-6 h-6 text-red-600" />
+              </div>
+              <h3 className="text-xl font-bold text-red-600 mb-2">Qualiopi + EDOF</h3>
+              <p className="text-gray-700 mb-4">Package complet : certification Qualiopi + accès CPF via EDOF</p>
+              <span className="text-red-600 font-semibold">En savoir plus →</span>
+            </Link>
+
+            <Link to="/acquisition/pack-creation-of-qualiopi" className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg hover:border-red-600 border-2 border-transparent transition-all">
+              <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                <Building2 className="w-6 h-6 text-red-600" />
+              </div>
+              <h3 className="text-xl font-bold text-red-600 mb-2">Créer votre OF</h3>
+              <p className="text-gray-700 mb-4">De la création à la certification Qualiopi en 6 mois maximum</p>
+              <span className="text-red-600 font-semibold">En savoir plus →</span>
+            </Link>
+
+            <Link to="/acquisition/referencer-formation-cpf" className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg hover:border-red-600 border-2 border-transparent transition-all">
+              <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                <Award className="w-6 h-6 text-red-600" />
+              </div>
+              <h3 className="text-xl font-bold text-red-600 mb-2">Formations CPF</h3>
+              <p className="text-gray-700 mb-4">Référencer vos formations sur MonCompteFormation dès maintenant</p>
+              <span className="text-red-600 font-semibold">En savoir plus →</span>
+            </Link>
+
+            <Link to="/acquisition/acceder-edof" className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg hover:border-red-600 border-2 border-transparent transition-all">
+              <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                <FileCheck className="w-6 h-6 text-red-600" />
+              </div>
+              <h3 className="text-xl font-bold text-red-600 mb-2">Accéder à EDOF</h3>
+              <p className="text-gray-700 mb-4">Inscription complète et gestion EDOF pour organismes existants</p>
+              <span className="text-red-600 font-semibold">En savoir plus →</span>
+            </Link>
+
+            <Link to="/services" className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg hover:border-red-600 border-2 border-transparent transition-all">
+              <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                <Lightbulb className="w-6 h-6 text-red-600" />
+              </div>
+              <h3 className="text-xl font-bold text-red-600 mb-2">Tous les services</h3>
+              <p className="text-gray-700 mb-4">Découvrez l'ensemble de nos accompagnements personnalisés</p>
+              <span className="text-red-600 font-semibold">Voir plus →</span>
+            </Link>
           </div>
         </div>
       </section>

@@ -37,7 +37,7 @@ function FAQItem({ faq }: { faq: typeof faqs[0] }) {
     <div className="border border-gray-200 rounded-lg overflow-hidden">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full text-left px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-50 font-semibold text-gray-900"
+        className="w-full text-left px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-50 font-semibold text-gray-700"
       >
         <span>{faq.q}</span>
         <span className="ml-4 text-red-600 text-xl flex-shrink-0">{open ? '−' : '+'}</span>
@@ -188,7 +188,7 @@ export default function CreerOrganismeFormation() {
       {/* PRÉREQUIS */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Ce qu'il faut pour ouvrir un OF</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-4 text-center">Ce qu'il faut pour ouvrir un OF</h2>
           <p className="text-gray-600 text-center mb-10 text-lg">Pas de diplôme obligatoire, pas de capital minimum. Mais des règles précises à respecter.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
@@ -232,7 +232,7 @@ export default function CreerOrganismeFormation() {
       {/* LES 6 ÉTAPES */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Les 6 étapes pour créer votre OF</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-12 text-center">Les 6 étapes pour créer votre OF</h2>
           <div className="space-y-6">
             {etapes.map((step, i) => (
               <div key={i} className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
@@ -242,7 +242,7 @@ export default function CreerOrganismeFormation() {
                   </div>
                   <div className="flex-1">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
-                      <h3 className="font-bold text-gray-900 text-xl">{step.titre}</h3>
+                      <h3 className="font-bold text-red-600 text-xl">{step.titre}</h3>
                       <span className="text-sm font-medium text-red-600 bg-red-50 px-3 py-1 rounded-full self-start">{step.duree}</span>
                     </div>
                     <p className="text-gray-600 leading-relaxed">{step.desc}</p>
@@ -289,7 +289,7 @@ export default function CreerOrganismeFormation() {
       {/* FAQ */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">Questions fréquentes sur la création d'OF</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-10 text-center">Questions fréquentes sur la création d'OF</h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => <FAQItem key={i} faq={faq} />)}
           </div>
@@ -299,7 +299,7 @@ export default function CreerOrganismeFormation() {
       {/* LIENS INTERNES + CTA */}
       <section className="py-16 bg-amber-50">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Prêt à créer votre organisme de formation ?</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-4">Prêt à créer votre organisme de formation ?</h2>
           <p className="text-gray-600 mb-8 text-lg">
             Nous gérons toute la partie administrative et qualité pendant que vous vous concentrez
             sur votre expertise pédagogique.

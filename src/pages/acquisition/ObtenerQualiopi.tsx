@@ -765,6 +765,48 @@ export default function ObtenerQualiopiPage() {
       {/* RESSOURCES */}
       <section className="py-12 bg-gray-50 border-t border-gray-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 className="text-lg font-bold text-red-600 mb-6">Services connexes</h3>
+          <div className="grid md:grid-cols-3 gap-4 mb-8">
+            <Link
+              to="/acquisition/etre-certifie-qualiopi"
+              className="p-4 bg-white rounded-lg border border-gray-200 hover:border-red-600 hover:shadow-md transition-all"
+            >
+              <p className="font-semibold text-red-600 text-sm">
+                Être certifié Qualiopi
+              </p>
+              <p className="text-gray-600 text-xs mt-1">
+                La méthode simple pour réussir du premier coup
+              </p>
+            </Link>
+            <Link
+              to="/acquisition/pack-qualiopi-edof"
+              className="p-4 bg-white rounded-lg border border-gray-200 hover:border-red-600 hover:shadow-md transition-all"
+            >
+              <p className="font-semibold text-red-600 text-sm">
+                Pack Qualiopi + EDOF
+              </p>
+              <p className="text-gray-600 text-xs mt-1">
+                Accès complet à MonCompteFormation et au CPF
+              </p>
+            </Link>
+            <Link
+              to="/acquisition/pack-creation-of-qualiopi"
+              className="p-4 bg-white rounded-lg border border-gray-200 hover:border-red-600 hover:shadow-md transition-all"
+            >
+              <p className="font-semibold text-red-600 text-sm">
+                Créer votre Organisme de Formation
+              </p>
+              <p className="text-gray-600 text-xs mt-1">
+                Du diagnostic au lancement en 6 mois
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* RESSOURCES */}
+      <section className="py-12 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h3 className="text-lg font-bold text-red-600 mb-6">Ressources complémentaires</h3>
           <div className="grid md:grid-cols-3 gap-4">
             <Link

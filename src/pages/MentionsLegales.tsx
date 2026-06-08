@@ -1,6 +1,14 @@
+import { Helmet } from 'react-helmet-async';
+
 export default function MentionsLegales() {
   return (
     <div className="py-20 bg-gray-50">
+      <Helmet>
+        <title>Mentions Légales | Eden Conseil Qualité</title>
+        <meta name="description" content="Mentions légales et informations légales du site Eden Conseil Qualité." />
+        <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://edenconseilqualite.fr/mentions-legales" />
+      </Helmet>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold text-red-600 mb-12">Mentions Légales</h1>
 

@@ -30,6 +30,15 @@ const PrixCertificationQualiopi = lazy(() => import('./pages/acquisition/PrixCer
 const ConsultantQualiopiParis = lazy(() => import('./pages/acquisition/ConsultantQualiopiParis'));
 const CreerOrganismeFormation = lazy(() => import('./pages/acquisition/CreerOrganismeFormation'));
 const AuditQualiopi = lazy(() => import('./pages/acquisition/AuditQualiopi'));
+const PreAuditQualiopi = lazy(() => import('./pages/acquisition/PreAuditQualiopi'));
+const AuditInitialQualiopi = lazy(() => import('./pages/acquisition/AuditInitialQualiopi'));
+const DocumentsQualiopi = lazy(() => import('./pages/acquisition/DocumentsQualiopi'));
+const PackOFCPF = lazy(() => import('./pages/acquisition/PackOFCPF'));
+const PackRSRNCPCPF = lazy(() => import('./pages/acquisition/PackRSRNCPCPF'));
+const PackSurveillanceRenouvellement = lazy(() => import('./pages/acquisition/PackSurveillanceRenouvellement'));
+const InscriptionEDOF = lazy(() => import('./pages/acquisition/InscriptionEDOF'));
+const PublierOffreCPF = lazy(() => import('./pages/acquisition/PublierOffreCPF'));
+const ConformiteCPF = lazy(() => import('./pages/acquisition/ConformiteCPF'));
 const MentionsLegales = lazy(() => import('./pages/MentionsLegales'));
 const PolitiqueConfidentialite = lazy(() => import('./pages/PolitiqueConfidentialite'));
 const NotFound = lazy(() => import('./pages/NotFound'));
@@ -64,6 +73,15 @@ function App() {
             <Route path="/acquisition/consultant-qualiopi-paris" element={<ConsultantQualiopiParis />} />
             <Route path="/acquisition/creer-organisme-formation" element={<CreerOrganismeFormation />} />
             <Route path="/acquisition/audit-qualiopi" element={<AuditQualiopi />} />
+            <Route path="/acquisition/preaudit-qualiopi" element={<PreAuditQualiopi />} />
+            <Route path="/acquisition/audit-initial-qualiopi" element={<AuditInitialQualiopi />} />
+            <Route path="/acquisition/documents-qualiopi" element={<DocumentsQualiopi />} />
+            <Route path="/acquisition/pack-of-cpf" element={<PackOFCPF />} />
+            <Route path="/acquisition/pack-rs-rncp-cpf" element={<PackRSRNCPCPF />} />
+            <Route path="/acquisition/pack-surveillance-renouvellement" element={<PackSurveillanceRenouvellement />} />
+            <Route path="/acquisition/inscription-edof" element={<InscriptionEDOF />} />
+            <Route path="/acquisition/publier-offre-cpf" element={<PublierOffreCPF />} />
+            <Route path="/acquisition/conformite-cpf" element={<ConformiteCPF />} />
             <Route path="/ressources" element={<Ressources />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />

@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom';
 import { AlertCircle, Home, Mail } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-900 to-red-600 text-white flex flex-col items-center justify-center px-4">
+      <Helmet>
+        <title>Page non trouvée (404) | Eden Conseil Qualité</title>
+        <meta name="description" content="La page que vous cherchez n'existe pas ou a été déplacée." />
+        <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://edenconseilqualite.fr/404" />
+      </Helmet>
       <div className="text-center">
         <div className="flex justify-center mb-6">
           <AlertCircle className="w-20 h-20 text-yellow-300" />

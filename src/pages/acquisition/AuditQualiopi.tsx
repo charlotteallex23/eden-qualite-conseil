@@ -37,7 +37,7 @@ function FAQItem({ faq }: { faq: typeof faqs[0] }) {
     <div className="border border-gray-200 rounded-lg overflow-hidden">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full text-left px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-50 font-semibold text-gray-900"
+        className="w-full text-left px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-50 font-semibold text-gray-700"
       >
         <span>{faq.q}</span>
         <span className="ml-4 text-red-600 text-xl flex-shrink-0">{open ? '−' : '+'}</span>
@@ -146,14 +146,14 @@ export default function AuditQualiopi() {
       {/* DÉROULEMENT DE L'AUDIT */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Comment se déroule un audit Qualiopi ?</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-4 text-center">Comment se déroule un audit Qualiopi ?</h2>
           <p className="text-gray-600 text-center mb-12 text-lg">L'audit se déroule en 4 temps, chacun avec ses enjeux propres.</p>
           <div className="space-y-5">
             {[
               {
                 phase: 'Avant l\'audit (J-30 à J-15)',
                 desc: 'L\'auditeur vous envoie la liste des documents à préparer. Vous rassemblez vos preuves : programmes de formation, feuilles de présence, comptes rendus, questionnaires de satisfaction, CV des formateurs. C\'est la phase la plus intense en termes de préparation.',
-                couleur: 'bg-blue-50 border-blue-300'
+                couleur: 'bg-amber-50 border-amber-300'
               },
               {
                 phase: 'Ouverture de l\'audit (J, matin)',
@@ -172,7 +172,7 @@ export default function AuditQualiopi() {
               }
             ].map((item, i) => (
               <div key={i} className={`border-l-4 rounded-xl p-6 ${item.couleur}`}>
-                <h3 className="font-bold text-gray-900 text-lg mb-2">{item.phase}</h3>
+                <h3 className="font-bold text-red-600 text-lg mb-2">{item.phase}</h3>
                 <p className="text-gray-700 leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -183,7 +183,7 @@ export default function AuditQualiopi() {
       {/* 7 CRITÈRES */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Les 7 critères vérifiés par l'auditeur</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-4 text-center">Les 7 critères vérifiés par l'auditeur</h2>
           <p className="text-gray-600 text-center mb-10 text-lg">Le référentiel Qualiopi repose sur 7 critères qualité déclinés en 32 indicateurs. Voici ce que chaque critère implique concrètement.</p>
           <div className="space-y-4">
             {indicateurs.map((item, i) => (
@@ -192,7 +192,7 @@ export default function AuditQualiopi() {
                   {item.num}
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-1">{item.titre}</h3>
+                  <h3 className="font-bold text-red-600 mb-1">{item.titre}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
@@ -204,7 +204,7 @@ export default function AuditQualiopi() {
       {/* CHECKLIST */}
       <section className="py-16 bg-amber-50">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Documents indispensables avant l'audit</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-4 text-center">Documents indispensables avant l'audit</h2>
           <p className="text-gray-600 text-center mb-10 text-lg">Cette liste non exhaustive couvre les preuves les plus fréquemment demandées.</p>
           <div className="grid md:grid-cols-2 gap-3">
             {[
@@ -266,7 +266,7 @@ export default function AuditQualiopi() {
       {/* FAQ */}
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">Vos questions sur l'audit Qualiopi</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-10 text-center">Vos questions sur l'audit Qualiopi</h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => <FAQItem key={i} faq={faq} />)}
           </div>
@@ -277,7 +277,7 @@ export default function AuditQualiopi() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <Search size={40} className="mx-auto mb-4 text-red-600" />
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Simulez votre audit avant le jour J</h2>
+          <h2 className="text-3xl font-bold text-red-600 mb-4">Simulez votre audit avant le jour J</h2>
           <p className="text-gray-600 mb-8 text-lg">
             Notre audit blanc vous donne une vision précise de ce qui manque et de ce qui est prêt.
             Vous arrivez à l'audit officiel sans surprise.
