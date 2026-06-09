@@ -89,10 +89,10 @@ export default function QuiSuisJe() {
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-2">Charlotte Allexandre</h2>
                 <p className="text-lg text-red-600 font-semibold mb-4">Consultante & Auditrice Qualiopi</p>
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  Je suis <strong>plus</strong> qu'une consultante qualité. Je vous accompagne dans la structuration complète de vos démarches qualité, la mise en conformité de vos organismes de formation, CFA, centres de bilan de compétences et toute structure souhaitant obtenir ou maintenir leur certification <strong>Qualiopi</strong>.
+                <p className="text-lg text-gray-800 leading-relaxed mb-4">
+                  Je suis <strong className="text-gray-900 font-bold">plus</strong> qu'une consultante qualité. Je vous accompagne dans la structuration complète de vos démarches qualité, la mise en conformité de vos organismes de formation, CFA, centres de bilan de compétences et toute structure souhaitant obtenir ou maintenir leur certification <strong className="text-gray-900 font-bold">Qualiopi</strong>.
                 </p>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-lg text-gray-800 leading-relaxed">
                   Depuis plusieurs années, j'accompagne les professionnels de la formation dans la structuration de leurs démarches qualité, la mise en conformité de leurs documents, la préparation aux audits et l'optimisation de leurs pratiques internes.
                 </p>
               </div>
@@ -118,11 +118,11 @@ export default function QuiSuisJe() {
           {/* Expertise */}
           <div className="bg-amber-50 rounded-lg p-8 mb-16">
             <h2 className="text-2xl font-bold text-red-600 mb-6">Mon Expertise</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-lg text-gray-800 leading-relaxed mb-4">
               Mon parcours m'a permis d'intervenir auprès de nombreux organismes de formation, sur des problématiques variées : création de dossier NDA, conformité Qualiopi, préparation aux audits initiaux ou de surveillance, mise en place de procédures, programmes de formation, conventions, évaluations, veilles, indicateurs qualité et structuration administrative.
             </p>
-            <p className="text-gray-700 leading-relaxed">
-              En parallèle de mon activité de consultante, j'interviens également en tant qu'<strong>auditrice Qualiopi</strong>, ce qui me permet d'avoir une vision concrète des attentes du référentiel national qualité et des exigences observées lors des audits.
+            <p className="text-lg text-gray-800 leading-relaxed">
+              En parallèle de mon activité de consultante, j'interviens également en tant qu'<strong className="text-gray-900 font-bold">auditrice Qualiopi</strong>, ce qui me permet d'avoir une vision concrète des attentes du référentiel national qualité et des exigences observées lors des audits.
             </p>
           </div>
 
@@ -130,25 +130,25 @@ export default function QuiSuisJe() {
           <div className="space-y-8">
             <div className="border-l-4 border-red-600 pl-6">
               <h3 className="text-xl font-bold text-red-600 mb-2">Une Approche Stratégique, Opérationnelle et Pragmatique</h3>
-              <p className="text-gray-700">
-                Cette double expertise me permet d'accompagner mes clients avec une approche à la fois <strong>stratégique, opérationnelle et pragmatique</strong>.
+              <p className="text-lg text-gray-800">
+                Cette double expertise me permet d'accompagner mes clients avec une approche à la fois <strong className="text-gray-900 font-bold">stratégique, opérationnelle et pragmatique</strong>.
               </p>
             </div>
 
             <div className="border-l-4 border-amber-800 pl-6">
               <h3 className="text-xl font-bold text-amber-900 mb-2">Mon Objectif</h3>
-              <p className="text-gray-700">
+              <p className="text-lg text-gray-800">
                 Mon objectif est simple : rendre la qualité plus claire, plus accessible et plus efficace pour les organismes de formation.
               </p>
             </div>
 
             <div className="border-l-4 border-red-600 pl-6">
               <h3 className="text-xl font-bold text-red-600 mb-2">Accompagnement Sérieux, Personnalisé et Humain</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Chez <strong>Eden Conseil Qualité</strong>, j'ai à cœur de proposer un accompagnement sérieux, personnalisé et humain. Chaque organisme a son fonctionnement, ses contraintes, ses objectifs et son niveau de maturité. C'est pourquoi je prends le temps d'analyser chaque situation afin de proposer des solutions adaptées, conformes et réellement applicables sur le terrain.
+              <p className="text-lg text-gray-800 leading-relaxed">
+                Chez <strong className="text-gray-900 font-bold">Eden Conseil Qualité</strong>, j'ai à cœur de proposer un accompagnement sérieux, personnalisé et humain. Chaque organisme a son fonctionnement, ses contraintes, ses objectifs et son niveau de maturité. C'est pourquoi je prends le temps d'analyser chaque situation afin de proposer des solutions adaptées, conformes et réellement applicables sur le terrain.
               </p>
-              <p className="text-gray-700 leading-relaxed mt-4">
-                J'accompagne mes clients avec <strong>exigence, pédagogie et transparence</strong>, afin qu'ils puissent aborder leurs démarches qualité avec confiance et sérénité.
+              <p className="text-lg text-gray-800 leading-relaxed mt-4">
+                J'accompagne mes clients avec <strong className="text-gray-900 font-bold">exigence, pédagogie et transparence</strong>, afin qu'ils puissent aborder leurs démarches qualité avec confiance et sérénité.
               </p>
             </div>
           </div>
@@ -163,21 +163,21 @@ export default function QuiSuisJe() {
             <div className="bg-white p-8 rounded-lg shadow text-center">
               <div className="text-red-600 text-4xl font-bold mb-4">✓</div>
               <h3 className="text-xl font-bold text-red-600 mb-3">Exigence</h3>
-              <p className="text-gray-700">
+              <p className="text-lg text-gray-800">
                 Rigueur et respect des normes qualité pour assurer vos succès
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow text-center">
               <div className="text-red-600 text-4xl font-bold mb-4">→</div>
               <h3 className="text-xl font-bold text-red-600 mb-3">Pédagogie</h3>
-              <p className="text-gray-700">
+              <p className="text-lg text-gray-800">
                 Explication claire et progressive pour que vous compreniez chaque étape
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow text-center">
               <div className="text-red-600 text-4xl font-bold mb-4">♦</div>
               <h3 className="text-xl font-bold text-red-600 mb-3">Transparence</h3>
-              <p className="text-gray-700">
+              <p className="text-lg text-gray-800">
                 Communication honnête sur les défis et les solutions pour votre projet
               </p>
             </div>
