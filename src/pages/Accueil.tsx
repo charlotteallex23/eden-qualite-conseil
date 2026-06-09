@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import charlotteImg from '../assets/charlotte-profil.jpg';
 import HeroAccueil from '../components/HeroAccueil';
 import ServicesGrid from '../components/ServicesGrid';
 import StatsSection from '../components/StatsSection';
@@ -112,13 +113,12 @@ export default function Accueil() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Image */}
             <div className="order-2 md:order-1">
-              <div className="bg-gradient-to-b from-amber-100 to-amber-50 rounded-lg overflow-hidden shadow-lg">
-                <div className="aspect-square flex items-center justify-center bg-gradient-to-br from-red-600 to-amber-800">
-                  <div className="text-center">
-                    <div className="text-white text-7xl font-bold mb-2">CA</div>
-                    <p className="text-amber-100 text-lg font-semibold">Charlotte<br />Allexandre</p>
-                  </div>
-                </div>
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src={charlotteImg} 
+                  alt="Charlotte Allexandre - Consultante Qualité" 
+                  className="w-full h-auto object-cover aspect-square"
+                />
               </div>
             </div>
 
@@ -127,11 +127,14 @@ export default function Accueil() {
               <p className="text-red-600 font-semibold text-lg mb-2">À Propos</p>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Charlotte Allexandre<br />
-                <span className="text-red-600">Consultante & Ingénieure Qualité</span>
+                <span className="text-red-600">Consultante & Auditrice Qualiopi</span>
               </h2>
-              <p className="text-amber-800 font-semibold mb-4">Depuis 2020</p>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Spécialisée dans l'accompagnement des organismes de formation, CFA et structures souhaitant obtenir ou maintenir leur certification Qualiopi. Avec une approche stratégique, opérationnelle et pragmatique, j'aide mes clients à structurer leurs démarches qualité et réussir leurs audits.
+                Je suis <strong>Charlotte Allexandre</strong>, consultante qualité et auditrice Qualiopi.
+                J'accompagne les organismes de formation, CFA et centres de bilan de compétences dans leur mise en conformité, leur certification Qualiopi et la structuration de leurs démarches qualité.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Mon approche est à la fois professionnelle, humaine et opérationnelle : je vous aide à comprendre les exigences du référentiel, à produire les bons documents et à sécuriser votre organisme avant l'audit.
               </p>
               <Link
                 to="/qui-suis-je"

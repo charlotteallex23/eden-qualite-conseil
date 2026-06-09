@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { MessageCircle } from 'lucide-react';
 import { config } from '../config/company';
+import charlotteImg from '../assets/charlotte-profil-2.jpg';
 
 export default function QuiSuisJe() {
   const handleWhatsApp = () => {
@@ -74,15 +75,13 @@ export default function QuiSuisJe() {
           <div className="grid md:grid-cols-3 gap-12 mb-16 items-center">
             {/* Image */}
             <div className="md:col-span-1">
-              <div className="bg-gradient-to-b from-amber-100 to-amber-50 rounded-lg overflow-hidden shadow-lg">
-                <div className="aspect-square flex items-center justify-center bg-gradient-to-br from-red-600 to-amber-800">
-                  <div className="text-center">
-                    <div className="text-white text-6xl font-bold mb-2">CA</div>
-                    <p className="text-amber-100 text-sm">Consultante Qualité<br />& Ingénieure</p>
-                  </div>
-                </div>
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src={charlotteImg} 
+                  alt="Charlotte Allexandre - Consultante Qualité" 
+                  className="w-full h-auto object-cover aspect-square"
+                />
               </div>
-              <p className="text-center text-gray-600 mt-4 font-semibold">Depuis 2020</p>
             </div>
 
             {/* Content */}
