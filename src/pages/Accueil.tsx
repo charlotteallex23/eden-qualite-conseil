@@ -107,41 +107,85 @@ export default function Accueil() {
       {/* Section 1 — Hero (accroche) */}
       <HeroAccueil />
 
-      {/* Section 2 — À propos de Charlotte */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
+      {/* Section 2 — À propos de Charlotte (redesigned) */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Image */}
-            <div className="order-2 md:order-1">
-              <div className="rounded-lg overflow-hidden shadow-2xl">
+            {/* Image avec badges */}
+            <div className="relative">
+              <div className="rounded-xl overflow-hidden shadow-2xl">
                 <img 
                   src={charlotteImg} 
                   alt="Charlotte Allexandre - Consultante Qualité" 
-                  className="w-full h-auto object-cover aspect-square"
+                  className="w-full h-auto object-cover"
                 />
+              </div>
+              {/* Badges */}
+              <div className="absolute bottom-6 left-6 bg-white rounded-lg shadow-lg p-4 max-w-xs">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="text-red-600 text-3xl font-bold">98%</div>
+                  <div className="text-sm text-gray-700">de clients satisfaits</div>
+                </div>
+                <div className="flex items-start gap-2 pt-4 border-t border-gray-200">
+                  <div className="text-red-600 text-2xl">🛡️</div>
+                  <div>
+                    <p className="font-bold text-gray-900 text-sm">Experte certifiée</p>
+                    <p className="text-xs text-gray-600">Qualiopi & Référentiels Qualité</p>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Content */}
-            <div className="order-1 md:order-2">
-              <p className="text-red-600 font-semibold text-lg mb-2">À Propos</p>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Charlotte Allexandre<br />
-                <span className="text-red-600">Consultante & Auditrice Qualiopi</span>
-              </h2>
-              <p className="text-lg text-gray-800 leading-relaxed mb-6">
-                Je suis <strong className="text-gray-900 font-bold">Charlotte Allexandre</strong>, consultante qualité et auditrice Qualiopi.
+            <div className="space-y-6">
+              <div>
+                <p className="text-red-600 font-bold text-sm uppercase tracking-wider mb-2">QUI SUIS-JE ?</p>
+                <h2 className="text-4xl font-bold text-gray-900 mb-3">Votre expertise Qualiopi</h2>
+                <p className="text-lg text-red-600 font-semibold mb-6">Charlotte Allexandre – Consultante & Auditrice Qualiopi</p>
+              </div>
+
+              <p className="text-lg text-gray-800 leading-relaxed">
                 J'accompagne les organismes de formation, CFA et centres de bilan de compétences dans leur mise en conformité, leur certification Qualiopi et la structuration de leurs démarches qualité.
               </p>
-              <p className="text-lg text-gray-800 leading-relaxed mb-6">
+
+              <p className="text-lg text-gray-800 leading-relaxed">
                 Mon approche est à la fois professionnelle, humaine et opérationnelle : je vous aide à comprendre les exigences du référentiel, à produire les bons documents et à sécuriser votre organisme avant l'audit.
               </p>
-              <Link
-                to="/qui-suis-je"
-                className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold transition"
-              >
-                En savoir plus <ArrowRight size={20} />
-              </Link>
+
+              {/* 3 Benefits */}
+              <div className="grid grid-cols-3 gap-4 pt-4">
+                <div className="text-center">
+                  <div className="text-3xl mb-2">👤</div>
+                  <p className="font-semibold text-gray-900 text-sm mb-1">Accompagnement sur mesure</p>
+                  <p className="text-xs text-gray-600">Solutions adaptées à votre besoin et objectifs.</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl mb-2">✓</div>
+                  <p className="font-semibold text-gray-900 text-sm mb-1">Conformité & Sérénité</p>
+                  <p className="text-xs text-gray-600">Maîtrisez les exigences réglementaires en confiance.</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl mb-2">📈</div>
+                  <p className="font-semibold text-gray-900 text-sm mb-1">Résultats durables</p>
+                  <p className="text-xs text-gray-600">Des démarches qualité efficaces et pérennes.</p>
+                </div>
+              </div>
+
+              {/* CTAs */}
+              <div className="flex gap-4 pt-6 flex-wrap">
+                <Link
+                  to="/qui-suis-je"
+                  className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition"
+                >
+                  Découvrir mon accompagnement <ArrowRight size={20} />
+                </Link>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold transition"
+                >
+                  Prendre rendez-vous
+                </Link>
+              </div>
             </div>
           </div>
         </div>
