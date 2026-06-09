@@ -75,7 +75,7 @@ export default function QuiSuisJe() {
           <div className="grid md:grid-cols-3 gap-12 mb-16 items-center">
             {/* Image */}
             <div className="md:col-span-1">
-              <div className="rounded-lg overflow-hidden shadow-lg">
+              <div className="rounded-lg overflow-hidden shadow-2xl">
                 <img 
                   src={charlotteImg} 
                   alt="Charlotte Allexandre - Consultante Qualité" 
@@ -87,9 +87,10 @@ export default function QuiSuisJe() {
             {/* Content */}
             <div className="md:col-span-2 space-y-6">
               <div>
-                <h2 className="text-3xl font-bold text-red-600 mb-4">Mon Parcours</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-2">Charlotte Allexandre</h2>
+                <p className="text-lg text-red-600 font-semibold mb-4">Consultante & Auditrice Qualiopi</p>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Je suis <strong>Charlotte Allexandre</strong>, consultante qualité spécialisée dans l'accompagnement des organismes de formation, CFA, centres de bilan de compétences et structures souhaitant obtenir ou maintenir leur certification <strong>Qualiopi</strong>.
+                  Je suis <strong>plus</strong> qu'une consultante qualité. Je vous accompagne dans la structuration complète de vos démarches qualité, la mise en conformité de vos organismes de formation, CFA, centres de bilan de compétences et toute structure souhaitant obtenir ou maintenir leur certification <strong>Qualiopi</strong>.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   Depuis plusieurs années, j'accompagne les professionnels de la formation dans la structuration de leurs démarches qualité, la mise en conformité de leurs documents, la préparation aux audits et l'optimisation de leurs pratiques internes.
