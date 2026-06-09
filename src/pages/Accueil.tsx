@@ -113,7 +113,7 @@ export default function Accueil() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Image */}
             <div className="order-2 md:order-1">
-              <div className="rounded-lg overflow-hidden shadow-lg">
+              <div className="rounded-lg overflow-hidden shadow-2xl">
                 <img 
                   src={charlotteImg} 
                   alt="Charlotte Allexandre - Consultante Qualité" 
@@ -129,11 +129,11 @@ export default function Accueil() {
                 Charlotte Allexandre<br />
                 <span className="text-red-600">Consultante & Auditrice Qualiopi</span>
               </h2>
-              <p className="text-gray-700 leading-relaxed mb-6">
-                Je suis <strong>Charlotte Allexandre</strong>, consultante qualité et auditrice Qualiopi.
+              <p className="text-lg text-gray-800 leading-relaxed mb-6">
+                Je suis <strong className="text-gray-900 font-bold">Charlotte Allexandre</strong>, consultante qualité et auditrice Qualiopi.
                 J'accompagne les organismes de formation, CFA et centres de bilan de compétences dans leur mise en conformité, leur certification Qualiopi et la structuration de leurs démarches qualité.
               </p>
-              <p className="text-gray-700 leading-relaxed mb-6">
+              <p className="text-lg text-gray-800 leading-relaxed mb-6">
                 Mon approche est à la fois professionnelle, humaine et opérationnelle : je vous aide à comprendre les exigences du référentiel, à produire les bons documents et à sécuriser votre organisme avant l'audit.
               </p>
               <Link
