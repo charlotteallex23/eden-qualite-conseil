@@ -26,7 +26,7 @@ export default function Tarifs() {
   const pricingOptions = [
     {
       title: "Accompagnement Obtention NDA",
-      price: "À partir de 500€",
+      price: "",
       description: "Démarrez votre organisme de formation sur des bases solides",
       features: [
         "Analyse préalable de votre projet OF",
@@ -39,7 +39,7 @@ export default function Tarifs() {
     },
     {
       title: "Certification Qualiopi – Audit Initial",
-      price: "À partir de 1 990€",
+      price: "",
       description: "Une préparation méthodique pour réussir votre audit du premier coup",
       features: [
         "Audit blanc intégral avec restitutions",
@@ -53,7 +53,7 @@ export default function Tarifs() {
     },
     {
       title: "Création & Déploiement de CFA",
-      price: "Sur devis",
+      price: "",
       description: "Conception complète d'un CFA conforme, efficient et rentable",
       features: [
         "Étude approfondie de faisabilité",
@@ -67,7 +67,7 @@ export default function Tarifs() {
     },
     {
       title: "Dossiers RNCP / RS – Partenariat Certificateur",
-      price: "À partir de 400€",
+      price: "",
       description: "Créez ou rejoignez une certification professionnelle reconnue",
       features: [
         "Analyse stratégique de l'opportunité",
@@ -81,7 +81,7 @@ export default function Tarifs() {
     },
     {
       title: "Éligibilité CPF & Référencement EDOF",
-      price: "À partir de 990€",
+      price: "",
       description: "Rendez vos formations finançables et visibles sur MonCompteFormation",
       features: [
         "Diagnostic complet de vos formations",
@@ -94,7 +94,7 @@ export default function Tarifs() {
     },
     {
       title: "Audit de Surveillance Qualiopi",
-      price: "À partir de 890€",
+      price: "",
       description: "Anticipez votre audit de surveillance et sécurisez votre certification",
       features: [
         "Contrôle de vos preuves et indicateurs",
@@ -151,9 +151,9 @@ export default function Tarifs() {
           name: 'Tarifs Eden Conseil Qualité',
           description: 'Nos offres de conseil pour organismes de formation',
           itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Accompagnement Obtention NDA', description: 'Démarrez votre organisme de formation sur des bases solides', offers: { '@type': 'Offer', price: '500', priceCurrency: 'EUR', priceSpecification: { '@type': 'PriceSpecification', price: '500', priceCurrency: 'EUR', valueAddedTaxIncluded: false } } },
-            { '@type': 'ListItem', position: 2, name: 'Certification Qualiopi – Audit Initial', description: 'Préparation méthodique pour réussir l’audit du premier coup', offers: { '@type': 'Offer', price: '1990', priceCurrency: 'EUR', priceSpecification: { '@type': 'PriceSpecification', price: '1990', priceCurrency: 'EUR', valueAddedTaxIncluded: false } } },
-            { '@type': 'ListItem', position: 3, name: 'Éligibilité CPF & Référencement EDOF', offers: { '@type': 'Offer', price: '890', priceCurrency: 'EUR', priceSpecification: { '@type': 'PriceSpecification', price: '890', priceCurrency: 'EUR', valueAddedTaxIncluded: false } } }
+            { '@type': 'ListItem', position: 1, name: 'Accompagnement Obtention NDA', description: 'Démarrez votre organisme de formation sur des bases solides' },
+            { '@type': 'ListItem', position: 2, name: 'Certification Qualiopi - Audit Initial', description: 'Préparation méthodique pour réussir l\'audit du premier coup' },
+            { '@type': 'ListItem', position: 3, name: 'Éligibilité CPF & Référencement EDOF', description: 'Rendez vos formations finançables et visibles sur MonCompteFormation' }
           ]
         })}</script>
       </Helmet>
@@ -192,12 +192,6 @@ export default function Tarifs() {
                   {option.description}
                 </p>
 
-                <div className="mb-6">
-                  <span className="text-3xl font-bold text-red-600">
-                    {option.price}
-                  </span>
-                </div>
-
                 <ul className="space-y-3 mb-8 flex-grow">
                   {option.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">
@@ -232,7 +226,6 @@ export default function Tarifs() {
                 <tr className="border-b-2 border-red-600">
                   <th className="text-left py-4 px-4 font-bold text-red-600">Service</th>
                   <th className="text-center py-4 px-4 font-bold text-red-600">Durée</th>
-                  <th className="text-center py-4 px-4 font-bold text-red-600">Tarif</th>
                   <th className="text-center py-4 px-4 font-bold text-red-600">Personnalisation</th>
                 </tr>
               </thead>
@@ -241,7 +234,6 @@ export default function Tarifs() {
                   <tr key={idx} className="border-b border-gray-200 hover:bg-amber-50">
                     <td className="py-4 px-4 font-semibold text-red-600">{option.title}</td>
                     <td className="py-4 px-4 text-center text-gray-700">{option.duration}</td>
-                    <td className="py-4 px-4 text-center text-gray-700">{option.price}</td>
                     <td className="py-4 px-4 text-center">
                       <Check className="w-5 h-5 text-red-600 mx-auto" />
                     </td>
