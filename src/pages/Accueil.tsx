@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import charlotteImg from '../assets/charlotte-profil.jpg';
+import logo from '../assets/logo-eden-conseil-copy.webp';
 import HeroAccueil from '../components/HeroAccueil';
 import ServicesGrid from '../components/ServicesGrid';
 import StatsSection from '../components/StatsSection';
@@ -112,12 +113,20 @@ export default function Accueil() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center bg-white rounded-xl shadow-2xl p-8 md:p-12 -mt-24 md:-mt-32 relative z-10">
             {/* Image */}
-            <div>
+            <div className="relative">
               <div className="rounded-lg overflow-hidden shadow-xl">
                 <img 
                   src={charlotteImg} 
                   alt="Charlotte Allexandre - Consultante Qualité" 
                   className="w-full h-auto object-cover aspect-square"
+                />
+              </div>
+              {/* Logo bottom-left */}
+              <div className="absolute bottom-4 left-4 bg-white rounded-lg shadow-lg p-2">
+                <img 
+                  src={logo} 
+                  alt="Eden Conseil Qualité" 
+                  className="h-12 w-auto"
                 />
               </div>
             </div>
