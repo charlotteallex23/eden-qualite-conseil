@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "index": "node scripts/notify-google.js",
+    "index:watch": "node scripts/notify-google.js && echo 'Indexation chaque dimanche via GitHub Actions'"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
