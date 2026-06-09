@@ -14,6 +14,7 @@ export default function Header() {
     { path: '/tarifs', label: 'Tarifs' },
     { path: '/case-studies', label: 'Cas de réussite' },
     { path: '/blog', label: 'Blog' },
+    { path: '/qui-suis-je', label: 'Qui suis-je ?' },
     { path: '/about', label: 'À propos' },
   ];
 
