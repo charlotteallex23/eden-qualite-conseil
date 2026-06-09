@@ -122,7 +122,7 @@ export default function Accueil() {
                 />
               </div>
               {/* Logo bottom-left */}
-              <div className="absolute bottom-4 left-4 bg-white rounded-lg shadow-lg p-2">
+              <div className="absolute bottom-4 left-4">
                 <img 
                   src={logo} 
                   alt="Eden Conseil Qualité" 
