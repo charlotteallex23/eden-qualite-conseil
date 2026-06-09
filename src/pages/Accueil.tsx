@@ -1,4 +1,6 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 import HeroAccueil from '../components/HeroAccueil';
 import ServicesGrid from '../components/ServicesGrid';
 import StatsSection from '../components/StatsSection';
@@ -104,22 +106,60 @@ export default function Accueil() {
       {/* Section 1 — Hero (accroche) */}
       <HeroAccueil />
 
-      {/* Section 2 — Services phares */}
+      {/* Section 2 — À propos de Charlotte */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Image */}
+            <div className="order-2 md:order-1">
+              <div className="bg-gradient-to-b from-amber-100 to-amber-50 rounded-lg overflow-hidden shadow-lg">
+                <div className="aspect-square flex items-center justify-center bg-gradient-to-br from-red-600 to-amber-800">
+                  <div className="text-center">
+                    <div className="text-white text-7xl font-bold mb-2">CA</div>
+                    <p className="text-amber-100 text-lg font-semibold">Charlotte<br />Allexandre</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="order-1 md:order-2">
+              <p className="text-red-600 font-semibold text-lg mb-2">À Propos</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Charlotte Allexandre<br />
+                <span className="text-red-600">Consultante & Ingénieure Qualité</span>
+              </h2>
+              <p className="text-amber-800 font-semibold mb-4">Depuis 2020</p>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Spécialisée dans l'accompagnement des organismes de formation, CFA et structures souhaitant obtenir ou maintenir leur certification Qualiopi. Avec une approche stratégique, opérationnelle et pragmatique, j'aide mes clients à structurer leurs démarches qualité et réussir leurs audits.
+              </p>
+              <Link
+                to="/qui-suis-je"
+                className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold transition"
+              >
+                En savoir plus <ArrowRight size={20} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3 — Services phares */}
       <ServicesHighlights />
 
-      {/* Section 3 — Chiffres clés / résultats */}
+      {/* Section 4 — Chiffres clés / résultats */}
       <StatsSection />
 
-      {/* Section 4 — Nos expertises */}
+      {/* Section 5 — Nos expertises */}
       <ServicesGrid />
 
-      {/* Section 5 — Témoignages clients */}
+      {/* Section 6 — Témoignages clients */}
       <TemoignagesCarousel />
 
-      {/* Section 6 — FAQ rapide */}
+      {/* Section 7 — FAQ rapide */}
       <FAQAccueil />
 
-      {/* Section 7 — Appel à l’action final */}
+      {/* Section 8 — Appel à l'action final */}
       <CallToActionAccueil />
 
     </main>

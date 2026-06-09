@@ -12,6 +12,7 @@ const Contact = lazy(() => import('./pages/Contact'));
 const Blog = lazy(() => import('./pages/Blog'));
 const ArticleDetail = lazy(() => import('./pages/Blog').then(m => ({ default: m.ArticleDetail })));
 const About = lazy(() => import('./pages/About'));
+const QuiSuisJe = lazy(() => import('./pages/QuiSuisJe'));
 const CaseStudies = lazy(() => import('./pages/CaseStudies'));
 const Qualiopi = lazy(() => import('./pages/Qualiopi').then(m => ({ default: m.Qualiopi })));
 const CpfEligibilite = lazy(() => import('./pages/CpfEligibilite').then(m => ({ default: m.CpfEligibilite })));
@@ -54,6 +55,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Accueil />} />
             <Route path="/about" element={<About />} />
+            <Route path="/qui-suis-je" element={<QuiSuisJe />} />
             <Route path="/services" element={<Services />} />
             <Route path="/tarifs" element={<Tarifs />} />
             <Route path="/case-studies" element={<CaseStudies />} />
