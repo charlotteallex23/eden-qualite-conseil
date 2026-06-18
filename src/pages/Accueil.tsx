@@ -1,8 +1,4 @@
 import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
-import charlotteImg from '../assets/charlotte-profil.jpg';
-import logo from '../assets/logo-eden-conseil-copy.webp';
 import HeroAccueil from '../components/HeroAccueil';
 import ServicesGrid from '../components/ServicesGrid';
 import StatsSection from '../components/StatsSection';
@@ -107,59 +103,6 @@ export default function Accueil() {
       </Helmet>
       {/* Section 1 — Hero (accroche) */}
       <HeroAccueil />
-
-      {/* Section 2 — À propos de Charlotte (overlapping hero with shadow) */}
-      <section className="bg-white py-20">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center bg-white rounded-xl shadow-2xl p-8 md:p-12 -mt-24 md:-mt-32 relative z-10">
-            {/* Image */}
-            <div className="relative">
-              <div className="rounded-lg overflow-hidden shadow-xl">
-                <img 
-                  src={charlotteImg} 
-                  alt="Charlotte Allexandre - Consultante Qualité" 
-                  className="w-full h-auto object-cover aspect-square"
-                />
-              </div>
-              {/* Logo bottom-left */}
-              <div className="absolute bottom-4 left-4">
-                <img 
-                  src={logo} 
-                  alt="Eden Conseil Qualité" 
-                  className="h-12 w-auto"
-                />
-              </div>
-            </div>
-
-            {/* Content */}
-            <div className="space-y-6">
-              <div>
-                <p className="text-red-600 font-semibold text-lg mb-2">À Propos</p>
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                  Charlotte Allexandre<br />
-                  <span className="text-red-600">Consultante & Auditrice Qualiopi</span>
-                </h2>
-              </div>
-
-              <p className="text-lg text-gray-800 leading-relaxed">
-                Je suis <strong className="text-gray-900 font-bold">Charlotte Allexandre</strong>, consultante qualité et auditrice Qualiopi.
-                J'accompagne les organismes de formation, CFA et centres de bilan de compétences dans leur mise en conformité, leur certification Qualiopi et la structuration de leurs démarches qualité.
-              </p>
-
-              <p className="text-lg text-gray-800 leading-relaxed">
-                Mon approche est à la fois professionnelle, humaine et opérationnelle : je vous aide à comprendre les exigences du référentiel, à produire les bons documents et à sécuriser votre organisme avant l'audit.
-              </p>
-
-              <Link
-                to="/qui-suis-je"
-                className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition"
-              >
-                En savoir plus <ArrowRight size={20} />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Section 3 — Services phares */}
       <ServicesHighlights />
