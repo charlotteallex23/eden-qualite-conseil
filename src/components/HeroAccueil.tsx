@@ -5,11 +5,10 @@ import { config } from '../config/company';
 import logoAccueil from '../assets/logo-eden-conseil-copy.webp';
 
 export default function HeroAccueil() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 768);
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
-    checkMobile();
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
@@ -43,6 +42,8 @@ export default function HeroAccueil() {
               alt="Background"
               className="absolute inset-0 w-full h-full object-cover"
               style={{ objectPosition: 'center' }}
+              fetchPriority="high"
+              loading="eager"
             />
           </picture>
         ) : (
@@ -54,6 +55,7 @@ export default function HeroAccueil() {
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
             style={{ opacity: 0.9, objectPosition: 'center' }}
+            poster="/fond-hero-1.webp"
           >
             <source src="/video-hero.webm" type="video/webm" />
             <source src="/video-hero.mp4" type="video/mp4" />
