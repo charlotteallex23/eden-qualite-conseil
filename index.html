@@ -42,10 +42,23 @@
     <meta name="twitter:image" content="https://edenconseilqualite.fr/og-image.webp" />
     <title>Eden Conseil Qualité | Consultant Qualiopi Paris</title>
     <link rel="canonical" href="https://edenconseilqualite.fr/" />
+    <script>
+      // Canonical dynamique selon l'URL — corrige le mismatch pour toutes les routes SPA
+      (function(){
+        var l=document.querySelector('link[rel="canonical"]');
+        if(l){
+          var p=window.location.pathname.replace(/\/$/,'');
+          l.href='https://edenconseilqualite.fr'+(p||'/');
+        }
+      })();
+    </script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://edenconseilqualite.fr","name":"Eden Conseil Qualité","description":"Cabinet de conseil expert en certification Qualiopi, CPF et EDOF pour organismes de formation","url":"https://edenconseilqualite.fr","founder":{"@type":"Person","name":"Charlotte Allexandre","jobTitle":"Consultante & Auditrice Qualiopi","url":"https://edenconseilqualite.fr/qui-suis-je"},"telephone":"+33767058187","email":"edenconseilqualite@gmail.com","address":{"@type":"PostalAddress","streetAddress":"1 Avenue François 1er","postalCode":"75008","addressLocality":"Paris","addressCountry":"FR"},"priceRange":"€€","areaServed":[{"@type":"Country","name":"FR"},{"@type":"Country","name":"BE"},{"@type":"Country","name":"CH"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","bestRating":"5","reviewCount":"3"}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://edenconseilqualite.fr/#website","name":"Eden Conseil Qualité","url":"https://edenconseilqualite.fr","description":"Expert en certification Qualiopi, CPF et EDOF pour organismes de formation et CFA","publisher":{"@type":"Organization","name":"Eden Conseil Qualité","url":"https://edenconseilqualite.fr"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://edenconseilqualite.fr/?s={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://edenconseilqualite.fr/#organization","name":"Eden Conseil Qualité","url":"https://edenconseilqualite.fr","logo":{"@type":"ImageObject","url":"https://edenconseilqualite.fr/logo.png"},"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+33767058187","email":"edenconseilqualite@gmail.com","availableLanguage":"French"},"sameAs":["https://www.linkedin.com/company/eden-conseil-qualite"],"founder":{"@type":"Person","name":"Charlotte Allexandre","jobTitle":"Consultante & Auditrice Qualiopi"}}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://edenconseilqualite.fr/#webpage","name":"Eden Conseil Qualité | Consultant Qualiopi Paris","description":"Cabinet de conseil expert en certification Qualiopi, CPF et EDOF pour organismes de formation. Charlotte Allexandre vous accompagne avec un taux d'obtention de 100%.","url":"https://edenconseilqualite.fr","isPartOf":{"@id":"https://edenconseilqualite.fr/#website"},"about":{"@id":"https://edenconseilqualite.fr"},"author":{"@type":"Person","name":"Charlotte Allexandre","jobTitle":"Consultante & Auditrice Qualiopi","url":"https://edenconseilqualite.fr/qui-suis-je"},"dateModified":"2025-06-01","inLanguage":"fr-FR","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://edenconseilqualite.fr"}]}}</script>
+    <!-- IndexNow — découverte rapide Bing/Yandex -->
+    <meta name="indexnow-key" content="97e2907b5e3b4bd5a44e73cc471f77bd" />
+    <link rel="indexnow" href="https://edenconseilqualite.fr/97e2907b5e3b4bd5a44e73cc471f77bd.txt" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMJFJSLECX"></script>
     <script>
