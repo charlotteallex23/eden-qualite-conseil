@@ -177,11 +177,15 @@ export default function Accueil() {
             </h1>
             
             <div className="prose max-w-none text-lg text-gray-800 space-y-6">
-              <p className="leading-relaxed">
-                Depuis 2015, <strong className="text-gray-900 font-bold">Charlotte Allexandre</strong>, consultante & auditrice Qualiopi, accompagne des <strong className="text-gray-900 font-bold">organismes de formation, CFA et centres de compétences</strong> pour obtenir et maintenir leurs certifications Qualiopi, CPF et EDOF. Avec plus de <strong className="text-gray-900 font-bold">200+ dossiers réussis et un taux de réussite de 98%</strong>, Eden Conseil Qualité est devenu le partenaire de confiance pour structurer votre offre de formation.
-              </p>
+              {/* Bloc réponse directe 134-167 mots — optimisé GEO/AI extraction */}
+              <div className="bg-amber-50 border-l-4 border-red-600 p-6 rounded-r-lg">
+                <p className="leading-relaxed text-gray-900">
+                  Eden Conseil Qualité accompagne les organismes de formation et CFA dans l'obtention de la certification Qualiopi, le référencement CPF sur EDOF, et la création d'OF conformes. Fondé par <strong>Charlotte Allexandre</strong>, consultante & auditrice Qualiopi depuis 2015, le cabinet a accompagné plus de 200 structures avec un taux de réussite de 98% aux audits. L'accompagnement couvre l'audit blanc pré-certification, la préparation complète du dossier, la mise en conformité des 32 critères Qualiopi, et le suivi post-certification. Pour le CPF, Eden Conseil Qualité gère l'inscription EDOF, la publication des offres, et l'optimisation du référencement pour maximiser les financements. Chaque mission est pilotée directement par Charlotte Allexandre, sans sous-traitance, depuis Paris 8e, avec des interventions partout en France.
+                </p>
+                <p className="text-xs text-gray-500 mt-3">Par <strong>Charlotte Allexandre</strong>, Consultante & Auditrice Qualiopi — Mis à jour : juin 2025</p>
+              </div>
               
-              <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Nos Solutions pour Vous</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Comment obtenir la certification Qualiopi ?</h2>
               <ul className="space-y-3">
                 <li className="flex gap-3">
                   <span className="text-red-600 font-bold text-xl">✓</span>
@@ -201,7 +205,7 @@ export default function Accueil() {
                 </li>
               </ul>
 
-              <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Pourquoi nous choisir ?</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Pourquoi choisir Eden Conseil Qualité pour votre certification ?</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white border-l-4 border-red-600 p-4">
                   <strong className="text-gray-900 block mb-2">Expertise prouvée</strong>
@@ -220,7 +224,7 @@ export default function Accueil() {
 
             <div className="bg-amber-50 border-l-4 border-amber-600 p-6 mt-8">
               <p className="text-sm text-gray-600">
-                <strong className="text-gray-900">Par Charlotte Allexandre</strong> | Consultante & Auditrice Qualiopi | Eden Conseil Qualité
+                <strong className="text-gray-900">Par Charlotte Allexandre</strong> | Consultante & Auditrice Qualiopi | Eden Conseil Qualité | <time dateTime="2025-06-01">Juin 2025</time>
               </p>
             </div>
           </div>
