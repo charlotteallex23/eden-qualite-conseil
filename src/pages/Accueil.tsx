@@ -6,6 +6,7 @@ import ServicesHighlights from '../components/ServicesHighlights';
 import TemoignagesCarousel from '../components/TemoignagesCarousel';
 import FAQAccueil from '../components/FAQAccueil';
 import CallToActionAccueil from '../components/CallToActionAccueil';
+import BookingCalendar from '../components/BookingCalendar';
 
 export default function Accueil() {
   return (
@@ -60,32 +61,12 @@ export default function Accueil() {
             { '@type': 'Country', name: 'CH' }
           ],
           priceRange: '€€',
-          aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: '5',
-            bestRating: '5',
-            reviewCount: '3'
-          },
-          review: [
-            {
-              '@type': 'Review',
-              author: { '@type': 'Person', name: 'Sophie L.' },
-              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-              reviewBody: 'Grâce à Eden Conseil Qualité, notre CFA a obtenu Qualiopi du premier coup. Accompagnement ultra pro et humain.'
-            },
-            {
-              '@type': 'Review',
-              author: { '@type': 'Person', name: 'Julien M.' },
-              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-              reviewBody: 'Un vrai partenaire pour structurer notre offre, obtenir le CPF et réussir l\'audit Qualiopi. Je recommande à 100 %.'
-            },
-            {
-              '@type': 'Review',
-              author: { '@type': 'Person', name: 'Fatima B.' },
-              reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-              reviewBody: 'L\'équipe a tout géré pour la création de notre OF et le dépôt RS. Réactivité, expertise et résultats concrets.'
-            }
-          ]
+          image: {
+            '@type': 'ImageObject',
+            url: 'https://edenconseilqualite.fr/og-image.webp',
+            width: 2128,
+            height: 900
+          }
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
@@ -132,37 +113,14 @@ export default function Accueil() {
             url: 'https://edenconseilqualite.fr'
           },
           knows: ['Certification Qualiopi', 'CPF EDOF', 'Organismes de formation', 'CFA', 'RNCP', 'Audit formation'],
-          areaServed: [
-            { '@type': 'Country', name: 'FR' },
-            { '@type': 'Country', name: 'BE' },
-            { '@type': 'Country', name: 'CH' }
-          ],
           description: 'Consultante & Auditrice Qualiopi avec 10+ ans d\'expérience. Spécialiste en certification Qualiopi, CPF et EDOF pour organismes de formation et CFA.'
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
-          '@type': 'WebPage',
+          '@type': 'WebSite',
           '@id': 'https://edenconseilqualite.fr',
-          name: 'Consultant Qualiopi Paris | Accompagnement CPF EDOF | Eden Conseil Qualité',
-          description: 'Expert en certification Qualiopi, CPF et EDOF. Accompagnement personnalisé pour organismes de formation avec résultats prouvés.',
-          isPartOf: {
-            '@type': 'WebSite',
-            '@id': 'https://edenconseilqualite.fr',
-            name: 'Eden Conseil Qualité',
-            url: 'https://edenconseilqualite.fr'
-          },
-          primaryImageOfPage: {
-            '@type': 'ImageObject',
-            url: 'https://edenconseilqualite.fr/og-image.webp',
-            width: 2128,
-            height: 900
-          },
-          datePublished: '2025-01-01',
-          author: {
-            '@type': 'Person',
-            name: 'Charlotte Allexandre',
-            url: 'https://edenconseilqualite.fr/qui-suis-je'
-          }
+          name: 'Eden Conseil Qualité',
+          url: 'https://edenconseilqualite.fr'
         })}</script>
       </Helmet>
       {/* Section 1 — Hero (accroche) */}
@@ -204,6 +162,13 @@ export default function Accueil() {
                   <span><strong className="text-gray-900">Conformité continue</strong> - Audit maintenance Qualiopi, mise à jour RNCP/RS, dossier évaluation interne</span>
                 </li>
               </ul>
+
+              <div className="not-prose mt-10">
+                <BookingCalendar
+                  title="Prenez rendez-vous directement"
+                  subtitle="Réservez votre consultation avec nos experts - Créneaux disponibles du lundi au vendredi"
+                />
+              </div>
 
               <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Pourquoi choisir Eden Conseil Qualité pour votre certification ?</h2>
               <div className="grid md:grid-cols-3 gap-6">

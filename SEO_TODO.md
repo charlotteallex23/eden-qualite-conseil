@@ -35,11 +35,7 @@ Basé sur l'audit Codex SEO (score 62/100 au 2026-06-23)
 
 ## ÉTAPE 5 — Git commit + push
 - **Action** : Commit des fichiers modifiés + push GitHub
-- **Status** : ⏳ EN ATTENTE
-
----
-
-## ÉTAPE 6 — Upload FTP IONOS
+- **Status** : ✅ FAIT (2026-06-23 — commit 749e071) — Upload FTP IONOS
 - **Action** : Uploader `dist/` + `public/.htaccess` sur le serveur
 - **Fichiers clés** : `dist/index.html`, `public/sitemap.xml`, `.htaccess`
 - **Status** : ⏳ EN ATTENTE (manuel par l'utilisateur)
@@ -53,7 +49,17 @@ Basé sur l'audit Codex SEO (score 62/100 au 2026-06-23)
 
 ---
 
-## Score cible
+## ÉTAPE 8 — GEO & Content : Attribution auteur + H2 questions + réponse directe
+- **Problèmes** : GEO 26/100, Content 9/100
+- **Actions** :
+  - `Blog.tsx` : 15 auteurs "Équipe Eden Conseil" → "Charlotte Allexandre" ✅
+  - `index.html` : meta author → "Charlotte Allexandre" ✅
+  - `Accueil.tsx` : bloc réponse directe 150 mots avec attribution + date ✅
+  - `Accueil.tsx` : H2 reformulés en questions ("Comment obtenir..." / "Pourquoi choisir...") ✅
+  - Attribution avec `<time dateTime="2025-06-01">Juin 2025</time>` ✅
+- **Build** : 0 erreurs ✅
+- **Git** : commit 4ffae67 ✅
+- **Status** : ✅ FAIT (2026-06-23)
 | Catégorie | Avant | Après |
 |-----------|-------|-------|
 | Technique | 79 | 85+ |

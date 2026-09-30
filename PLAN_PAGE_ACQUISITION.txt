@@ -5,15 +5,15 @@ QUALIOPI : INTENTIONS “OBTENIR / ÊTRE CERTIFIÉ / PRÉPARER AUDIT”
 
 TODO | QUALIOPI | qualiopi-bilan-competences | qualiopi bilan de compétences | périmètre bilan | indicateurs, preuves, audit
 TODO | QUALIOPI | qualiopi-vae | qualiopi VAE | périmètre VAE | process, preuves, audit
-TODO | QUALIOPI | qualiopi-apprentissage | qualiopi apprentissage | CFA et apprentissage | conformité, audit, délais
+DONE | QUALIOPI | qualiopi-apprentissage | qualiopi apprentissage | CFA et apprentissage | conformité, audit, délais
 TODO | QUALIOPI | qualiopi-sous-traitance | qualiopi sous-traitant | conformité sous-traitance | obligations, risques, preuves
 
-TODO | QUALIOPI | audit-surveillance-qualiopi | audit de surveillance qualiopi | maintien conformité | échéances, preuves, non-conformités
+DONE | QUALIOPI | audit-surveillance-qualiopi | audit de surveillance qualiopi | maintien conformité | échéances, preuves, non-conformités
 TODO | QUALIOPI | audit-renouvellement-qualiopi | audit de renouvellement qualiopi | renouveler sans stress | échéances, changements, preuves
 TODO | QUALIOPI | non-conformite-qualiopi | non-conformité qualiopi | corriger vite et proprement | gravité, délais, reprise
 TODO | QUALIOPI | plan-action-qualiopi | plan d’action qualiopi | roadmap 30-60-90 jours | organisation, charge, priorité
 
-TODO | QUALIOPI | procedures-qualiopi | procédures qualiopi | kit procédures complet | peur paperasse, cohérence
+DONE | QUALIOPI | procedures-qualiopi | procédures qualiopi | kit procédures complet | peur paperasse, cohérence
 TODO | QUALIOPI | indicateurs-qualiopi | indicateurs qualiopi | comprendre et prouver | interprétation, exemples
 TODO | QUALIOPI | processus-qualiopi | processus qualiopi | du NDA à l’audit | étapes, timings
 TODO | QUALIOPI | prix-qualiopi | prix qualiopi | budget réaliste + postes | coût certificateur, accompagnement
@@ -42,8 +42,8 @@ TODO | EDOF | demande-acces-edof | demande accès EDOF | check-list avant dépô
 TODO | EDOF | delai-acces-edof | délai accès EDOF | planifier et anticiper | attente, relances
 TODO | EDOF | conditions-acces-edof | conditions accès EDOF | prérequis clairs | NDA, Qualiopi, BPF, capacité
 
-TODO | CPF | catalogue-cpf | catalogue CPF | structurer son catalogue | lisibilité, conversion
-TODO | CPF | edof-parametrage | paramétrage EDOF | config compte + rôles | erreurs, droits
+DONE | CPF | catalogue-cpf | catalogue CPF | structurer son catalogue | lisibilité, conversion
+DONE | CPF | edof-parametrage | paramétrage EDOF | config compte + rôles | erreurs, droits
 TODO | CPF | edof-sessions | créer une session CPF | sessions et dates | délais, règles
 TODO | CPF | edof-prix | prix formation CPF | structurer prix | cohérence, contrôles
 TODO | CPF | edof-documents | documents EDOF | pièces et justificatifs | confusion, oublis
@@ -54,7 +54,9 @@ TODO | CPF | edof-dereferencement | déréférencement CPF | éviter sanctions |
 TODO | CPF | cgu-cpf-organisme | CGU CPF organisme | obligations clés | délais, process
 TODO | CPF | delai-11-jours-cpf | délai 11 jours ouvrés CPF | sécuriser la planification | calendrier, sessions
 TODO | CPF | qualio pi-et-cpf | qualiopi et CPF | lien et prérequis | ordre des étapes, délais
-TODO | CPF | nda-et-cpf | NDA et CPF | étapes administratives | calendrier, pièces
+DONE | CPF | nda-et-cpf | NDA et CPF | étapes administratives | calendrier, pièces
+DONE | QUALIOPI | nda-qualiopi | NDA Qualiopi | protection des données audit | clauses, sécurité, preuves
+DONE | TRANSVERSE | obtenir-son-nda | obtenir son NDA | méthode + accompagnement | délais, clauses, mise en oeuvre
 TODO | CPF | edof-habilitation | habilitation certification | prouver l’éligibilité | RS/RNCP, preuves
 TODO | CPF | rs-rncp-et-cpf | RS RNCP CPF | comprendre l’éligibilité | choix certification, stratégie
 TODO | CPF | edof-sous-traitance | sous-traitance CPF | sécuriser la sous-traitance | risques, conformité

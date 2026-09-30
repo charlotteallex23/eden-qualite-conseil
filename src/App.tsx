@@ -40,8 +40,18 @@ const PackSurveillanceRenouvellement = lazy(() => import('./pages/acquisition/Pa
 const InscriptionEDOF = lazy(() => import('./pages/acquisition/InscriptionEDOF'));
 const PublierOffreCPF = lazy(() => import('./pages/acquisition/PublierOffreCPF'));
 const ConformiteCPF = lazy(() => import('./pages/acquisition/ConformiteCPF'));
+const QualiopiApprentissage = lazy(() => import('./pages/acquisition/QualiopiApprentissage'));
+const AuditSurveillanceQualiopi = lazy(() => import('./pages/acquisition/AuditSurveillanceQualiopi'));
+const ProceduresQualiopi = lazy(() => import('./pages/acquisition/ProceduresQualiopi'));
+const CatalogueCpf = lazy(() => import('./pages/acquisition/CatalogueCpf'));
+const EdofParametrage = lazy(() => import('./pages/acquisition/EdofParametrage'));
+const NdaQualiopiAcquisition = lazy(() => import('./pages/acquisition/NdaQualiopiAcquisition'));
+const NdaEtCpf = lazy(() => import('./pages/acquisition/NdaEtCpf'));
+const ObtenirSonNda = lazy(() => import('./pages/acquisition/ObtenirSonNda'));
 const MentionsLegales = lazy(() => import('./pages/MentionsLegales'));
 const PolitiqueConfidentialite = lazy(() => import('./pages/PolitiqueConfidentialite'));
+const NdaQualiopi = lazy(() => import('./pages/NdaQualiopi'));
+const NdaEdof = lazy(() => import('./pages/NdaEdof'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 function App() {
@@ -84,12 +94,22 @@ function App() {
             <Route path="/acquisition/inscription-edof" element={<InscriptionEDOF />} />
             <Route path="/acquisition/publier-offre-cpf" element={<PublierOffreCPF />} />
             <Route path="/acquisition/conformite-cpf" element={<ConformiteCPF />} />
+            <Route path="/acquisition/qualiopi-apprentissage" element={<QualiopiApprentissage />} />
+            <Route path="/acquisition/audit-surveillance-qualiopi" element={<AuditSurveillanceQualiopi />} />
+            <Route path="/acquisition/procedures-qualiopi" element={<ProceduresQualiopi />} />
+            <Route path="/acquisition/catalogue-cpf" element={<CatalogueCpf />} />
+            <Route path="/acquisition/edof-parametrage" element={<EdofParametrage />} />
+            <Route path="/acquisition/nda-qualiopi" element={<NdaQualiopiAcquisition />} />
+            <Route path="/acquisition/nda-et-cpf" element={<NdaEtCpf />} />
+            <Route path="/acquisition/obtenir-son-nda" element={<ObtenirSonNda />} />
             <Route path="/ressources" element={<Ressources />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<ArticleDetail />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
             <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+            <Route path="/nda-qualiopi" element={<NdaQualiopi />} />
+            <Route path="/nda-edof" element={<NdaEdof />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

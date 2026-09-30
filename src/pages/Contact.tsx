@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { Helmet } from 'react-helmet-async';
 import { useScrollToTop } from '../hooks/userHooks';
+import BookingCalendar from '../components/BookingCalendar';
 
 const EMAILJS_PUBLIC_KEY = 'w0GiVe8V5k_sHZYwU';
 const EMAILJS_SERVICE_ID = 'service_3o7wsxl';
@@ -288,6 +289,10 @@ export default function Contact() {
                   * Champs obligatoires
                 </p>
               </form>
+            </div>
+
+            <div className="mt-16">
+              <BookingCalendar />
             </div>
           </div>
 
